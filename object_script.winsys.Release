@@ -1,0 +1,15 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\toolbartab.o
+./release\repairtab.o
+./release\systemtab.o
+./release\tweakstab.o
+./release\installtab.o
+./release\about.o
+./release\services.o
+./release\updatezone.o
+./release\tutorial.o
+./release\qrc_winsys.o
+./release\moc_mainwindow.o
+);

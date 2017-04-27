@@ -27,3 +27,8 @@
 *.exe
 *.out
 *.app
+
+# Extra folders
+debug
+release
+scripts

@@ -1,0 +1,4 @@
+#include <windows.h>
+ 
+ID_ICON    ICON    DISCARDABLE    "winsys.ico"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "winsys.exe.manifest"

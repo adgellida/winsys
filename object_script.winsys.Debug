@@ -1,0 +1,15 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\toolbartab.o
+./debug\repairtab.o
+./debug\systemtab.o
+./debug\tweakstab.o
+./debug\installtab.o
+./debug\about.o
+./debug\services.o
+./debug\updatezone.o
+./debug\tutorial.o
+./debug\qrc_winsys.o
+./debug\moc_mainwindow.o
+);
