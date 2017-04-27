@@ -19,7 +19,13 @@ If you need help about compilation and packaging I have basic notions, ask me.
 Tutorial
 =============================================
 
-Pending
+Recommended steps:
+
+1. Push on 'Update scripts' button each time you open app.
+
+Near the program version (green up arrow).
+
+To be continued...
 
 TO DO
 =============================================
