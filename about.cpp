@@ -26,7 +26,7 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='https://github.com/adgellida/winsys'>Git Repo</a></p></br>");
 
     about.setInformativeText("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com"
-                             "\n\nv2017.05.21");
+                             "\n\nv2017.05.22");
 
     about.setWindowTitle("About");
     about.setStandardButtons(QMessageBox::Ok);

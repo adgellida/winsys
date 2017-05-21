@@ -104,6 +104,10 @@ private slots:
 
     void on_runProcessHackerButton_clicked();
 
+    void on_UTCButton_clicked();
+
+    void on_GMTButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

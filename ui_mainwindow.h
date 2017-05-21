@@ -97,6 +97,9 @@ public:
     QPushButton *startExplorerButton;
     QPushButton *restoreDefaultsServicesButton;
     QPushButton *restartExplorerButton;
+    QPushButton *UTCButton;
+    QLabel *label_15;
+    QPushButton *GMTButton;
     QPushButton *RestoreTweaksToDefaultButton;
     QWidget *tab_5;
     QTabWidget *tabWidget_6;
@@ -608,7 +611,7 @@ public:
         updateSystemTimeButton->setCheckable(false);
         label_14 = new QLabel(tab_7);
         label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setGeometry(QRect(10, 10, 61, 16));
+        label_14->setGeometry(QRect(10, 150, 111, 16));
         label_14->setFont(font);
         startExplorerButton = new QPushButton(tab_7);
         startExplorerButton->setObjectName(QStringLiteral("startExplorerButton"));
@@ -769,6 +772,20 @@ public:
         restartExplorerButton->setPalette(palette5);
         restartExplorerButton->setIconSize(QSize(30, 30));
         restartExplorerButton->setCheckable(false);
+        UTCButton = new QPushButton(tab_7);
+        UTCButton->setObjectName(QStringLiteral("UTCButton"));
+        UTCButton->setGeometry(QRect(10, 170, 120, 36));
+        UTCButton->setIconSize(QSize(30, 30));
+        UTCButton->setCheckable(false);
+        label_15 = new QLabel(tab_7);
+        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setGeometry(QRect(10, 10, 61, 16));
+        label_15->setFont(font);
+        GMTButton = new QPushButton(tab_7);
+        GMTButton->setObjectName(QStringLiteral("GMTButton"));
+        GMTButton->setGeometry(QRect(10, 210, 120, 36));
+        GMTButton->setIconSize(QSize(30, 30));
+        GMTButton->setCheckable(false);
         tabWidget_3->addTab(tab_7, QString());
         RestoreTweaksToDefaultButton = new QPushButton(tab_3);
         RestoreTweaksToDefaultButton->setObjectName(QStringLiteral("RestoreTweaksToDefaultButton"));
@@ -922,11 +939,11 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(0);
         tabWidget_6->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(0);
+        tabWidget_4->setCurrentIndex(2);
         tabWidget_5->setCurrentIndex(0);
 
 
@@ -1128,7 +1145,7 @@ public:
 #endif // QT_NO_WHATSTHIS
         updateSystemTimeButton->setText(QApplication::translate("MainWindow", "Update system time", Q_NULLPTR));
         updateSystemTimeButton->setShortcut(QString());
-        label_14->setText(QApplication::translate("MainWindow", "Secondary", Q_NULLPTR));
+        label_14->setText(QApplication::translate("MainWindow", "Current Local Time", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
         startExplorerButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1145,6 +1162,17 @@ public:
 #endif // QT_NO_WHATSTHIS
         restartExplorerButton->setText(QApplication::translate("MainWindow", "Restart explorer.exe", Q_NULLPTR));
         restartExplorerButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        UTCButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>I recommend to change to this</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        UTCButton->setText(QApplication::translate("MainWindow", "UTC", Q_NULLPTR));
+        UTCButton->setShortcut(QString());
+        label_15->setText(QApplication::translate("MainWindow", "Extra", Q_NULLPTR));
+#ifndef QT_NO_WHATSTHIS
+        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        GMTButton->setText(QApplication::translate("MainWindow", "GMT", Q_NULLPTR));
+        GMTButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
         RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore\n"
 " to Default", Q_NULLPTR));
@@ -1186,7 +1214,7 @@ public:
         integrityCheckButton->setShortcut(QString());
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.05.21", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.05.22", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
