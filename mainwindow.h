@@ -69,6 +69,41 @@ private slots:
     void on_updateScriptsButton_clicked();
     void on_actionTutorial_triggered();
 
+    void on_installChrisPCButton_clicked();
+
+    void on_runChrisPCButton_clicked();
+
+    void on_enableFastStartupButton_clicked();
+
+    void on_disableFastStartupButton_clicked();
+
+
+    void on_enableSystemRestoreButton_clicked();
+
+    void on_disableSystemRestoreButton_clicked();
+
+    void on_smartscreenBlockButton_clicked();
+
+    void on_smartscreenWarnButton_clicked();
+
+    void on_smartscreenOffButton_clicked();
+
+    void on_run10AppsManager_clicked();
+
+    void on_runUltimateWindowsTweaker4Button_clicked();
+
+    void on_runWindosUpdateMiniToolButton_clicked();
+
+    void on_RestoreTweaksToDefaultButton_clicked();
+
+    void on_RestoreAllServicesToDefaultButton_clicked();
+
+    void on_runProcessExplorerButton_clicked();
+
+    void on_runServiwinButton_clicked();
+
+    void on_runProcessHackerButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

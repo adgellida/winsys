@@ -98,29 +98,35 @@ void MainWindow::on_RestoreServicesToDefaultButton_clicked()
 {
     ui->statusBar->showMessage(tr("Applying settings. Please wait"));
 
-    //001.Superfetch - SysMain - DEFAULT
+    //001.Superfetch - SysMain - DEFAULT ON
 
     system("sc config sysmain start= auto & net start sysmain");
     ui->checkBox_001->setChecked(false);
 
-    //003.BITS - DEFAULT
+    //003.BITS - DEFAULT ON
 
-    system("sc config bits start= delayed-auto & net stop bits");
+    system("sc config bits start= delayed-auto & net start bits");
     ui->checkBox_003->setChecked(false);
 
-    //005.Windows Search - WSearch - DEFAULT
+    //005.Windows Search - WSearch - DEFAULT ON
 
     system("sc config wsearch start= delayed-auto & net start wsearch");
     ui->checkBox_005->setChecked(false);
 
+    //007.Windows Update - wuauserv - DEFAULT ON
 
-    //007.Windows Update - wuauserv - DEFAULT
-
-    system("sc config wuauserv start= demand & net stop wuauserv");
+    system("sc config wuauserv start= delayed-auto & net start wuauserv");
     ui->checkBox_007->setChecked(false);
 
 
     ui->statusBar->showMessage(tr("Settings applied. Select another action"));
+}
+
+void MainWindow::on_RestoreAllServicesToDefaultButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Smartscreen Block"));
+    system("cd scripts\\windowsScripts-master\\Windows_10_default_services & start regedit /s *.reg");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_loadServicesSelectionButton_clicked()

@@ -12,7 +12,7 @@ void MainWindow::on_actionTutorial_triggered()
     information.setText("<p align='left'><b>winsys</b></p></br>"
                   "<p align='left'>Recommended steps:</p></br>"
                   "<p align='left'>1. Push on 'Update scripts' button each time you open app.</p></br>"
-                  "<p align='left'>Near the program version (green up arrow)</p></br>"
+                  "<p align='left'>This button is near the program version (green up arrow)</p></br>"
                   "<p align='left'>\n</p></br>"
                   "<p align='left'>To be continued...</p></br>");
 
