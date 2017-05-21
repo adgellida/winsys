@@ -108,6 +108,12 @@ private slots:
 
     void on_GMTButton_clicked();
 
+    void on_loadTweaksSelectionButton_clicked();
+
+    void on_applyTweaksButton_clicked();
+
+    void on_unloadTweaksSelectionButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 

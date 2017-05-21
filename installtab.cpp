@@ -51,9 +51,8 @@ void MainWindow::on_run10AppsManager_clicked()
 
 void MainWindow::on_runWindosUpdateMiniToolButton_clicked()
 {
-    ui->statusBar->showMessage(tr("Running WindosUpdateMiniTool"));
-    // system("cd scripts\\windowsScripts-master & 013.runWindowsUpdateMiniTool.bat");
-    system("cd downloads & start wumt_x64.exe");
+    ui->statusBar->showMessage(tr("Running WindowsUpdateMiniTool"));
+    system("cd scripts\\windowsScripts-master & 013.runWindowsUpdateMiniTool.bat");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 

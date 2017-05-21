@@ -101,6 +101,9 @@ public:
     QLabel *label_15;
     QPushButton *GMTButton;
     QPushButton *RestoreTweaksToDefaultButton;
+    QPushButton *applyTweaksButton;
+    QPushButton *loadTweaksSelectionButton;
+    QPushButton *unloadTweaksSelectionButton;
     QWidget *tab_5;
     QTabWidget *tabWidget_6;
     QWidget *tab_14;
@@ -790,6 +793,15 @@ public:
         RestoreTweaksToDefaultButton = new QPushButton(tab_3);
         RestoreTweaksToDefaultButton->setObjectName(QStringLiteral("RestoreTweaksToDefaultButton"));
         RestoreTweaksToDefaultButton->setGeometry(QRect(600, 150, 90, 41));
+        applyTweaksButton = new QPushButton(tab_3);
+        applyTweaksButton->setObjectName(QStringLiteral("applyTweaksButton"));
+        applyTweaksButton->setGeometry(QRect(600, 100, 90, 23));
+        loadTweaksSelectionButton = new QPushButton(tab_3);
+        loadTweaksSelectionButton->setObjectName(QStringLiteral("loadTweaksSelectionButton"));
+        loadTweaksSelectionButton->setGeometry(QRect(600, 240, 90, 23));
+        unloadTweaksSelectionButton = new QPushButton(tab_3);
+        unloadTweaksSelectionButton->setObjectName(QStringLiteral("unloadTweaksSelectionButton"));
+        unloadTweaksSelectionButton->setGeometry(QRect(600, 270, 90, 23));
         tabWidget->addTab(tab_3, QString());
         tab_5 = new QWidget();
         tab_5->setObjectName(QStringLiteral("tab_5"));
@@ -1176,6 +1188,9 @@ public:
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
         RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore\n"
 " to Default", Q_NULLPTR));
+        applyTweaksButton->setText(QApplication::translate("MainWindow", "Apply", Q_NULLPTR));
+        loadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Load", Q_NULLPTR));
+        unloadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Unload", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
         checkBox_004->setText(QApplication::translate("MainWindow", "004.BITS - DISABLE", Q_NULLPTR));
         checkBox_008->setText(QApplication::translate("MainWindow", "008.Windows Update - wuauserv - DISABLE", Q_NULLPTR));

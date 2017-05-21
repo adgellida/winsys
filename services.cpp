@@ -133,7 +133,7 @@ void MainWindow::on_loadServicesSelectionButton_clicked()
 {
     qDebug() << "load selection pushed";
 
-    ui->statusBar->showMessage(tr("Predefined selection loaded"));
+    ui->statusBar->showMessage(tr("Predefined selection loaded. Push Apply if you're agree."));
 
     //First
 

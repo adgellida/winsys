@@ -216,4 +216,100 @@ void MainWindow::on_RestoreTweaksToDefaultButton_clicked()
     MainWindow::on_enableFastStartupButton_clicked();
     MainWindow::on_enableSystemRestoreButton_clicked();
     MainWindow::on_smartscreenWarnButton_clicked();
+    MainWindow::on_GMTButton_clicked();
+}
+
+void MainWindow::on_UTCButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Smartscreen Off"));
+    system("cd scripts\\windowsScripts-master & start regedit /s 017.Windows Universal Time - On.reg");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_GMTButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Smartscreen Off"));
+    system("cd scripts\\windowsScripts-master & start regedit /s 018.Windows Universal Time - Off.reg");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_loadTweaksSelectionButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Predefined tweaks selection loaded. Push Apply if you're agree."));
+
+    QPalette pal1 = ui->enableFirewallButton->palette();
+    pal1.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->enableFirewallButton->setAutoFillBackground(true);
+    ui->enableFirewallButton->setPalette(pal1);
+    ui->enableFirewallButton->update();
+
+    QPalette pal2 = ui->smartscreenOffButton->palette();
+    pal2.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->smartscreenOffButton->setAutoFillBackground(true);
+    ui->smartscreenOffButton->setPalette(pal2);
+    ui->smartscreenOffButton->update();
+
+    QPalette pal3 = ui->disableFastStartupButton->palette();
+    pal3.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->disableFastStartupButton->setAutoFillBackground(true);
+    ui->disableFastStartupButton->setPalette(pal3);
+    ui->disableFastStartupButton->update();
+
+    QPalette pal4 = ui->disableSystemRestoreButton->palette();
+    pal4.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->disableSystemRestoreButton->setAutoFillBackground(true);
+    ui->disableSystemRestoreButton->setPalette(pal4);
+    ui->disableSystemRestoreButton->update();
+
+    QPalette pal5 = ui->UTCButton->palette();
+    pal5.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->UTCButton->setAutoFillBackground(true);
+    ui->UTCButton->setPalette(pal5);
+    ui->UTCButton->update();
+}
+
+void MainWindow::on_unloadTweaksSelectionButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Predefined tweaks selection unloaded. Select another action."));
+
+    //QPalette pal1 = ui->enableFirewallButton->palette();
+    //pal1.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->enableFirewallButton->setAutoFillBackground(false);
+    //ui->enableFirewallButton->setPalette(pal1);
+    ui->enableFirewallButton->update();
+
+    //QPalette pal2 = ui->smartscreenOffButton->palette();
+    //pal2.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->smartscreenOffButton->setAutoFillBackground(false);
+    //ui->smartscreenOffButton->setPalette(pal2);
+    ui->smartscreenOffButton->update();
+
+    //QPalette pal3 = ui->disableFastStartupButton->palette();
+    //pal3.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->disableFastStartupButton->setAutoFillBackground(false);
+    //ui->disableFastStartupButton->setPalette(pal3);
+    ui->disableFastStartupButton->update();
+
+    //QPalette pal4 = ui->disableSystemRestoreButton->palette();
+    //pal4.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->disableSystemRestoreButton->setAutoFillBackground(false);
+    //ui->disableSystemRestoreButton->setPalette(pal4);
+    ui->disableSystemRestoreButton->update();
+
+    //QPalette pal5 = ui->UTCButton->palette();
+    //pal5.setColor(QPalette::Button, QColor(Qt::blue));
+    ui->UTCButton->setAutoFillBackground(false);
+    //ui->UTCButton->setPalette(pal5);
+    ui->UTCButton->update();
+}
+
+void MainWindow::on_applyTweaksButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Applying loaded tweaks."));
+    MainWindow::on_enableFirewallButton_clicked();
+    MainWindow::on_smartscreenOffButton_clicked();
+    MainWindow::on_disableFastStartupButton_clicked();
+    MainWindow::on_disableSystemRestoreButton_clicked();
+    MainWindow::on_UTCButton_clicked();
+    ui->statusBar->showMessage(tr("Tweaks applied. Select another action"));
 }
