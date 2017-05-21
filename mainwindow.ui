@@ -4358,7 +4358,7 @@ Services</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.05.22</string>
+     <string>v2017.05.23</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">
