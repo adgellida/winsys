@@ -7,6 +7,12 @@ Configurable app designed for Windows 10 x64 able to do changes on system config
 
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
 
+<img src="http://i.imgur.com/TtgGYff.png" width="500">
+
+<img src="http://i.imgur.com/qy5VRnM.png" width="500">
+
+<img src="http://i.imgur.com/vRP5ac7.png" width="500">
+
 What this program do
 =============================================
 
@@ -37,11 +43,6 @@ What this program do
 * Check system integrity.
 
 
-Be careful! These initial versions has a lot of bugs and disabled functionalities.
-
-If you want to help on this dev, say to me.
-
-If you need help about compilation and packaging I have basic notions, ask me.
 
 Tutorial
 =============================================
@@ -57,6 +58,11 @@ This button is near the program version (green up arrow).
 3. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.
 
 4. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system.
+
+Notes
+=============================================
+
+
 
 TO DO
 =============================================
@@ -79,6 +85,12 @@ TO DO
 
 Be care
 =============================================
+
+Be careful! These initial versions has a lot of bugs and disabled functionalities.
+
+If you want to help on this dev, say to me.
+
+If you need help about compilation and packaging I have basic notions, ask me.
 
 I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practises.
 
