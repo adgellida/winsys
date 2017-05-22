@@ -7,13 +7,14 @@ Configurable app designed for Windows 10 x64 able to do changes on system config
 
 What this program do
 =============================================
-** Packages
+
+##### Packages
 
 * Install chocolatey, ChrisPC Win Experience Index.
 
 * Run DriverPack Online, Windows Update Mini Tool (third party tool for system updates, recommended), Process Explorer, Process Hacker, serviwin, Ultimate Windows Tweaker, 10AppsManager.
 
-** Tweaks
+##### Tweaks
 
 * Enable-disable firewall, fast startup, system restore.
 
@@ -23,13 +24,13 @@ What this program do
 
 * Know license expiration, search updates (native ui), set time to UTC (recommended for dualboot with other OS, like ubuntu for example) or GMT (default).
 
-** Services
+##### Services
 
 * Enable-disable Superfetch, BITS, Windows Search, Windows Update.
 
 * Restore to default all windows services.
 
-** Repair
+##### Repair
 
 * Check system integrity.
 
@@ -72,7 +73,7 @@ TO DO
 
 * Save user configuration for use it when you re-open app, 
 
-Regroup files to clean main directory.
+* Regroup files to clean main directory.
 
 Be care
 =============================================
