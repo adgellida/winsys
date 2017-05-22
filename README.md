@@ -5,6 +5,8 @@
 
 Configurable app designed for Windows 10 x64 able to do changes on system configuration, download and run apps, execute tweaks, fixes, executing actions to blow of mouse click.
 
+Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
+
 What this program do
 =============================================
 
@@ -46,7 +48,7 @@ Tutorial
 
 Recommended steps:
 
-1. Push on 'Update scripts' button each time you open app.
+1. Push on 'Update scripts' button each time you open app. This way you get the latest scripts version.
 
 This button is near the program version (green up arrow).
 
@@ -61,7 +63,7 @@ TO DO
 
 * Update program with red arrow button.
 
-* Traduce app to spanish.
+* Translate app to Spanish.
 
 * Add buttons: DNS change, enable-disable Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
 
