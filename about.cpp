@@ -9,7 +9,7 @@ void MainWindow::on_actionAbout_triggered()
     QMessageBox about;
 
     about.setTextFormat(Qt::RichText);   //this is what makes the links clickable
-    about.setText("<p align='left'><b>winsys</b></p></br>"
+    about.setText(tr("<p align='left'><b>winsys</b></p></br>"
                   "<p align='left'>Configurable app referent to packages, updates and configurations</p></br>"
                   "<p align='left'>Built with Qt 5.8.0. Designed for Windows 10 x64."
 				  "<p align='left'>Contains bugs. Alpha test status.</p></br>"
@@ -23,12 +23,12 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='http://www.thewindowsclub.com'>thewindowsclub</a>. Any apps are used.</p></br>"
                   "<p align='left'><a href='https://wumt.blogspot.com.es/'>Windows Update MiniTool</a>. This app is used.</p></br>"
 
-                  "<p align='left'><a href='https://github.com/adgellida/winsys'>Git Repo</a></p></br>");
+                  "<p align='left'><a href='https://github.com/adgellida/winsys'>Git Repo</a></p></br>"));
 
-    about.setInformativeText("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com"
-                             "\n\nv2017.05.23");
+    about.setInformativeText(tr("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com"
+                             "\n\nv2017.06.04"));
 
-    about.setWindowTitle("About");
+    about.setWindowTitle(tr("About"));
     about.setStandardButtons(QMessageBox::Ok);
     about.setIconPixmap(QPixmap(":/images/winsys.ico"));
     about.setWindowIcon(QIcon(":/images/winsys.ico"));

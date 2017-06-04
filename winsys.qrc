@@ -17,5 +17,7 @@
         <file>images/typografia.png</file>
         <file>images/escoba.png</file>
         <file>images/winsys.ico</file>
+        <file>languages/winsys_es_ES.ts</file>
+        <file>languages/winsys_es_ES.qm</file>
     </qresource>
 </RCC>

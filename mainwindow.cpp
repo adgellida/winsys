@@ -12,6 +12,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
 
+    //Update scrips
+    on_updateScriptsButton_clicked();
+
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
 }

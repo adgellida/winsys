@@ -42,8 +42,6 @@ What this program do
 
 * Check system integrity.
 
-
-
 Tutorial
 =============================================
 
@@ -59,17 +57,10 @@ This button is near the program version (green up arrow).
 
 4. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system.
 
-Notes
-=============================================
-
-
-
 TO DO
 =============================================
 
 * Update program with red arrow button.
-
-* Translate app to Spanish.
 
 * Add buttons: DNS change, enable-disable Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
 
@@ -82,6 +73,11 @@ TO DO
 * Save user configuration for use it when you re-open app, 
 
 * Regroup files to clean main directory.
+
+DONE
+=============================================
+
+* Translate app to Spanish.
 
 Be care
 =============================================

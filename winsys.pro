@@ -32,9 +32,13 @@ FORMS    += mainwindow.ui
 RESOURCES += \
     winsys.qrc
 
+TRANSLATIONS += languages/winsys_es_ES.ts
+
 DISTFILES +=
 
 #Windows icon and admin right
 win32 {
     RC_FILE = winsys.rc
 }
+
+

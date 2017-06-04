@@ -582,7 +582,7 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>51</width>
+          <width>71</width>
           <height>16</height>
          </rect>
         </property>
@@ -744,7 +744,7 @@
          <rect>
           <x>10</x>
           <y>220</y>
-          <width>61</width>
+          <width>111</width>
           <height>16</height>
          </rect>
         </property>
@@ -2467,7 +2467,7 @@
          <rect>
           <x>10</x>
           <y>150</y>
-          <width>111</width>
+          <width>171</width>
           <height>16</height>
          </rect>
         </property>
@@ -3907,7 +3907,7 @@ Services</string>
        </rect>
       </property>
       <property name="text">
-       <string>Restore
+       <string>Restore tweaks
  to Default</string>
       </property>
      </widget>
@@ -3976,7 +3976,7 @@ Services</string>
          <rect>
           <x>270</x>
           <y>30</y>
-          <width>181</width>
+          <width>291</width>
           <height>23</height>
          </rect>
         </property>
@@ -3989,7 +3989,7 @@ Services</string>
          <rect>
           <x>270</x>
           <y>70</y>
-          <width>240</width>
+          <width>301</width>
           <height>23</height>
          </rect>
         </property>
@@ -4002,7 +4002,7 @@ Services</string>
          <rect>
           <x>270</x>
           <y>10</y>
-          <width>201</width>
+          <width>291</width>
           <height>23</height>
          </rect>
         </property>
@@ -4015,7 +4015,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>201</width>
+          <width>251</width>
           <height>23</height>
          </rect>
         </property>
@@ -4028,7 +4028,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>70</y>
-          <width>240</width>
+          <width>251</width>
           <height>23</height>
          </rect>
         </property>
@@ -4041,7 +4041,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>30</y>
-          <width>141</width>
+          <width>251</width>
           <height>23</height>
          </rect>
         </property>
@@ -4054,7 +4054,7 @@ Services</string>
          <rect>
           <x>270</x>
           <y>50</y>
-          <width>230</width>
+          <width>301</width>
           <height>23</height>
          </rect>
         </property>
@@ -4067,7 +4067,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>50</y>
-          <width>240</width>
+          <width>251</width>
           <height>23</height>
          </rect>
         </property>
@@ -4145,7 +4145,7 @@ Services</string>
        <string>Apply</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="RestoreServicesToDefaultButton">
+     <widget class="QPushButton" name="RestoreThisServicesToDefaultButton">
       <property name="geometry">
        <rect>
         <x>600</x>
@@ -4155,8 +4155,8 @@ Services</string>
        </rect>
       </property>
       <property name="text">
-       <string>Restore
- to Default</string>
+       <string>Restore this
+ services to Def.</string>
       </property>
      </widget>
      <widget class="QPushButton" name="RestoreAllServicesToDefaultButton">
@@ -4169,8 +4169,8 @@ Services</string>
        </rect>
       </property>
       <property name="text">
-       <string>Restore
- all to Default</string>
+       <string>Restore all
+ services to Def.</string>
       </property>
      </widget>
     </widget>
@@ -4199,7 +4199,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>41</width>
+          <width>81</width>
           <height>21</height>
          </rect>
         </property>
@@ -4223,7 +4223,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>41</width>
+          <width>81</width>
           <height>21</height>
          </rect>
         </property>
@@ -4247,7 +4247,7 @@ Services</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>41</width>
+          <width>81</width>
           <height>21</height>
          </rect>
         </property>
@@ -4358,7 +4358,7 @@ Services</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.05.23</string>
+     <string>v2017.06.04</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">
@@ -4408,7 +4408,7 @@ Services</string>
      <x>0</x>
      <y>0</y>
      <width>711</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuNuevo">

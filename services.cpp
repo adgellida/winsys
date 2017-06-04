@@ -94,7 +94,7 @@ void MainWindow::on_enableAllServicesButton_clicked()
     ui->checkBox_008->setChecked(false);
 }
 
-void MainWindow::on_RestoreServicesToDefaultButton_clicked()
+void MainWindow::on_RestoreThisServicesToDefaultButton_clicked()
 {
     ui->statusBar->showMessage(tr("Applying settings. Please wait"));
 
@@ -117,7 +117,6 @@ void MainWindow::on_RestoreServicesToDefaultButton_clicked()
 
     system("sc config wuauserv start= delayed-auto & net start wuauserv");
     ui->checkBox_007->setChecked(false);
-
 
     ui->statusBar->showMessage(tr("Settings applied. Select another action"));
 }

@@ -120,7 +120,7 @@ public:
     QPushButton *enableAllServicesButton;
     QPushButton *saveSelectionButton_2;
     QPushButton *applyButton;
-    QPushButton *RestoreServicesToDefaultButton;
+    QPushButton *RestoreThisServicesToDefaultButton;
     QPushButton *RestoreAllServicesToDefaultButton;
     QWidget *tab;
     QTabWidget *tabWidget_4;
@@ -337,7 +337,7 @@ public:
         enableFirewallButton->setCheckable(false);
         label_12 = new QLabel(tab_6);
         label_12->setObjectName(QStringLiteral("label_12"));
-        label_12->setGeometry(QRect(10, 10, 51, 16));
+        label_12->setGeometry(QRect(10, 10, 71, 16));
         label_12->setFont(font);
         disableFirewallButton = new QPushButton(tab_6);
         disableFirewallButton->setObjectName(QStringLiteral("disableFirewallButton"));
@@ -366,7 +366,7 @@ public:
         knowLicenceExpirationButton->setCheckable(false);
         label_19 = new QLabel(tab_6);
         label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setGeometry(QRect(10, 220, 61, 16));
+        label_19->setGeometry(QRect(10, 220, 111, 16));
         label_19->setFont(font);
         openServicesButton = new QPushButton(tab_6);
         openServicesButton->setObjectName(QStringLiteral("openServicesButton"));
@@ -614,7 +614,7 @@ public:
         updateSystemTimeButton->setCheckable(false);
         label_14 = new QLabel(tab_7);
         label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setGeometry(QRect(10, 150, 111, 16));
+        label_14->setGeometry(QRect(10, 150, 171, 16));
         label_14->setFont(font);
         startExplorerButton = new QPushButton(tab_7);
         startExplorerButton->setObjectName(QStringLiteral("startExplorerButton"));
@@ -812,28 +812,28 @@ public:
         tab_14->setObjectName(QStringLiteral("tab_14"));
         checkBox_004 = new QCheckBox(tab_14);
         checkBox_004->setObjectName(QStringLiteral("checkBox_004"));
-        checkBox_004->setGeometry(QRect(270, 30, 181, 23));
+        checkBox_004->setGeometry(QRect(270, 30, 291, 23));
         checkBox_008 = new QCheckBox(tab_14);
         checkBox_008->setObjectName(QStringLiteral("checkBox_008"));
-        checkBox_008->setGeometry(QRect(270, 70, 240, 23));
+        checkBox_008->setGeometry(QRect(270, 70, 301, 23));
         checkBox_002 = new QCheckBox(tab_14);
         checkBox_002->setObjectName(QStringLiteral("checkBox_002"));
-        checkBox_002->setGeometry(QRect(270, 10, 201, 23));
+        checkBox_002->setGeometry(QRect(270, 10, 291, 23));
         checkBox_001 = new QCheckBox(tab_14);
         checkBox_001->setObjectName(QStringLiteral("checkBox_001"));
-        checkBox_001->setGeometry(QRect(10, 10, 201, 23));
+        checkBox_001->setGeometry(QRect(10, 10, 251, 23));
         checkBox_007 = new QCheckBox(tab_14);
         checkBox_007->setObjectName(QStringLiteral("checkBox_007"));
-        checkBox_007->setGeometry(QRect(10, 70, 240, 23));
+        checkBox_007->setGeometry(QRect(10, 70, 251, 23));
         checkBox_003 = new QCheckBox(tab_14);
         checkBox_003->setObjectName(QStringLiteral("checkBox_003"));
-        checkBox_003->setGeometry(QRect(10, 30, 141, 23));
+        checkBox_003->setGeometry(QRect(10, 30, 251, 23));
         checkBox_006 = new QCheckBox(tab_14);
         checkBox_006->setObjectName(QStringLiteral("checkBox_006"));
-        checkBox_006->setGeometry(QRect(270, 50, 230, 23));
+        checkBox_006->setGeometry(QRect(270, 50, 301, 23));
         checkBox_005 = new QCheckBox(tab_14);
         checkBox_005->setObjectName(QStringLiteral("checkBox_005"));
-        checkBox_005->setGeometry(QRect(10, 50, 240, 23));
+        checkBox_005->setGeometry(QRect(10, 50, 251, 23));
         tabWidget_6->addTab(tab_14, QString());
         loadServicesSelectionButton = new QPushButton(tab_5);
         loadServicesSelectionButton->setObjectName(QStringLiteral("loadServicesSelectionButton"));
@@ -851,9 +851,9 @@ public:
         applyButton = new QPushButton(tab_5);
         applyButton->setObjectName(QStringLiteral("applyButton"));
         applyButton->setGeometry(QRect(600, 120, 90, 23));
-        RestoreServicesToDefaultButton = new QPushButton(tab_5);
-        RestoreServicesToDefaultButton->setObjectName(QStringLiteral("RestoreServicesToDefaultButton"));
-        RestoreServicesToDefaultButton->setGeometry(QRect(600, 150, 90, 41));
+        RestoreThisServicesToDefaultButton = new QPushButton(tab_5);
+        RestoreThisServicesToDefaultButton->setObjectName(QStringLiteral("RestoreThisServicesToDefaultButton"));
+        RestoreThisServicesToDefaultButton->setGeometry(QRect(600, 150, 90, 41));
         RestoreAllServicesToDefaultButton = new QPushButton(tab_5);
         RestoreAllServicesToDefaultButton->setObjectName(QStringLiteral("RestoreAllServicesToDefaultButton"));
         RestoreAllServicesToDefaultButton->setGeometry(QRect(600, 200, 90, 41));
@@ -867,21 +867,21 @@ public:
         tab_8->setObjectName(QStringLiteral("tab_8"));
         label_63 = new QLabel(tab_8);
         label_63->setObjectName(QStringLiteral("label_63"));
-        label_63->setGeometry(QRect(10, 10, 41, 21));
+        label_63->setGeometry(QRect(10, 10, 81, 21));
         label_63->setFont(font1);
         tabWidget_4->addTab(tab_8, QString());
         tab_9 = new QWidget();
         tab_9->setObjectName(QStringLiteral("tab_9"));
         label_62 = new QLabel(tab_9);
         label_62->setObjectName(QStringLiteral("label_62"));
-        label_62->setGeometry(QRect(10, 10, 41, 21));
+        label_62->setGeometry(QRect(10, 10, 81, 21));
         label_62->setFont(font1);
         tabWidget_4->addTab(tab_9, QString());
         tab_10 = new QWidget();
         tab_10->setObjectName(QStringLiteral("tab_10"));
         label_61 = new QLabel(tab_10);
         label_61->setObjectName(QStringLiteral("label_61"));
-        label_61->setGeometry(QRect(10, 10, 41, 21));
+        label_61->setGeometry(QRect(10, 10, 81, 21));
         label_61->setFont(font1);
         tabWidget_4->addTab(tab_10, QString());
         tabWidget->addTab(tab, QString());
@@ -925,7 +925,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 711, 21));
+        menuBar->setGeometry(QRect(0, 0, 711, 20));
         menuNuevo = new QMenu(menuBar);
         menuNuevo->setObjectName(QStringLiteral("menuNuevo"));
         menuEdici_n = new QMenu(menuBar);
@@ -1186,7 +1186,7 @@ public:
         GMTButton->setText(QApplication::translate("MainWindow", "GMT", Q_NULLPTR));
         GMTButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
-        RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore\n"
+        RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore tweaks\n"
 " to Default", Q_NULLPTR));
         applyTweaksButton->setText(QApplication::translate("MainWindow", "Apply", Q_NULLPTR));
         loadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Load", Q_NULLPTR));
@@ -1206,10 +1206,10 @@ public:
         enableAllServicesButton->setText(QApplication::translate("MainWindow", "Enable All", Q_NULLPTR));
         saveSelectionButton_2->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
         applyButton->setText(QApplication::translate("MainWindow", "Apply", Q_NULLPTR));
-        RestoreServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore\n"
-" to Default", Q_NULLPTR));
-        RestoreAllServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore\n"
-" all to Default", Q_NULLPTR));
+        RestoreThisServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore this\n"
+" services to Def.", Q_NULLPTR));
+        RestoreAllServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore all\n"
+" services to Def.", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Services", Q_NULLPTR));
         label_63->setText(QApplication::translate("MainWindow", "Pending", Q_NULLPTR));
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", Q_NULLPTR));
@@ -1229,7 +1229,7 @@ public:
         integrityCheckButton->setShortcut(QString());
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.05.23", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.04", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
