@@ -5,9 +5,9 @@
 
 **For English push [here](https://github.com/adgellida/winsys/blob/master/README.md)**
 
-Configurable app designed for Windows 10 x64 able to do changes on system configuration, download and run apps, execute tweaks, fixes, executing actions to blow of mouse click.
+App configurable diseñada para Windows 10 x64 capaz de hacer cambios en la configuración del sistema, descargar y ejecutar apps, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
-Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
+Construido con Qt 5.8.0. Basado en [ubunsys](https://github.com/adgellida/ubunsys).
 
 <img src="http://i.imgur.com/TtgGYff.png" width="500">
 
