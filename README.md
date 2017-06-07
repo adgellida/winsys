@@ -3,6 +3,8 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/winsys.ico" width="80">
 
+**Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es.md)**
+
 Configurable app designed for Windows 10 x64 able to do changes on system configuration, download and run apps, execute tweaks, fixes, executing actions to blow of mouse click.
 
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
@@ -12,6 +14,11 @@ Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
 <img src="http://i.imgur.com/qy5VRnM.png" width="500">
 
 <img src="http://i.imgur.com/vRP5ac7.png" width="500">
+
+Download
+=============================================
+
+* https://github.com/adgellida/winsys/releases
 
 What this program do
 =============================================
@@ -26,7 +33,7 @@ What this program do
 
 * Enable-disable firewall, fast startup, system restore.
 
-* Block, warn, off smartscreen.
+* Block, warn, off Smartscreen.
 
 * Open cmd, powershell, taskmgr, services.msc, regedit, restart, do a complete (real) shutdown.
 
@@ -55,12 +62,12 @@ This button is near the program version (green up arrow).
 
 3. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.
 
-4. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system.
+4. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system. (Not tested)
 
 TO DO
 =============================================
 
-* Update program with red arrow button.
+* Update program with red arrow button. For now link to release versions page.
 
 * Add buttons: DNS change, enable-disable Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
 
@@ -70,7 +77,7 @@ TO DO
 
 * No check drivers on Windows Update when plug a device.
 
-* Save user configuration for use it when you re-open app, 
+* Save user configuration for use it when you re-open app. 
 
 * Regroup files to clean main directory.
 
