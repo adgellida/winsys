@@ -3,22 +3,22 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/winsys.ico" width="80">
 
-**Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es.md)**
+**Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
 
 Configurable app designed for Windows 10 x64 able to do changes on system configuration, download and run apps, execute tweaks, fixes, executing actions to blow of mouse click.
 
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
+
+Download
+=============================================
+
+* https://github.com/adgellida/winsys/releases
 
 <img src="http://i.imgur.com/TtgGYff.png" width="500">
 
 <img src="http://i.imgur.com/qy5VRnM.png" width="500">
 
 <img src="http://i.imgur.com/vRP5ac7.png" width="500">
-
-Download
-=============================================
-
-* https://github.com/adgellida/winsys/releases
 
 What this program do
 =============================================
@@ -54,15 +54,11 @@ Tutorial
 
 Recommended steps:
 
-1. Push on 'Update scripts' button each time you open app. This way you get the latest scripts version.
+1. Install or run the apps you want.
 
-This button is near the program version (green up arrow).
+2. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.
 
-2. Install or run the apps you want.
-
-3. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.
-
-4. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system. (Not tested)
+3. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system. (Not tested)
 
 TO DO
 =============================================
@@ -115,8 +111,3 @@ Credits and thanks to
 * [thewindowsclub](http://www.thewindowsclub.com). Any apps are used.
 
 * [Windows Update MiniTool](https://wumt.blogspot.com.es). This app is used.
-
-Release notes
-=============================================
-
-You can check it [here](https://github.com/adgellida/winsys/releases)

@@ -9,16 +9,16 @@ App configurable diseñada para Windows 10 x64 capaz de hacer cambios en la conf
 
 Construido con Qt 5.8.0. Basado en [ubunsys](https://github.com/adgellida/ubunsys).
 
+Descarga
+=============================================
+
+* https://github.com/adgellida/winsys/releases
+
 <img src="http://i.imgur.com/TtgGYff.png" width="500">
 
 <img src="http://i.imgur.com/qy5VRnM.png" width="500">
 
 <img src="http://i.imgur.com/vRP5ac7.png" width="500">
-
-Descarga
-=============================================
-
-* https://github.com/adgellida/winsys/releases
 
 Qué hace este programa
 =============================================
@@ -54,15 +54,11 @@ Tutorial
 
 Pasos recomendados:
 
-1. Pulsar en el botón de 'Actualizar scripts' cada vez que se abra la app. De esta manera tendrás la última versión de los scripts. Este paso ya no es necesario, esto se hace al iniciar el programa.
+1. Instalar o ejecutar las apps que quieras.
 
-Este botón está al lado de la versión del programa (flecha hacia arriba verde).
+2. Ejecutar todos las mejoras que quieras, tú puedes seleccionarlas manualemente, cargar una selección preconfigurada (en un futuro podrás seleccionar la tuya), o restaurar la configuración por defecto del sistema de esos ajustes.
 
-2. Instalar o ejecutar las apps que quieras.
-
-3. Ejecutar todos las mejoras que quieras, tú puedes seleccionarlas manualemente, cargar una selección preconfigurada (en un futuro podrás seleccionar la tuya), o restaurar la configuración por defecto del sistema de esos ajustes.
-
-4. Habilitar-Deshabilitar los servicios que quieras, cargar una selección preconfigurada, restaurar los servicios que se muestran a su estado por defecto, restaurar todos los servicios existentes en el sistema a sus estados por defecto. (No probado)
+3. Habilitar-Deshabilitar los servicios que quieras, cargar una selección preconfigurada, restaurar los servicios que se muestran a su estado por defecto, restaurar todos los servicios existentes en el sistema a sus estados por defecto. (No probado)
 
 POR HACER
 =============================================
@@ -115,8 +111,3 @@ Créditos y gracias a
 * [thewindowsclub](http://www.thewindowsclub.com). Algunas apps son usadas.
 
 * [Windows Update MiniTool](https://wumt.blogspot.com.es). Esta app es usada.
-
-Notas de la versión
-=============================================
-
-Puedes comprobarlas [aquí](https://github.com/adgellida/winsys/releases)

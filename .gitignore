@@ -34,3 +34,10 @@ release
 scripts
 downloads
 Rubbish
+
+# Extra
+*.pro.user
+*.pro.user*
+wget-log*
+#Makefile
+#moc_mainwindow.cpp
