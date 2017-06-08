@@ -400,14 +400,14 @@ por defecto</translation>
         <location filename="../mainwindow.ui" line="4158"/>
         <source>Restore this
  services to Def.</source>
-        <translation type="unfinished">Rest. estos
+        <translation>Rest. estos
 serv. por def.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="4172"/>
         <source>Restore all
  services to Def.</source>
-        <translation type="unfinished">Rest. todos los
+        <translation>Rest. todos los
 serv. por def.</translation>
     </message>
     <message>
@@ -553,7 +553,7 @@ por def.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="4553"/>
-        <location filename="../tutorial.cpp" line="19"/>
+        <location filename="../tutorial.cpp" line="18"/>
         <source>Tutorial</source>
         <translation></translation>
     </message>
@@ -738,10 +738,9 @@ v2017.05.23</translation>
         <translation>Guardar_como</translation>
     </message>
     <message>
-        <location filename="../tutorial.cpp" line="12"/>
         <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;winsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Push on &apos;Update scripts&apos; button each time you open app.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;This button is near the program version (green up arrow)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
 &lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;To be continued...&lt;/p&gt;&lt;/br&gt;</source>
-        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;winsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulse en &apos;Actualizar scripst&apos; cada vez que abra la app.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Este botón está al lado de la versión del programa (flecha superior verde)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
+        <translation type="vanished">&lt;p align=&apos;left&apos;&gt;&lt;b&gt;winsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Pasos recomendados:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Pulse en &apos;Actualizar scripst&apos; cada vez que abra la app.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Este botón está al lado de la versión del programa (flecha superior verde)&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;
 &lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Continuará...&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
     <message>
@@ -899,6 +898,11 @@ v2017.05.23</translation>
     <message>
         <source>Function not implemented yet. May be an update is present</source>
         <translation type="vanished">Función no implementada todavía. Puede que una actualización esté presente</translation>
+    </message>
+    <message>
+        <location filename="../tutorial.cpp" line="12"/>
+        <source>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;winsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Install or run the apps you want..&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system (Not tested).&lt;/p&gt;&lt;/br&gt;</source>
+        <translation>&lt;p align=&apos;left&apos;&gt;&lt;b&gt;winsys&lt;/b&gt;&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;Recommended steps:&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;1. Instalar o ejecutar las apps que quieras.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;2. Ejecutar todos las mejoras que quieras, tú puedes seleccionarlas manualmente, cargar una selección preconfigurada (en un futuro podrás seleccionar la tuya), o restaurar la configuración por defecto del sistema de esos ajustes.&lt;/p&gt;&lt;/br&gt;&lt;p align=&apos;left&apos;&gt;3. Habilitar-Deshabilitar los servicios que quieras, cargar una selección preconfigurada, restaurar los servicios que se muestran a su estado por defecto, restaurar todos los servicios existentes en el sistema a sus estados por defecto (No probado).&lt;/p&gt;&lt;/br&gt;</translation>
     </message>
 </context>
 </TS>

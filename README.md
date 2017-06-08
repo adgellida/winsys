@@ -58,7 +58,7 @@ Recommended steps:
 
 2. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.
 
-3. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system. (Not tested)
+3. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system (Not tested).
 
 TO DO
 =============================================
@@ -73,7 +73,9 @@ TO DO
 
 * No check drivers on Windows Update when plug a device.
 
-* Save user configuration for use it when you re-open app. 
+* Save user configuration for use it when you re-open app.
+
+* Create a category to personal scripts.
 
 * Regroup files to clean main directory.
 

@@ -3,7 +3,7 @@
 
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/winsys.ico" width="80">
 
-**For English push [here](https://github.com/adgellida/winsys/blob/master/README.md)**
+**For English click [here](https://github.com/adgellida/winsys/blob/master/README.md)**
 
 App configurable diseñada para Windows 10 x64 capaz de hacer cambios en la configuración del sistema, descargar y ejecutar apps, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
@@ -56,9 +56,9 @@ Pasos recomendados:
 
 1. Instalar o ejecutar las apps que quieras.
 
-2. Ejecutar todos las mejoras que quieras, tú puedes seleccionarlas manualemente, cargar una selección preconfigurada (en un futuro podrás seleccionar la tuya), o restaurar la configuración por defecto del sistema de esos ajustes.
+2. Ejecutar todos las mejoras que quieras, tú puedes seleccionarlas manualmente, cargar una selección preconfigurada (en un futuro podrás seleccionar la tuya), o restaurar la configuración por defecto del sistema de esos ajustes.
 
-3. Habilitar-Deshabilitar los servicios que quieras, cargar una selección preconfigurada, restaurar los servicios que se muestran a su estado por defecto, restaurar todos los servicios existentes en el sistema a sus estados por defecto. (No probado)
+3. Habilitar-Deshabilitar los servicios que quieras, cargar una selección preconfigurada, restaurar los servicios que se muestran a su estado por defecto, restaurar todos los servicios existentes en el sistema a sus estados por defecto (No probado).
 
 POR HACER
 =============================================
@@ -73,7 +73,9 @@ POR HACER
 
 * No comprobar drivers en Windows Update cada vez que se conecte un dispositivo.
 
-* Guardar la configuración del usuario para usarla cuando se reabra la app. 
+* Guardar la configuración del usuario para usarla cuando se reabra la app.
+
+* Crear apartado de scripts personales.
 
 * Reagrupar ficheros para limpiar el directorio principal.
 
