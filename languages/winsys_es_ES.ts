@@ -35,15 +35,15 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="121"/>
-        <location filename="../mainwindow.ui" line="3937"/>
-        <location filename="../mainwindow.ui" line="4090"/>
+        <location filename="../mainwindow.ui" line="3968"/>
+        <location filename="../mainwindow.ui" line="4121"/>
         <source>Load</source>
         <translation>Cargar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="137"/>
-        <location filename="../mainwindow.ui" line="4132"/>
-        <location filename="../mainwindow.ui" line="4513"/>
+        <location filename="../mainwindow.ui" line="4163"/>
+        <location filename="../mainwindow.ui" line="4544"/>
         <location filename="../toolbartab.cpp" line="18"/>
         <source>Save</source>
         <translation>Guardar</translation>
@@ -119,205 +119,215 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="528"/>
+        <location filename="../mainwindow.ui" line="539"/>
+        <source>AdwCleaner</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="559"/>
         <source>Tweaks</source>
         <translation>Mejoras</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="550"/>
+        <location filename="../mainwindow.ui" line="581"/>
         <source>Tweaks 1/2</source>
         <translation>Mejoras 1/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="565"/>
+        <location filename="../mainwindow.ui" line="596"/>
         <source>Enable firewall</source>
         <translation>Habilitar firewall</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="596"/>
+        <location filename="../mainwindow.ui" line="627"/>
         <source>Security</source>
         <translation>Seguridad</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="612"/>
+        <location filename="../mainwindow.ui" line="643"/>
         <source>Disable firewall</source>
         <translation>Deshabilitar firewall</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="640"/>
+        <location filename="../mainwindow.ui" line="671"/>
         <source>Complete shutdown</source>
         <translation>Apagado completo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="668"/>
+        <location filename="../mainwindow.ui" line="699"/>
         <source>Open regedit</source>
         <translation>Abrir regedit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="696"/>
+        <location filename="../mainwindow.ui" line="727"/>
         <source>Open taskmgr</source>
         <translation>Abrir admin. tareas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="721"/>
-        <location filename="../mainwindow.ui" line="1995"/>
-        <location filename="../mainwindow.ui" line="2444"/>
+        <location filename="../mainwindow.ui" line="752"/>
+        <location filename="../mainwindow.ui" line="2026"/>
+        <location filename="../mainwindow.ui" line="2475"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When your Windows license expires?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cuando expira la licencia de Windows?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="727"/>
+        <location filename="../mainwindow.ui" line="758"/>
         <source>Know licence expiration</source>
         <translation>Saber exp. licencia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="758"/>
+        <location filename="../mainwindow.ui" line="789"/>
         <source>Shortcuts</source>
         <translation>Accesos directos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="774"/>
+        <location filename="../mainwindow.ui" line="805"/>
         <source>Open services</source>
         <translation>Abrir servicios</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="802"/>
+        <location filename="../mainwindow.ui" line="833"/>
         <source>Open cmd</source>
         <translation>Abrir cmd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="830"/>
+        <location filename="../mainwindow.ui" line="861"/>
         <source>Open Powershell</source>
         <translation>Abrir Powershell</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="861"/>
+        <location filename="../mainwindow.ui" line="892"/>
         <source>Energy</source>
         <translation>Energía</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="877"/>
+        <location filename="../mainwindow.ui" line="908"/>
         <source>Restart</source>
         <translation>Reiniciar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="905"/>
+        <location filename="../mainwindow.ui" line="936"/>
         <source>Search updates</source>
         <translation>Buscar actualizaciones</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="933"/>
+        <location filename="../mainwindow.ui" line="964"/>
         <source>Enable fast startup</source>
         <translation>Habilitar inicio rápido</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="961"/>
+        <location filename="../mainwindow.ui" line="992"/>
         <source>Disable fast startup</source>
         <translation>Des. inicio rápido</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="989"/>
+        <location filename="../mainwindow.ui" line="1020"/>
         <source>Enable system restore</source>
         <translation>Habilitar restauración
 del sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1017"/>
+        <location filename="../mainwindow.ui" line="1048"/>
         <source>Disable system restore</source>
         <translation>Des. restauración
 del sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1045"/>
+        <location filename="../mainwindow.ui" line="1076"/>
         <source>Smartscreen - Warn</source>
         <translation>Smartscreen - Notif.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1073"/>
+        <location filename="../mainwindow.ui" line="1104"/>
         <source>Smartscreen - Block</source>
         <translation>Smartscreen - Bloquear</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1101"/>
+        <location filename="../mainwindow.ui" line="1132"/>
         <source>Smartscreen - Off</source>
         <translation>Smartscreen - Apagar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1119"/>
+        <location filename="../mainwindow.ui" line="1150"/>
         <source>Tweaks 2/2</source>
         <translation>Mejoras 2/2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1552"/>
+        <location filename="../mainwindow.ui" line="1583"/>
         <source>Get firewall status</source>
         <translation>Obtener estado
 del firewall</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2001"/>
+        <location filename="../mainwindow.ui" line="2032"/>
         <source>Fix time on dualboot</source>
         <translation>Arreglar hora
 en dualboot</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2450"/>
+        <location filename="../mainwindow.ui" line="2481"/>
         <source>Update system time</source>
         <translation>Actualizar hora
 del sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2481"/>
+        <location filename="../mainwindow.ui" line="2512"/>
         <source>Current Local Time</source>
         <translation>Tiempo local actual</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2915"/>
+        <location filename="../mainwindow.ui" line="2946"/>
         <source>Start explorer.exe</source>
         <translation>Abrir explorer.exe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3361"/>
+        <location filename="../mainwindow.ui" line="3392"/>
         <source>Restore Defaults
 Services</source>
         <translation>Restaurar servicios
 por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3808"/>
+        <location filename="../mainwindow.ui" line="3839"/>
         <source>Restart explorer.exe</source>
         <translation>Resetear explorer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3833"/>
+        <location filename="../mainwindow.ui" line="3864"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;I recommend to change to this&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recomiendo cambiar a esto&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3836"/>
+        <location filename="../mainwindow.ui" line="3867"/>
         <source>UTC</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3867"/>
+        <location filename="../mainwindow.ui" line="3898"/>
         <source>Extra</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3880"/>
+        <location filename="../mainwindow.ui" line="3911"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default setting. Not recommended&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Configuración por defecto. No recomendada&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3883"/>
+        <location filename="../mainwindow.ui" line="3914"/>
         <source>GMT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3910"/>
+        <location filename="../mainwindow.ui" line="3941"/>
         <source>Restore tweaks
  to Default</source>
         <translation>Rest. mejoras
 por defecto</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="4392"/>
+        <source>v2017.06.11</source>
+        <translation></translation>
     </message>
     <message>
         <source>Restore
@@ -326,85 +336,85 @@ por defecto</translation>
 por defecto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3924"/>
-        <location filename="../mainwindow.ui" line="4145"/>
+        <location filename="../mainwindow.ui" line="3955"/>
+        <location filename="../mainwindow.ui" line="4176"/>
         <source>Apply</source>
         <translation>Aplicar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3950"/>
+        <location filename="../mainwindow.ui" line="3981"/>
         <source>Unload</source>
         <translation>Deseleccionar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3956"/>
+        <location filename="../mainwindow.ui" line="3987"/>
         <source>Services</source>
         <translation>Servicios</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3972"/>
+        <location filename="../mainwindow.ui" line="4003"/>
         <source>Services 1/1</source>
         <translation>Servicios 1/1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3984"/>
+        <location filename="../mainwindow.ui" line="4015"/>
         <source>004.BITS - DISABLE</source>
         <translation>004.BITS - DES.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3997"/>
+        <location filename="../mainwindow.ui" line="4028"/>
         <source>008.Windows Update - wuauserv - DISABLE</source>
         <translation>008.Windows Update - wuauserv - DES.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4010"/>
+        <location filename="../mainwindow.ui" line="4041"/>
         <source>002.Superfetch - SysMain - DISABLE</source>
         <translation>002.Superfetch - SysMain - DES.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4023"/>
+        <location filename="../mainwindow.ui" line="4054"/>
         <source>001.Superfetch - SysMain - ENABLE</source>
         <translation>001.Superfetch - SysMain - HAB.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4036"/>
+        <location filename="../mainwindow.ui" line="4067"/>
         <source>007.Windows Update - wuauserv - ENABLE</source>
         <translation>007.Windows Update - wuauserv - HAB.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4049"/>
+        <location filename="../mainwindow.ui" line="4080"/>
         <source>003.BITS - ENABLE</source>
         <translation>003.BITS - HAB.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4062"/>
+        <location filename="../mainwindow.ui" line="4093"/>
         <source>006.Windows Search - WSearch - DISABLE</source>
         <translation>006.Windows Search - WSearch - DES.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4075"/>
+        <location filename="../mainwindow.ui" line="4106"/>
         <source>005.Windows Search - WSearch - ENABLE</source>
         <translation>005.Windows Search - WSearch - HAB.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4103"/>
+        <location filename="../mainwindow.ui" line="4134"/>
         <source>Disable All</source>
         <translation>Des. todo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4116"/>
+        <location filename="../mainwindow.ui" line="4147"/>
         <source>Enable All</source>
         <translation>Habilitar todo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4158"/>
+        <location filename="../mainwindow.ui" line="4189"/>
         <source>Restore this
  services to Def.</source>
         <translation>Rest. estos
 serv. por def.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4172"/>
+        <location filename="../mainwindow.ui" line="4203"/>
         <source>Restore all
  services to Def.</source>
         <translation>Rest. todos los
@@ -417,142 +427,137 @@ serv. por def.</translation>
 por def.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4179"/>
+        <location filename="../mainwindow.ui" line="4210"/>
         <source>System</source>
         <translation>Sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4195"/>
+        <location filename="../mainwindow.ui" line="4226"/>
         <source>Normal user</source>
         <translation>Usuario normal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4213"/>
-        <location filename="../mainwindow.ui" line="4237"/>
-        <location filename="../mainwindow.ui" line="4261"/>
+        <location filename="../mainwindow.ui" line="4244"/>
+        <location filename="../mainwindow.ui" line="4268"/>
+        <location filename="../mainwindow.ui" line="4292"/>
         <source>Pending</source>
         <translation>Pendiente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4219"/>
+        <location filename="../mainwindow.ui" line="4250"/>
         <source>Advanced user</source>
         <translation>Usuario avanzado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4243"/>
+        <location filename="../mainwindow.ui" line="4274"/>
         <source>Developer</source>
         <translation>Desarrollador</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4269"/>
+        <location filename="../mainwindow.ui" line="4300"/>
         <source>Repair</source>
         <translation>Reparar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4285"/>
+        <location filename="../mainwindow.ui" line="4316"/>
         <source>Repair  1/1</source>
         <translation>Reparar 1/1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4303"/>
+        <location filename="../mainwindow.ui" line="4334"/>
         <source>Check system integrity</source>
         <translation>Chequeando la integridad del sistema</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4322"/>
+        <location filename="../mainwindow.ui" line="4353"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff55ff;&quot;&gt;SFC&lt;/span&gt;&lt;span style=&quot; color:#c0c0c0;&quot;/&gt;&lt;span style=&quot; color:#ff55ff;&quot;&gt;/ScanNow&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4361"/>
-        <source>v2017.06.04</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="4374"/>
+        <location filename="../mainwindow.ui" line="4405"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update program&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar programa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4394"/>
+        <location filename="../mainwindow.ui" line="4425"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update scripts&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar scripts&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4416"/>
+        <location filename="../mainwindow.ui" line="4447"/>
         <source>File</source>
         <translation>Archivo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4424"/>
+        <location filename="../mainwindow.ui" line="4455"/>
         <source>Edit</source>
         <translation>Editar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4430"/>
+        <location filename="../mainwindow.ui" line="4461"/>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4443"/>
+        <location filename="../mainwindow.ui" line="4474"/>
         <source>Exit</source>
         <translation>Salir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4455"/>
+        <location filename="../mainwindow.ui" line="4486"/>
         <source>Paste</source>
         <translation>Pegar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4460"/>
+        <location filename="../mainwindow.ui" line="4491"/>
         <location filename="../about.cpp" line="31"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4465"/>
+        <location filename="../mainwindow.ui" line="4496"/>
         <source>About Qt</source>
         <translation>Acerca de Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4477"/>
+        <location filename="../mainwindow.ui" line="4508"/>
         <source>Save as...</source>
         <translation>Guardar como...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4489"/>
+        <location filename="../mainwindow.ui" line="4520"/>
         <location filename="../toolbartab.cpp" line="8"/>
         <source>New</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4501"/>
+        <location filename="../mainwindow.ui" line="4532"/>
         <location filename="../toolbartab.cpp" line="13"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4525"/>
+        <location filename="../mainwindow.ui" line="4556"/>
         <source>Copy</source>
         <translation>Copiar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4537"/>
+        <location filename="../mainwindow.ui" line="4568"/>
         <source>Cut</source>
         <translation>Cortar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4540"/>
+        <location filename="../mainwindow.ui" line="4571"/>
         <source>Cortar</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4548"/>
+        <location filename="../mainwindow.ui" line="4579"/>
         <source>Preferences</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="4553"/>
+        <location filename="../mainwindow.ui" line="4584"/>
         <location filename="../tutorial.cpp" line="18"/>
         <source>Tutorial</source>
         <translation></translation>
@@ -572,8 +577,28 @@ Antonio David Gellida Lavara
 
 adgellida@gmail.com
 
-v2017.06.04</source>
+v2017.06.11</source>
         <translation>Copyright (c) 2017 todos los derechos reservados
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.06.11</translation>
+    </message>
+    <message>
+        <source>Copyright (c) 2017 all rights reserved
+
+GPL v2
+
+Antonio David Gellida Lavara
+
+adgellida@gmail.com
+
+v2017.06.04</source>
+        <translation type="vanished">Copyright (c) 2017 todos los derechos reservados
 
 GPL v2
 
@@ -619,6 +644,7 @@ v2017.05.23</translation>
         <location filename="../installtab.cpp" line="63"/>
         <location filename="../installtab.cpp" line="70"/>
         <location filename="../installtab.cpp" line="77"/>
+        <location filename="../installtab.cpp" line="85"/>
         <location filename="../services.cpp" line="128"/>
         <location filename="../tweakstab.cpp" line="83"/>
         <location filename="../tweakstab.cpp" line="93"/>
@@ -678,6 +704,11 @@ v2017.05.23</translation>
         <location filename="../installtab.cpp" line="75"/>
         <source>Running serviwin</source>
         <translation>Ejecutando serviwin</translation>
+    </message>
+    <message>
+        <location filename="../installtab.cpp" line="82"/>
+        <source>Running AdwCleaner</source>
+        <translation>Ejecutando AdwCleaner</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="18"/>
@@ -886,12 +917,12 @@ v2017.05.23</translation>
         <translation>Actualizando último scripts. Espere por favor</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="17"/>
+        <location filename="../updatezone.cpp" line="29"/>
         <source>Latest scripts updated ok. Please select an action</source>
         <translation>Últimos scrips actualizados ok. Por favor seleccione otra acción</translation>
     </message>
     <message>
-        <location filename="../updatezone.cpp" line="23"/>
+        <location filename="../updatezone.cpp" line="35"/>
         <source>For now launches to release page to update manually. Please wait.</source>
         <translation>Por ahora abre la página de las versiones para actualizar manualmente. Espere por favor.</translation>
     </message>

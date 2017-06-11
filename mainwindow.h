@@ -151,6 +151,8 @@ private slots:
 
     void on_unloadTweaksSelectionButton_clicked();
 
+    void on_runAdwcleaner_clicked();
+
 private:
     Ui::MainWindow *ui;
 

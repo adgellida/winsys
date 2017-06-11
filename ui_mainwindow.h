@@ -65,6 +65,7 @@ public:
     QPushButton *runProcessHackerButton;
     QPushButton *runServiwinButton;
     QPushButton *runProcessExplorerButton;
+    QPushButton *runAdwcleaner;
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_6;
@@ -280,18 +281,18 @@ public:
         runUltimateWindowsTweaker4Button = new QPushButton(tab_11);
         runUltimateWindowsTweaker4Button->setObjectName(QStringLiteral("runUltimateWindowsTweaker4Button"));
         runUltimateWindowsTweaker4Button->setEnabled(true);
-        runUltimateWindowsTweaker4Button->setGeometry(QRect(10, 310, 161, 36));
+        runUltimateWindowsTweaker4Button->setGeometry(QRect(200, 140, 161, 36));
         runUltimateWindowsTweaker4Button->setIconSize(QSize(30, 30));
         runUltimateWindowsTweaker4Button->setCheckable(false);
         run10AppsManager = new QPushButton(tab_11);
         run10AppsManager->setObjectName(QStringLiteral("run10AppsManager"));
         run10AppsManager->setEnabled(true);
-        run10AppsManager->setGeometry(QRect(10, 350, 161, 36));
+        run10AppsManager->setGeometry(QRect(200, 180, 161, 36));
         run10AppsManager->setIconSize(QSize(30, 30));
         run10AppsManager->setCheckable(false);
         label_22 = new QLabel(tab_11);
         label_22->setObjectName(QStringLiteral("label_22"));
-        label_22->setGeometry(QRect(10, 290, 101, 16));
+        label_22->setGeometry(QRect(200, 120, 101, 16));
         label_22->setFont(font);
         runWindosUpdateMiniToolButton = new QPushButton(tab_11);
         runWindosUpdateMiniToolButton->setObjectName(QStringLiteral("runWindosUpdateMiniToolButton"));
@@ -317,6 +318,12 @@ public:
         runProcessExplorerButton->setGeometry(QRect(10, 150, 161, 36));
         runProcessExplorerButton->setIconSize(QSize(30, 30));
         runProcessExplorerButton->setCheckable(false);
+        runAdwcleaner = new QPushButton(tab_11);
+        runAdwcleaner->setObjectName(QStringLiteral("runAdwcleaner"));
+        runAdwcleaner->setEnabled(true);
+        runAdwcleaner->setGeometry(QRect(10, 270, 161, 36));
+        runAdwcleaner->setIconSize(QSize(30, 30));
+        runAdwcleaner->setCheckable(false);
         tabWidget_2->addTab(tab_11, QString());
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
@@ -951,7 +958,7 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(0);
         tabWidget_6->setCurrentIndex(0);
@@ -1037,6 +1044,11 @@ public:
 #endif // QT_NO_WHATSTHIS
         runProcessExplorerButton->setText(QApplication::translate("MainWindow", "Process Explorer", Q_NULLPTR));
         runProcessExplorerButton->setShortcut(QString());
+#ifndef QT_NO_WHATSTHIS
+        runAdwcleaner->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        runAdwcleaner->setText(QApplication::translate("MainWindow", "AdwCleaner", Q_NULLPTR));
+        runAdwcleaner->setShortcut(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/1", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Install packages", Q_NULLPTR));
 #ifndef QT_NO_WHATSTHIS
@@ -1229,7 +1241,7 @@ public:
         integrityCheckButton->setShortcut(QString());
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.06.04", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.11", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

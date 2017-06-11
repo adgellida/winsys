@@ -32,7 +32,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -321,8 +321,8 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>310</y>
+          <x>200</x>
+          <y>140</y>
           <width>161</width>
           <height>36</height>
          </rect>
@@ -352,8 +352,8 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>350</y>
+          <x>200</x>
+          <y>180</y>
           <width>161</width>
           <height>36</height>
          </rect>
@@ -380,8 +380,8 @@
        <widget class="QLabel" name="label_22">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>290</y>
+          <x>200</x>
+          <y>120</y>
           <width>101</width>
           <height>16</height>
          </rect>
@@ -506,6 +506,37 @@
         </property>
         <property name="text">
          <string>Process Explorer</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="runAdwcleaner">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>270</y>
+          <width>161</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>AdwCleaner</string>
         </property>
         <property name="iconSize">
          <size>
@@ -4358,7 +4389,7 @@ Services</string>
      </rect>
     </property>
     <property name="text">
-     <string>v2017.06.04</string>
+     <string>v2017.06.11</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

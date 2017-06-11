@@ -49,6 +49,8 @@ Qué hace este programa
 
 * Comprobar la integridad del sistema.
 
+Y más...
+
 Tutorial
 =============================================
 

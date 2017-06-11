@@ -49,6 +49,8 @@ What this program do
 
 * Check system integrity.
 
+And more...
+
 Tutorial
 =============================================
 
