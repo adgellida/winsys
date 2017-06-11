@@ -7,6 +7,8 @@
 
 Configurable app designed for Windows 10 x64 able to do changes on system configuration, download and run apps, execute tweaks, fixes, executing actions to blow of mouse click.
 
+**Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
+
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
 
 Download

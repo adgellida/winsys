@@ -7,6 +7,8 @@
 
 App configurable diseñada para Windows 10 x64 capaz de hacer cambios en la configuración del sistema, descargar y ejecutar apps, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
+**App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
+
 Construido con Qt 5.8.0. Basado en [ubunsys](https://github.com/adgellida/ubunsys).
 
 Descarga
