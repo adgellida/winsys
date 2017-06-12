@@ -5,11 +5,15 @@
 
 **Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
 
-Configurable app designed for Windows 10 x64 able to do changes on system configuration, download and run apps, execute tweaks, fixes, executing actions to blow of mouse click.
+Software installer of a helpful program list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
+
+Windows 10 x64 specific.
 
 **Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
 
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
+
+Feeded with [windowsScripts](https://github.com/adgellida/windowsScripts).
 
 Download
 =============================================
