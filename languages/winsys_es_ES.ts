@@ -323,7 +323,7 @@ por defecto</translation>
     <message>
         <location filename="../mainwindow.ui" line="3043"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Uses defaults locations only&lt;/p&gt;&lt;p&gt;From:&lt;/p&gt;&lt;p&gt;HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows Messaging Subsystem\\Profiles&lt;/p&gt;&lt;p&gt;%localappdata%\Microsoft\Outlook\*&lt;/p&gt;&lt;p&gt;To:&lt;/p&gt;&lt;p&gt;C:\Program Files(x86)\winsys\OutlookProfile\OutlookWinsys.reg&lt;/p&gt;&lt;p&gt;C:\Program Files(x86)\winsys\OutlookData\*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Usa diretorios por defecto sólo&lt;/p&gt;&lt;p&gt;Desde:&lt;/p&gt;&lt;p&gt;HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows Messaging Subsystem\\Profiles&lt;/p&gt;&lt;p&gt;%localappdata%\Microsoft\Outlook\*&lt;/p&gt;&lt;p&gt;A:&lt;/p&gt;&lt;p&gt;C:\Program Files(x86)\winsys\OutlookProfile\OutlookWinsys.reg&lt;/p&gt;&lt;p&gt;C:\Program Files(x86)\winsys\OutlookData\*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Usa directorios por defecto sólo&lt;/p&gt;&lt;p&gt;Desde:&lt;/p&gt;&lt;p&gt;HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows Messaging Subsystem\\Profiles&lt;/p&gt;&lt;p&gt;%localappdata%\Microsoft\Outlook\*&lt;/p&gt;&lt;p&gt;A:&lt;/p&gt;&lt;p&gt;C:\Program Files(x86)\winsys\OutlookProfile\OutlookWinsys.reg&lt;/p&gt;&lt;p&gt;C:\Program Files(x86)\winsys\OutlookData\*&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3049"/>
