@@ -92,15 +92,16 @@ public:
     QPushButton *smartscreenOffButton;
     QWidget *tab_7;
     QPushButton *getFirewallStatusButton;
-    QPushButton *fixTimeOnDualbootButton;
     QPushButton *updateSystemTimeButton;
     QLabel *label_14;
     QPushButton *startExplorerButton;
-    QPushButton *restoreDefaultsServicesButton;
     QPushButton *restartExplorerButton;
     QPushButton *UTCButton;
     QLabel *label_15;
     QPushButton *GMTButton;
+    QPushButton *ExportOutlookButton;
+    QLabel *label_16;
+    QPushButton *ImportOutlookButton;
     QPushButton *RestoreTweaksToDefaultButton;
     QPushButton *applyTweaksButton;
     QPushButton *loadTweaksSelectionButton;
@@ -513,10 +514,10 @@ public:
         getFirewallStatusButton->setPalette(palette);
         getFirewallStatusButton->setIconSize(QSize(30, 30));
         getFirewallStatusButton->setCheckable(false);
-        fixTimeOnDualbootButton = new QPushButton(tab_7);
-        fixTimeOnDualbootButton->setObjectName(QStringLiteral("fixTimeOnDualbootButton"));
-        fixTimeOnDualbootButton->setEnabled(false);
-        fixTimeOnDualbootButton->setGeometry(QRect(10, 70, 120, 36));
+        updateSystemTimeButton = new QPushButton(tab_7);
+        updateSystemTimeButton->setObjectName(QStringLiteral("updateSystemTimeButton"));
+        updateSystemTimeButton->setEnabled(false);
+        updateSystemTimeButton->setGeometry(QRect(10, 70, 120, 36));
         QPalette palette1;
         palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -563,13 +564,17 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        fixTimeOnDualbootButton->setPalette(palette1);
-        fixTimeOnDualbootButton->setIconSize(QSize(30, 30));
-        fixTimeOnDualbootButton->setCheckable(false);
-        updateSystemTimeButton = new QPushButton(tab_7);
-        updateSystemTimeButton->setObjectName(QStringLiteral("updateSystemTimeButton"));
-        updateSystemTimeButton->setEnabled(false);
-        updateSystemTimeButton->setGeometry(QRect(10, 110, 120, 36));
+        updateSystemTimeButton->setPalette(palette1);
+        updateSystemTimeButton->setIconSize(QSize(30, 30));
+        updateSystemTimeButton->setCheckable(false);
+        label_14 = new QLabel(tab_7);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setGeometry(QRect(10, 120, 171, 16));
+        label_14->setFont(font);
+        startExplorerButton = new QPushButton(tab_7);
+        startExplorerButton->setObjectName(QStringLiteral("startExplorerButton"));
+        startExplorerButton->setEnabled(false);
+        startExplorerButton->setGeometry(QRect(140, 70, 120, 36));
         QPalette palette2;
         palette2.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette2.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -616,17 +621,13 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        updateSystemTimeButton->setPalette(palette2);
-        updateSystemTimeButton->setIconSize(QSize(30, 30));
-        updateSystemTimeButton->setCheckable(false);
-        label_14 = new QLabel(tab_7);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setGeometry(QRect(10, 150, 171, 16));
-        label_14->setFont(font);
-        startExplorerButton = new QPushButton(tab_7);
-        startExplorerButton->setObjectName(QStringLiteral("startExplorerButton"));
-        startExplorerButton->setEnabled(false);
-        startExplorerButton->setGeometry(QRect(140, 70, 120, 36));
+        startExplorerButton->setPalette(palette2);
+        startExplorerButton->setIconSize(QSize(30, 30));
+        startExplorerButton->setCheckable(false);
+        restartExplorerButton = new QPushButton(tab_7);
+        restartExplorerButton->setObjectName(QStringLiteral("restartExplorerButton"));
+        restartExplorerButton->setEnabled(false);
+        restartExplorerButton->setGeometry(QRect(140, 30, 120, 36));
         QPalette palette3;
         palette3.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette3.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -673,118 +674,12 @@ public:
         palette3.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette3.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette3.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        startExplorerButton->setPalette(palette3);
-        startExplorerButton->setIconSize(QSize(30, 30));
-        startExplorerButton->setCheckable(false);
-        restoreDefaultsServicesButton = new QPushButton(tab_7);
-        restoreDefaultsServicesButton->setObjectName(QStringLiteral("restoreDefaultsServicesButton"));
-        restoreDefaultsServicesButton->setEnabled(false);
-        restoreDefaultsServicesButton->setGeometry(QRect(140, 110, 120, 36));
-        QPalette palette4;
-        palette4.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        palette4.setBrush(QPalette::Active, QPalette::Button, brush1);
-        palette4.setBrush(QPalette::Active, QPalette::Light, brush2);
-        palette4.setBrush(QPalette::Active, QPalette::Midlight, brush3);
-        palette4.setBrush(QPalette::Active, QPalette::Dark, brush4);
-        palette4.setBrush(QPalette::Active, QPalette::Mid, brush5);
-        palette4.setBrush(QPalette::Active, QPalette::Text, brush);
-        palette4.setBrush(QPalette::Active, QPalette::BrightText, brush6);
-        palette4.setBrush(QPalette::Active, QPalette::ButtonText, brush);
-        palette4.setBrush(QPalette::Active, QPalette::Base, brush6);
-        palette4.setBrush(QPalette::Active, QPalette::Window, brush1);
-        palette4.setBrush(QPalette::Active, QPalette::Shadow, brush);
-        palette4.setBrush(QPalette::Active, QPalette::AlternateBase, brush7);
-        palette4.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
-        palette4.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
-        palette4.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette4.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette4.setBrush(QPalette::Inactive, QPalette::Light, brush2);
-        palette4.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
-        palette4.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
-        palette4.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
-        palette4.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        palette4.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
-        palette4.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
-        palette4.setBrush(QPalette::Inactive, QPalette::Base, brush6);
-        palette4.setBrush(QPalette::Inactive, QPalette::Window, brush1);
-        palette4.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
-        palette4.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush7);
-        palette4.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
-        palette4.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
-        palette4.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
-        palette4.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette4.setBrush(QPalette::Disabled, QPalette::Light, brush2);
-        palette4.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
-        palette4.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
-        palette4.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
-        palette4.setBrush(QPalette::Disabled, QPalette::Text, brush4);
-        palette4.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
-        palette4.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
-        palette4.setBrush(QPalette::Disabled, QPalette::Base, brush1);
-        palette4.setBrush(QPalette::Disabled, QPalette::Window, brush1);
-        palette4.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
-        palette4.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
-        palette4.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
-        palette4.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        restoreDefaultsServicesButton->setPalette(palette4);
-        restoreDefaultsServicesButton->setIconSize(QSize(30, 30));
-        restoreDefaultsServicesButton->setCheckable(false);
-        restartExplorerButton = new QPushButton(tab_7);
-        restartExplorerButton->setObjectName(QStringLiteral("restartExplorerButton"));
-        restartExplorerButton->setEnabled(false);
-        restartExplorerButton->setGeometry(QRect(140, 30, 120, 36));
-        QPalette palette5;
-        palette5.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        palette5.setBrush(QPalette::Active, QPalette::Button, brush1);
-        palette5.setBrush(QPalette::Active, QPalette::Light, brush2);
-        palette5.setBrush(QPalette::Active, QPalette::Midlight, brush3);
-        palette5.setBrush(QPalette::Active, QPalette::Dark, brush4);
-        palette5.setBrush(QPalette::Active, QPalette::Mid, brush5);
-        palette5.setBrush(QPalette::Active, QPalette::Text, brush);
-        palette5.setBrush(QPalette::Active, QPalette::BrightText, brush6);
-        palette5.setBrush(QPalette::Active, QPalette::ButtonText, brush);
-        palette5.setBrush(QPalette::Active, QPalette::Base, brush6);
-        palette5.setBrush(QPalette::Active, QPalette::Window, brush1);
-        palette5.setBrush(QPalette::Active, QPalette::Shadow, brush);
-        palette5.setBrush(QPalette::Active, QPalette::AlternateBase, brush7);
-        palette5.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
-        palette5.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
-        palette5.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette5.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette5.setBrush(QPalette::Inactive, QPalette::Light, brush2);
-        palette5.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
-        palette5.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
-        palette5.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
-        palette5.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        palette5.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
-        palette5.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
-        palette5.setBrush(QPalette::Inactive, QPalette::Base, brush6);
-        palette5.setBrush(QPalette::Inactive, QPalette::Window, brush1);
-        palette5.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
-        palette5.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush7);
-        palette5.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
-        palette5.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
-        palette5.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
-        palette5.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette5.setBrush(QPalette::Disabled, QPalette::Light, brush2);
-        palette5.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
-        palette5.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
-        palette5.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
-        palette5.setBrush(QPalette::Disabled, QPalette::Text, brush4);
-        palette5.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
-        palette5.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
-        palette5.setBrush(QPalette::Disabled, QPalette::Base, brush1);
-        palette5.setBrush(QPalette::Disabled, QPalette::Window, brush1);
-        palette5.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
-        palette5.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
-        palette5.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
-        palette5.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        restartExplorerButton->setPalette(palette5);
+        restartExplorerButton->setPalette(palette3);
         restartExplorerButton->setIconSize(QSize(30, 30));
         restartExplorerButton->setCheckable(false);
         UTCButton = new QPushButton(tab_7);
         UTCButton->setObjectName(QStringLiteral("UTCButton"));
-        UTCButton->setGeometry(QRect(10, 170, 120, 36));
+        UTCButton->setGeometry(QRect(10, 140, 120, 36));
         UTCButton->setIconSize(QSize(30, 30));
         UTCButton->setCheckable(false);
         label_15 = new QLabel(tab_7);
@@ -793,9 +688,23 @@ public:
         label_15->setFont(font);
         GMTButton = new QPushButton(tab_7);
         GMTButton->setObjectName(QStringLiteral("GMTButton"));
-        GMTButton->setGeometry(QRect(10, 210, 120, 36));
+        GMTButton->setGeometry(QRect(10, 180, 120, 36));
         GMTButton->setIconSize(QSize(30, 30));
         GMTButton->setCheckable(false);
+        ExportOutlookButton = new QPushButton(tab_7);
+        ExportOutlookButton->setObjectName(QStringLiteral("ExportOutlookButton"));
+        ExportOutlookButton->setGeometry(QRect(10, 250, 120, 36));
+        ExportOutlookButton->setIconSize(QSize(30, 30));
+        ExportOutlookButton->setCheckable(false);
+        label_16 = new QLabel(tab_7);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setGeometry(QRect(10, 230, 171, 16));
+        label_16->setFont(font);
+        ImportOutlookButton = new QPushButton(tab_7);
+        ImportOutlookButton->setObjectName(QStringLiteral("ImportOutlookButton"));
+        ImportOutlookButton->setGeometry(QRect(10, 290, 120, 36));
+        ImportOutlookButton->setIconSize(QSize(30, 30));
+        ImportOutlookButton->setCheckable(false);
         tabWidget_3->addTab(tab_7, QString());
         RestoreTweaksToDefaultButton = new QPushButton(tab_3);
         RestoreTweaksToDefaultButton->setObjectName(QStringLiteral("RestoreTweaksToDefaultButton"));
@@ -958,9 +867,9 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_3->setCurrentIndex(0);
+        tabWidget_3->setCurrentIndex(1);
         tabWidget_6->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(2);
         tabWidget_5->setCurrentIndex(0);
@@ -1154,15 +1063,7 @@ public:
         getFirewallStatusButton->setText(QApplication::translate("MainWindow", "Get firewall status", Q_NULLPTR));
         getFirewallStatusButton->setShortcut(QString());
 #ifndef QT_NO_TOOLTIP
-        fixTimeOnDualbootButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>When your Windows license expires?</p></body></html>", Q_NULLPTR));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_WHATSTHIS
-        fixTimeOnDualbootButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        fixTimeOnDualbootButton->setText(QApplication::translate("MainWindow", "Fix time on dualboot", Q_NULLPTR));
-        fixTimeOnDualbootButton->setShortcut(QString());
-#ifndef QT_NO_TOOLTIP
-        updateSystemTimeButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>When your Windows license expires?</p></body></html>", Q_NULLPTR));
+        updateSystemTimeButton->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         updateSystemTimeButton->setWhatsThis(QString());
@@ -1176,27 +1077,44 @@ public:
         startExplorerButton->setText(QApplication::translate("MainWindow", "Start explorer.exe", Q_NULLPTR));
         startExplorerButton->setShortcut(QString());
 #ifndef QT_NO_WHATSTHIS
-        restoreDefaultsServicesButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        restoreDefaultsServicesButton->setText(QApplication::translate("MainWindow", "Restore Defaults\n"
-"Services", Q_NULLPTR));
-        restoreDefaultsServicesButton->setShortcut(QString());
-#ifndef QT_NO_WHATSTHIS
         restartExplorerButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         restartExplorerButton->setText(QApplication::translate("MainWindow", "Restart explorer.exe", Q_NULLPTR));
         restartExplorerButton->setShortcut(QString());
+#ifndef QT_NO_TOOLTIP
+        UTCButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>I recommend to change to this</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        UTCButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>I recommend to change to this</p></body></html>", Q_NULLPTR));
+        UTCButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         UTCButton->setText(QApplication::translate("MainWindow", "UTC", Q_NULLPTR));
         UTCButton->setShortcut(QString());
         label_15->setText(QApplication::translate("MainWindow", "Extra", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        GMTButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", Q_NULLPTR));
+        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
 #endif // QT_NO_WHATSTHIS
         GMTButton->setText(QApplication::translate("MainWindow", "GMT", Q_NULLPTR));
         GMTButton->setShortcut(QString());
+#ifndef QT_NO_TOOLTIP
+        ExportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p><p>To:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        ExportOutlookButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        ExportOutlookButton->setText(QApplication::translate("MainWindow", "Export profile and data", Q_NULLPTR));
+        ExportOutlookButton->setShortcut(QString());
+        label_16->setText(QApplication::translate("MainWindow", "Outlook", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        ImportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p><p>To:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        ImportOutlookButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_WHATSTHIS
+        ImportOutlookButton->setText(QApplication::translate("MainWindow", "Import profile and data", Q_NULLPTR));
+        ImportOutlookButton->setShortcut(QString());
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
         RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore tweaks\n"
 " to Default", Q_NULLPTR));
@@ -1241,7 +1159,7 @@ public:
         integrityCheckButton->setShortcut(QString());
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.06.11", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "v2017.06.16", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP

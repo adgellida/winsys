@@ -80,7 +80,7 @@ void MainWindow::on_runServiwinButton_clicked()
 void MainWindow::on_runAdwcleaner_clicked()
 {
     ui->statusBar->showMessage(tr("Running AdwCleaner"));
-    //on_installChocolateyButton_clicked();
+    on_installChocolateyButton_clicked();
     system("cd scripts\\windowsScripts-master & 019.runAdwCleaner.bat");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }

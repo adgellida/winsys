@@ -85,11 +85,7 @@ private slots:
 
     void on_openPowershellButton_clicked();
 
-    void on_fixTimeOnDualbootButton_clicked();
-
     void on_updateSystemTimeButton_clicked();
-
-    void on_restoreDefaultsServicesButton_clicked();
 
     void on_RestartButton_clicked();
 
@@ -152,6 +148,10 @@ private slots:
     void on_unloadTweaksSelectionButton_clicked();
 
     void on_runAdwcleaner_clicked();
+
+    void on_ExportOutlookButton_clicked();
+
+    void on_ImportOutlookButton_clicked();
 
 private:
     Ui::MainWindow *ui;

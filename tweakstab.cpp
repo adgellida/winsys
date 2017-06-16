@@ -123,12 +123,6 @@ void MainWindow::on_openPowershellButton_clicked()
 }
 
 //PENDING
-void MainWindow::on_fixTimeOnDualbootButton_clicked()
-{
-    ui->statusBar->showMessage(tr("To implement yet"));
-}
-
-//PENDING
 void MainWindow::on_updateSystemTimeButton_clicked()
 {
    ui->statusBar->showMessage(tr("updating system time"));   
@@ -140,12 +134,6 @@ void MainWindow::on_updateSystemTimeButton_clicked()
 }
 
 //PENDING
-void MainWindow::on_restoreDefaultsServicesButton_clicked()
-{
-    ui->statusBar->showMessage(tr("Restore Defaults Services"));
-    system("regedit /s Windows_Update.reg");
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-}
 
 void MainWindow::on_RestartButton_clicked()
 {
@@ -312,4 +300,22 @@ void MainWindow::on_applyTweaksButton_clicked()
     MainWindow::on_disableSystemRestoreButton_clicked();
     MainWindow::on_UTCButton_clicked();
     ui->statusBar->showMessage(tr("Tweaks applied. Select another action"));
+}
+
+void MainWindow::on_ExportOutlookButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Exporting Outlook"));
+
+    system("cd scripts\\windowsScripts-master & start 020.OutlookExport.bat");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_ImportOutlookButton_clicked()
+{
+    ui->statusBar->showMessage(tr("Importing Outlook"));
+
+    system("cd scripts\\windowsScripts-master & start 021.OutlookImport.bat");
+
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
