@@ -90,6 +90,7 @@ POR HACER
 HECHO
 =============================================
 
+* Outlook exportar/importar perfil y datos.
 * Traducir app al Español.
 
 Ten cuidado

@@ -90,6 +90,7 @@ TO DO
 DONE
 =============================================
 
+* Outlook export/import profile and data.
 * Translate app to Spanish.
 
 Be care
