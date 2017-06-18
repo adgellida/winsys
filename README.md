@@ -20,6 +20,11 @@ Download
 
 * https://github.com/adgellida/winsys/releases
 
+Download from [Chocolatey](https://chocolatey.org/)
+=============================================
+
+* https://chocolatey.org/packages/winsys
+
 <img src="http://i.imgur.com/TtgGYff.png" width="500">
 
 <img src="http://i.imgur.com/qy5VRnM.png" width="500">
