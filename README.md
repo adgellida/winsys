@@ -42,8 +42,6 @@ Then in a terminal do:
 
 * https://chocolatey.org/packages/winsys
 
-`choco install -y winsys`
-
 <img src="http://i.imgur.com/TtgGYff.png" width="500">
 
 <img src="http://i.imgur.com/qy5VRnM.png" width="500">
