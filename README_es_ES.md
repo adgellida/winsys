@@ -31,8 +31,14 @@ Descarga
 
 * https://github.com/adgellida/winsys/releases
 
-Descarga desde [Chocolatey](https://chocolatey.org/)
+Instalar desde [Chocolatey](https://chocolatey.org/)
 =============================================
+
+Primero [instala](https://chocolatey.org/install) Chocolatey.
+
+Después en un terminal haz:
+
+`choco install -y winsys`
 
 * https://chocolatey.org/packages/winsys
 
