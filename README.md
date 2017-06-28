@@ -2,6 +2,7 @@ winsys
 =============================================
 
 <p align="center">
+  <a href="https://gitter.im/adgellida/winsys" target="_blank"><img src="https://badges.gitter.im/adgellida/winsys.svg" alt="chat"></a>
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5V74HS4RV2YWG" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate with PayPal"></a>
   <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
   <a href="https://github.com/adgellida/winsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/winsys.svg" alt="stars"></a>  
