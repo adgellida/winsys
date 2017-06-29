@@ -27,10 +27,15 @@ Construido con Qt 5.8.0. Basado en [ubunsys](https://github.com/adgellida/ubunsy
 
 Alimentado con [windowsScripts](https://github.com/adgellida/windowsScripts).
 
-Descarga
+Descarga desde fuentes oficiales - pulsa en el logo
 =============================================
 
-* https://github.com/adgellida/winsys/releases
+<p align="center">
+  <a href="https://github.com/adgellida/ubunsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a>
+  <a href="https://sourceforge.net/projects/ubunsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a>
+  <a href="https://www.linux-apps.com/p/1179908/" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a>
+  <a href="https://launchpad.net/~adgellida/+archive/ubuntu/ubunsys" target="_blank"><img src="https://launchpad.net/+tour/images/join/main-image.png" width="80" alt="Launchpad"></a>
+</p>
 
 Instalar desde [Chocolatey](https://chocolatey.org/)
 =============================================
@@ -44,9 +49,7 @@ Después en un terminal haz:
 * https://chocolatey.org/packages/winsys
 
 <img src="http://i.imgur.com/TtgGYff.png" width="500">
-
 <img src="http://i.imgur.com/qy5VRnM.png" width="500">
-
 <img src="http://i.imgur.com/vRP5ac7.png" width="500">
 
 Qué hace este programa
