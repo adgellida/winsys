@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/adgellida/ubunsys/master/images/ubunsys.ico" width="80"> winsys
+<img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/winsys.png" width="80"> winsys
 =============================================
 
 <p align="center">
