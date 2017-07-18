@@ -13,6 +13,8 @@
   <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/release-v2017.06.16-blue.svg" alt="Release"></a>
 </p>
 
+<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+
 **For English click [here](https://github.com/adgellida/winsys/blob/master/README.md)**
 
 Software instalador de una lista de programas útiles, capaz de hacer cambios en la configuración del sistema, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
