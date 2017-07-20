@@ -87,13 +87,7 @@ And more...
 Tutorial
 =============================================
 
-Recommended steps:
-
-1. Install or run the apps you want.
-
-2. Execute all tweaks you want, you can select manually, load a preconfigured selection (on future you can select yours), or restore to default system configuration.
-
-3. Enable-disable services you want, load a preconfigured selection, restore to default services status you see, restore to default all services status existent on system (Not tested).
+Push [here](https://github.com/adgellida/winsys/wiki/Tutorial_en) to go to wiki.
 
 TO DO
 =============================================
@@ -132,8 +126,6 @@ If you need help about compilation and packaging I have basic notions, ask me.
 I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practises.
 
 I know that my code is horrifying and not good implemented. With patience I'll go to cleaning and improving it. 
-
-All experienced help are welcome.
 
 Credits and thanks to
 =============================================

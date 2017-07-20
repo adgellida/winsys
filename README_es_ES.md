@@ -87,13 +87,7 @@ Y más...
 Tutorial
 =============================================
 
-Pasos recomendados:
-
-1. Instalar o ejecutar las apps que quieras.
-
-2. Ejecutar todos las mejoras que quieras, tú puedes seleccionarlas manualmente, cargar una selección preconfigurada (en un futuro podrás seleccionar la tuya), o restaurar la configuración por defecto del sistema de esos ajustes.
-
-3. Habilitar-Deshabilitar los servicios que quieras, cargar una selección preconfigurada, restaurar los servicios que se muestran a su estado por defecto, restaurar todos los servicios existentes en el sistema a sus estados por defecto (No probado).
+Pulsa [aquí](https://github.com/adgellida/winsys/wiki/Tutorial_es) para ir a la wiki.
 
 POR HACER
 =============================================
@@ -132,8 +126,6 @@ Si tú necesitas ayuda a cerca de compilar y empaquetar tengo nociones básicas,
 No soy un programador senior, ni junior. Programo como hobby. No estoy siguiendo prácticas de código profesionales.
 
 Sé que mi código es horrible y no está bien implementado. Con paciencia lo iré limpiando y mejorando. 
-
-Toda buena ayuda será bienvenida.
 
 Créditos y gracias a
 =============================================

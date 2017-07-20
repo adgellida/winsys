@@ -19,5 +19,6 @@
         <file>images/winsys.ico</file>
         <file>languages/winsys_es_ES.ts</file>
         <file>languages/winsys_es_ES.qm</file>
+        <file>images/winsys.png</file>
     </qresource>
 </RCC>

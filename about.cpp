@@ -30,8 +30,8 @@ void MainWindow::on_actionAbout_triggered()
 
     about.setWindowTitle(tr("About"));
     about.setStandardButtons(QMessageBox::Ok);
-    about.setIconPixmap(QPixmap(":/images/winsys.ico"));
-    about.setWindowIcon(QIcon(":/images/winsys.ico"));
+    about.setIconPixmap(QPixmap(":/images/winsys.png"));
+    about.setWindowIcon(QIcon(":/images/winsys.png"));
     //about.setIcon(":/images/winsys.ico");
     about.setDefaultButton(QMessageBox::Ok);
 
