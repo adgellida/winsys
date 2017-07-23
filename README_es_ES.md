@@ -13,7 +13,10 @@
   <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.06.16-blue.svg" alt="latest release"></a>
 </p>
 
+<p align="left">
 <a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+  <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a>
+</p>
 
 **For English click [here](https://github.com/adgellida/winsys/blob/master/README.md)**
 
