@@ -16,6 +16,7 @@
 <p align="left">
 <a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a>
   <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a>
+  <a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/paused/2017.svg" alt="maintained"></a>
 </p>
 
 **For English click [here](https://github.com/adgellida/winsys/blob/master/README.md)**
