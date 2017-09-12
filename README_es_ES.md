@@ -2,11 +2,29 @@
 =============================================
 
 <p align="center">
-  	<a href="https://gitter.im/adgellida/winsys" target="_blank"><img src="https://badges.gitter.im/adgellida/winsys.svg" alt="chat"></a> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5V74HS4RV2YWG" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a> <a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a> <a href="https://www.bountysource.com/teams/winsys" target="_blank"><img src="https://img.shields.io/bountysource/team/winsys/activity.svg" alt="Donate with Bountysource"></a> <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a> <a href="https://github.com/adgellida/winsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/winsys.svg" alt="stars"></a>   <a href="https://github.com/adgellida/winsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/winsys.svg" alt="forks"></a> <a href="https://github.com/adgellida/winsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/winsys.svg" alt="open issues"></a> <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/total.svg" alt="total downloads"></a> <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/v2017.06.16/total.svg" alt="total downloads latest release"></a> <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.06.16-blue.svg" alt="latest release"></a> <a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/paused/2017.svg" alt="maintained"></a> <a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platforms"></a> <a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
+  	<a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
+  	<a href="https://github.com/adgellida/winsys/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/winsys.svg" alt="stars"></a>
+  	<a href="https://github.com/adgellida/winsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/winsys.svg" alt="forks"></a>
+  	<a href="https://github.com/adgellida/winsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/winsys.svg" alt="open issues"></a>
+  	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/total.svg" alt="total downloads"></a>
+  	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/v2017.06.16/total.svg" alt="total downloads latest release"></a>
+  	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.06.16-blue.svg" alt="latest release"></a>
+  	<a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/paused/2017.svg" alt="maintained"></a>
+  	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platforms"></a>
+  	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
 
 <p align="left">
-<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a> 
+	<a href="https://t.me/winsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/td_logo.png" width="25" alt="telegram group"></a>
+	<a href="https://twitter.com/winsys_app" target="_blank"><img src="https://img.shields.io/twitter/follow/winsys_app.svg?style=social&label=Follow" alt="twitter"></a>
+	<a href="https://gitter.im/adgellida/winsys" target="_blank"><img src="https://badges.gitter.im/adgellida/winsys.svg" alt="chat"></a>
+  	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5V74HS4RV2YWG" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a>
+  	<a href="https://www.paypal.me/adgellida" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal.me-green.svg" alt="Donate to developer"></a>
+  	<a href="https://www.bountysource.com/teams/winsys" target="_blank"><img src="https://img.shields.io/bountysource/team/winsys/activity.svg" alt="Donate with Bountysource"></a>
+</p>
+
+<p align="left">
+	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a> 
 </p>
 
 **For English click [here](https://github.com/adgellida/winsys/blob/master/README.md)**
