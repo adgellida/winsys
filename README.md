@@ -14,7 +14,7 @@
   	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
 
-<p align="left">
+<p align="center">
 	<a href="https://t.me/winsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/td_logo.png" width="25" alt="telegram group"></a>
 	<a href="https://twitter.com/winsys_app" target="_blank"><img src="https://img.shields.io/twitter/follow/winsys_app.svg?style=social&label=Follow" alt="twitter"></a>
 	<a href="https://gitter.im/adgellida/winsys" target="_blank"><img src="https://badges.gitter.im/adgellida/winsys.svg" alt="chat"></a>
