@@ -9,7 +9,7 @@
   	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/total.svg" alt="total downloads"></a>
   	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/v2017.06.16/total.svg" alt="total downloads latest release"></a>
   	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.06.16-blue.svg" alt="latest release"></a>
-  	<a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/paused/2017.svg" alt="maintained"></a>
+  	<a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/paused/2016.svg" alt="maintained"></a>
   	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platforms"></a>
   	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
@@ -24,7 +24,8 @@
 </p>
 
 <p align="left">
-	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a> <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a> 
+	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
