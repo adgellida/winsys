@@ -9,7 +9,7 @@
   	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/total.svg" alt="total downloads"></a>
   	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/v2017.06.16/total.svg" alt="total downloads latest release"></a>
   	<a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2017.06.16-blue.svg" alt="latest release"></a>
-  	<a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/paused/2016.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-paused-orange.svg" alt="maintained"></a>
   	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platforms"></a>
   	<a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
