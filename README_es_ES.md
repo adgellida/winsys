@@ -59,9 +59,9 @@ Después en un terminal haz:
 Capturas de pantalla
 =============================================
 
-<img src="http://i.imgur.com/TtgGYff.png" width="500">         <img src="http://i.imgur.com/qy5VRnM.png" width="500">
+<img src="http://i.imgur.com/TtgGYff.png" width="425">         <img src="http://i.imgur.com/qy5VRnM.png" width="425">
 
-<img src="http://i.imgur.com/vRP5ac7.png" width="500">
+<img src="http://i.imgur.com/vRP5ac7.png" width="425">
 
 Qué hace este programa
 =============================================
