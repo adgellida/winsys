@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-	<a href="https://t.me/winsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/td_logo.png" width="25" alt="telegram group"></a>
+	<a href="https://t.me/winsys_app" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/td_logo.png" width="25" alt="telegram group"></a>
 	<a href="https://twitter.com/winsys_app" target="_blank"><img src="https://img.shields.io/twitter/follow/winsys_app.svg?style=social&label=Follow" alt="twitter"></a>
 	<a href="https://gitter.im/adgellida/winsys" target="_blank"><img src="https://badges.gitter.im/adgellida/winsys.svg" alt="chat"></a>
   	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5V74HS4RV2YWG" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate to project"></a>
@@ -24,7 +24,7 @@
 </p>
 
 <p align="left">
-	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/images/made-with-qt.png" alt="forthebadge"></a>
+	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/made-with-qt.png" alt="forthebadge"></a>
 	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a>
 </p>
 
@@ -59,9 +59,9 @@ Then in a terminal do:
 Screenshots
 =============================================
 
-<img src="http://i.imgur.com/TtgGYff.png" width="425">         <img src="http://i.imgur.com/qy5VRnM.png" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot1.png" width="425">         <img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot2.png" width="425">
 
-<img src="http://i.imgur.com/vRP5ac7.png" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot3.png" width="425">
 
 What this program do
 =============================================
