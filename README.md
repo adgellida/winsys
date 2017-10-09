@@ -26,6 +26,7 @@
 <p align="left">
 	<a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/made-with-qt.png" alt="forthebadge"></a>
 	<a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a>
+  <a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=winsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
 
 **Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
