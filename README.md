@@ -31,17 +31,17 @@
 
 **Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
 
-Software installer of a helpful program list, able to do changes on system configuration, updates, execute improves, fixes, executing actions to blow of mouse click.
+Winsys is a piece of software that gives the user a powerful control center to toggle on and off many system settings in Windows 10, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 
 Windows 10 x64 specific.
 
-**Very dangerous app in any points, if you don't know where you are touching or how to fix it, don't do it. For testing and knowledge purposes. It's not meant to be stable at the moment.**
+**This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
 
-Feeded with [windowsScripts](https://github.com/adgellida/windowsScripts).
+This is a GUI for these scripts [windowsScripts](https://github.com/adgellida/windowsScripts).
 
-Download from official sources - click on logo
+To Download this app from official sources - Select a logo
 =============================================
 
 <p align="center">
@@ -53,7 +53,7 @@ Install from [Chocolatey](https://chocolatey.org/)
 
 First [install](https://chocolatey.org/install) Chocolatey.
 
-Then in a terminal do:
+Then in a terminal:
 
 `choco install -y winsys`
 
@@ -64,30 +64,30 @@ Screenshots
 
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot3.png" width="425">
 
-What this program do
+What this program does
 =============================================
 
 ##### Packages
 
-* Install chocolatey, ChrisPC Win Experience Index.
+* Installs chocolatey, and the ChrisPC Win Experience Index.
 
-* Run DriverPack Online, Windows Update Mini Tool (third party tool for system updates, recommended), Process Explorer, Process Hacker, serviwin, Ultimate Windows Tweaker, 10AppsManager.
+* Runs DriverPack Online, Windows Update Mini Tool (third party tool for system updates, recommended), Process Explorer, Process Hacker, serviwin, Ultimate Windows Tweaker, and the 10AppsManager.
 
 ##### Tweaks
 
 * Enable-disable firewall, fast startup, system restore.
 
-* Block, warn, off Smartscreen.
+* Change the settings for Smartscreen to either: Block, warn, or disable entirely.
 
 * Open cmd, powershell, taskmgr, services.msc, regedit, restart, do a complete (real) shutdown.
 
-* Know license expiration, search updates (native ui), set time to UTC (recommended for dualboot with other OS, like ubuntu for example) or GMT (default).
+* Check license expiration, search updates (native ui), set time to UTC (recommended for dualboot with other OS, like ubuntu for example) or GMT (default).
 
 ##### Services
 
-* Enable-disable Superfetch, BITS, Windows Search, Windows Update.
+* Enable-disable Superfetch, BITS, Windows Search, or Windows Update.
 
-* Restore to default all windows services.
+* Restore to default settings all windows services.
 
 ##### Repair
 
@@ -98,26 +98,26 @@ And more...
 Tutorial
 =============================================
 
-Push [here](https://github.com/adgellida/winsys/wiki/Tutorial_en) to go to wiki.
+Click [here](https://github.com/adgellida/winsys/wiki/Tutorial_en) to go to wiki.
 
 TO DO
 =============================================
 
-* Update program with red arrow button. For now link to release versions page.
+* Update program with a red arrow button. For now there is a link to the previous release versions.
 
-* Add buttons: DNS change, enable-disable Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
+* Add more buttons: DNS change, enable-disable Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
 
 * Add USB-Fix app.
 
 * Replace metro photo app with native default photo viewer.
 
-* No check drivers on Windows Update when plug a device.
+* disable driver check with Windows Update when you plug in a device.
 
-* Save user configuration for use it when you re-open app.
+* Save the user configuration for when you re-open app.
 
-* Create a category to personal scripts.
+* Create a category for personal scripts.
 
-* Regroup files to clean main directory.
+* Reorganize files to clean the main directory.
 
 DONE
 =============================================
@@ -125,18 +125,18 @@ DONE
 * Outlook export/import profile and data.
 * Translate app to Spanish.
 
-Be care
+Be careful
 =============================================
 
-Be careful! These initial versions has a lot of bugs and disabled functionalities.
+Be careful! The initial versions have a lot of bugs and disabled functions for a reason.
 
-If you want to help on this dev, say to me.
+If you want to help with development on this software, please contact me.
 
-If you need help about compilation and packaging I have basic notions, ask me.
+If you need help with compiling and packaging I have basic knowhow, feel free to ask me.
 
-I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practises.
+I'm not a senior programmer, nor junior. I program as a hobby. So I'm not following professional coding practices.
 
-I know that my code is horrifying and not good implemented. With patience I'll go to cleaning and improving it. 
+I know that my code is horrifying and very well implemented. With patience and time I'll go to cleaning and improving it.
 
 Credits and thanks to
 =============================================
