@@ -100,6 +100,17 @@ Tutorial
 
 Click [here](https://github.com/adgellida/winsys/wiki/Tutorial_en) to go to wiki.
 
+Dependencies
+=============================================
+
+* Set-ExecutionPolicy Unrestricted
+
+* WMF 4.0 +
+
+* Windows Framework 4.0 +
+
+* Chocolatey (optional)
+
 TO DO
 =============================================
 
