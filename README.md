@@ -64,77 +64,15 @@ Screenshots
 
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot3.png" width="425">
 
-What this program does
-=============================================
-
-##### Packages
-
-* Installs chocolatey, and the ChrisPC Win Experience Index.
-
-* Runs DriverPack Online, Windows Update Mini Tool (third party tool for system updates, recommended), Process Explorer, Process Hacker, serviwin, Ultimate Windows Tweaker, and the 10AppsManager.
-
-##### Tweaks
-
-* Enable-disable firewall, fast startup, system restore.
-
-* Change the settings for Smartscreen to either: Block, warn, or disable entirely.
-
-* Open cmd, powershell, taskmgr, services.msc, regedit, restart, do a complete (real) shutdown.
-
-* Check license expiration, search updates (native ui), set time to UTC (recommended for dualboot with other OS, like ubuntu for example) or GMT (default).
-
-##### Services
-
-* Enable-disable Superfetch, BITS, Windows Search, or Windows Update.
-
-* Restore to default settings all windows services.
-
-##### Repair
-
-* Check system integrity.
-
-And more...
-
 Tutorial
 =============================================
 
 Click [here](https://github.com/adgellida/winsys/wiki/Tutorial_en) to go to wiki.
 
-Dependencies
+More info
 =============================================
 
-* Set-ExecutionPolicy Unrestricted
-
-* WMF 4.0 +
-
-* Windows Framework 4.0 +
-
-* Chocolatey (optional)
-
-TO DO
-=============================================
-
-* Update program with a red arrow button. For now there is a link to the previous release versions.
-
-* Add more buttons: DNS change, enable-disable Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
-
-* Add USB-Fix app.
-
-* Replace metro photo app with native default photo viewer.
-
-* disable driver check with Windows Update when you plug in a device.
-
-* Save the user configuration for when you re-open app.
-
-* Create a category for personal scripts.
-
-* Reorganize files to clean the main directory.
-
-DONE
-=============================================
-
-* Outlook export/import profile and data.
-* Translate app to Spanish.
+Push [here](https://github.com/adgellida/winsys/wiki/More-info) to go to the wiki.
 
 Be careful
 =============================================

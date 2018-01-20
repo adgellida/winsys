@@ -64,77 +64,15 @@ Capturas de pantalla
 
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot3.png" width="425">
 
-Qué hace este programa
-=============================================
-
-##### Paquetes
-
-* Instalar chocolatey, ChrisPC Win Experience Index.
-
-* Ejecutar DriverPack Online, Windows Update Mini Tool (aplicación de terceros para las actualizaciones del sistema, recommendado), Process Explorer, Process Hacker, serviwin, Ultimate Windows Tweaker, 10AppsManager.
-
-##### Mejoras
-
-* Habilitar-Deshabilitar firewall, inicio rápido, restaurar sistema.
-
-* Bloquear, notificar, apagar Smartscreen.
-
-* Abir cmd, powershell, taskmgr, services.msc, regedit, restart, hacer un apagado completo (real).
-
-* Saber la expiración de la licencia, buscar actualizaciones (ui nativa), ajustar el reloj del sistema a UTC (recomendado para dualboot con otro SO, like ubuntu por ejemplo) o GMT (por defecto).
-
-##### Servicios
-
-* Habilitar-Deshabilitar Superfetch, BITS, Windows Search, Windows Update.
-
-* Restaurar todos los servicios a sus estados por defecto.
-
-##### Reparar
-
-* Comprobar la integridad del sistema.
-
-Y más...
-
 Tutorial
 =============================================
 
 Pulsa [aquí](https://github.com/adgellida/winsys/wiki/Tutorial_es) para ir a la wiki.
 
-Dependencias
+Más información
 =============================================
 
-* Set-ExecutionPolicy Unrestricted
-
-* WMF 4.0 +
-
-* Windows Framework 4.0 +
-
-* Chocolatey (opcional)
-
-POR HACER
-=============================================
-
-* Actualizar programa con la flecha hacia arriba roja. Por ahora lanza a la página de versiones.
-
-* Añadir botones: cambio de DNS, habilitar-deshabilitar Windows Store, Windows Problem Reporting, Windows Telemetry Agent.
-
-* Añadir app USB-Fix.
-
-* Cambiar la app de fotos de metro por el visualizador de fotos nativo de siempre.
-
-* No comprobar drivers en Windows Update cada vez que se conecte un dispositivo.
-
-* Guardar la configuración del usuario para usarla cuando se reabra la app.
-
-* Crear apartado de scripts personales.
-
-* Reagrupar ficheros para limpiar el directorio principal.
-
-HECHO
-=============================================
-
-* Outlook exportar/importar perfil y datos.
-* Traducir app al Español.
+Pulsa [aquí](https://github.com/adgellida/winsys/wiki/Mas-info) para ir a la wiki.
 
 Ten cuidado
 =============================================
