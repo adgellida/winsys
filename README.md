@@ -41,7 +41,7 @@ Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
 
 This is a GUI for these scripts [windowsScripts](https://github.com/adgellida/windowsScripts).
 
-To Download this app from official sources - Select a logo
+Download from official mirrors
 =============================================
 
 <p align="center">

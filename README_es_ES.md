@@ -41,7 +41,7 @@ Construido con Qt 5.8.0. Basado en [ubunsys](https://github.com/adgellida/ubunsy
 
 Alimentado con [windowsScripts](https://github.com/adgellida/windowsScripts).
 
-Descarga desde fuentes oficiales - pulsa en el logo
+Descarga desde fuentes oficiales
 =============================================
 
 <p align="center">
