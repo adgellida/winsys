@@ -9,9 +9,9 @@ void MainWindow::on_updateScriptsButton_clicked()
 
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
-    //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"$down = New-Object System.Net.WebClient; $url = 'https://raw.githubusercontent.com/adgellida/windowsScripts/master/022.downloadLatestWindowsScripts.ps1'; $file = '022.downloadLatestWindowsScripts.ps1'; $down.DownloadFile($url,$file); & ./022.downloadLatestWindowsScripts.ps1;sleep 2;""\"");
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"$down = New-Object System.Net.WebClient; $url = 'https://raw.githubusercontent.com/adgellida/windowsScripts/master/022.downloadLatestWindowsScripts.ps1'; $file = '022.downloadLatestWindowsScripts.ps1'; $down.DownloadFile($url,$file); & ./022.downloadLatestWindowsScripts.ps1;sleep 2;""\"");
 	
-	system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"$down = New-Object System.Net.WebClient; $url = 'https://raw.githubusercontent.com/adgellida/windowsScripts/master/022.downloadLatestWindowsScripts.ps1'; iex $down.DownloadString($url); sleep 2;""\"");
+	//system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"$down = New-Object System.Net.WebClient; $url = 'https://raw.githubusercontent.com/adgellida/windowsScripts/master/022.downloadLatestWindowsScripts.ps1'; iex $down.DownloadString($url); sleep 2;""\"");
 
 }
 
