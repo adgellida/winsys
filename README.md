@@ -42,6 +42,8 @@ Winsys is a piece of software that gives the user a powerful control center to t
 
 Windows 10 x64 specific.
 
+Due to lack of time paused development.
+
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
 Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).

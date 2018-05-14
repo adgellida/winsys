@@ -42,6 +42,8 @@ Software instalador de una lista de programas útiles, capaz de hacer cambios en
 
 Específico para Windows 10 x64.
 
+Debido a falta de tiempo desarrollo pausado.
+
 **App muy peligrosa en algunos puntos, si no sabes donde estás tocando o cómo arreglarlo, no lo hagas. Hecha con motivos de aprendizaje y testeo. No pretende ser estable de momento.**
 
 Construido con Qt 5.8.0. Basado en [ubunsys](https://github.com/adgellida/ubunsys).
