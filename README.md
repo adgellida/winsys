@@ -92,7 +92,7 @@ I know that my code is horrifying and very well implemented. With patience and t
 Credits and thanks to
 =============================================
 
-* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that creates the app [icon](https://thenounproject.com/term/terminal/715962/) used here. Beautiful!
+* [Bernar Novalyi](https://thenounproject.com/bernar.novalyi/) from Noun Project that created the [icon](https://thenounproject.com/term/terminal/715962/) and I used it as app icon. Beautiful!
 
 * [tenforums](https://www.tenforums.com). Any scripts obtained from here.
 
