@@ -38,7 +38,7 @@ Descarga desde fuentes oficiales
 
 **For English click [here](https://github.com/adgellida/winsys/blob/master/README.md)**
 
-Software instalador de una lista de programas útiles, capaz de hacer cambios en la configuración del sistema, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
+Instalador de una lista de programas útiles, capaz de hacer cambios en la configuración del sistema, ejecutar mejoras, arreglos, ejecutando acciones a golpe de click de ratón.
 
 Específico para Windows 10 x64.
 

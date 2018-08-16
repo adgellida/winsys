@@ -38,7 +38,7 @@ Download from official mirrors
 
 **Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
 
-Winsys is a piece of software that gives the user a powerful control center to toggle on and off many system settings in Windows 10, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
+Gives the user a powerful control center to toggle on and off many system settings in Windows 10, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 
 Windows 10 x64 specific.
 
