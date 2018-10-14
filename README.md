@@ -19,6 +19,7 @@ Download from official mirrors
     <a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-paused-orange.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
+	<a href="https://www.codacy.com/app/adgellida/winsys?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=adgellida/winsys&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/e649869b40094e689bd070ae4977bfa3"/></a>
 </p>
 
 <p align="center">
