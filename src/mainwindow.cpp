@@ -16,11 +16,14 @@ MainWindow::MainWindow(QWidget *parent) :
     //on_updateScriptsButton_clicked();
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+
+
 

@@ -85,6 +85,21 @@ void MainWindow::on_runAdwcleaner_clicked()
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
+void MainWindow::on_runOptimizer_clicked()
+{
+    ui->statusBar->showMessage(tr("Running Optimizer"));
+    on_installChocolateyButton_clicked();
+    system("cd scripts\\windowsScripts-master & 025.runOptimizer.bat");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_runWPD_clicked()
+{
+    ui->statusBar->showMessage(tr("Running Windows Privacy Dashboard"));
+    on_installChocolateyButton_clicked();
+    system("cd scripts\\windowsScripts-master & 026.runWPD.bat");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
 
 //
 

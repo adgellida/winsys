@@ -153,6 +153,10 @@ private slots:
 
     void on_ImportOutlookButton_clicked();
 
+    void on_runOptimizer_clicked();
+
+    void on_runWPD_clicked();
+
 private:
     Ui::MainWindow *ui;
 
