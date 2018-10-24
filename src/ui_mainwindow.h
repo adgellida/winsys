@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.11.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
@@ -66,6 +65,8 @@ public:
     QPushButton *runServiwinButton;
     QPushButton *runProcessExplorerButton;
     QPushButton *runAdwcleaner;
+    QPushButton *runOptimizer;
+    QPushButton *runWPD;
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_6;
@@ -325,6 +326,18 @@ public:
         runAdwcleaner->setGeometry(QRect(10, 270, 161, 36));
         runAdwcleaner->setIconSize(QSize(30, 30));
         runAdwcleaner->setCheckable(false);
+        runOptimizer = new QPushButton(tab_11);
+        runOptimizer->setObjectName(QStringLiteral("runOptimizer"));
+        runOptimizer->setEnabled(true);
+        runOptimizer->setGeometry(QRect(10, 310, 161, 36));
+        runOptimizer->setIconSize(QSize(30, 30));
+        runOptimizer->setCheckable(false);
+        runWPD = new QPushButton(tab_11);
+        runWPD->setObjectName(QStringLiteral("runWPD"));
+        runWPD->setEnabled(true);
+        runWPD->setGeometry(QRect(10, 350, 161, 36));
+        runWPD->setIconSize(QSize(30, 30));
+        runWPD->setCheckable(false);
         tabWidget_2->addTab(tab_11, QString());
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
@@ -867,7 +880,7 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(1);
         tabWidget_6->setCurrentIndex(0);
@@ -880,297 +893,387 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "winsys", Q_NULLPTR));
-        actionExit->setText(QApplication::translate("MainWindow", "Exit", Q_NULLPTR));
-        actionPaste->setText(QApplication::translate("MainWindow", "Paste", Q_NULLPTR));
-        actionAbout->setText(QApplication::translate("MainWindow", "About", Q_NULLPTR));
-        actionAbout_Qt->setText(QApplication::translate("MainWindow", "About Qt", Q_NULLPTR));
-        actionSave_as->setText(QApplication::translate("MainWindow", "Save as...", Q_NULLPTR));
-        actionNew->setText(QApplication::translate("MainWindow", "New", Q_NULLPTR));
-        actionOpen->setText(QApplication::translate("MainWindow", "Open", Q_NULLPTR));
-        actionSave->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
-        actionCopy->setText(QApplication::translate("MainWindow", "Copy", Q_NULLPTR));
-        actionCut->setText(QApplication::translate("MainWindow", "Cut", Q_NULLPTR));
-        actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", Q_NULLPTR));
-        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", Q_NULLPTR));
-        actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", Q_NULLPTR));
-        unselectAllButton->setText(QApplication::translate("MainWindow", "Unselect All", Q_NULLPTR));
-        selectAllButton->setText(QApplication::translate("MainWindow", "Select All", Q_NULLPTR));
-        installSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Install", Q_NULLPTR));
-        uninstallSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Uninstall", Q_NULLPTR));
-        loadSelectionButton->setText(QApplication::translate("MainWindow", "Load", Q_NULLPTR));
-        saveSelectionButton->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
-        label_18->setText(QApplication::translate("MainWindow", "Utilities", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "winsys", nullptr));
+        actionExit->setText(QApplication::translate("MainWindow", "Exit", nullptr));
+        actionPaste->setText(QApplication::translate("MainWindow", "Paste", nullptr));
+        actionAbout->setText(QApplication::translate("MainWindow", "About", nullptr));
+        actionAbout_Qt->setText(QApplication::translate("MainWindow", "About Qt", nullptr));
+        actionSave_as->setText(QApplication::translate("MainWindow", "Save as...", nullptr));
+        actionNew->setText(QApplication::translate("MainWindow", "New", nullptr));
+        actionOpen->setText(QApplication::translate("MainWindow", "Open", nullptr));
+        actionSave->setText(QApplication::translate("MainWindow", "Save", nullptr));
+        actionCopy->setText(QApplication::translate("MainWindow", "Copy", nullptr));
+        actionCut->setText(QApplication::translate("MainWindow", "Cut", nullptr));
+        actionCut->setIconText(QApplication::translate("MainWindow", "Cortar", nullptr));
+        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences", nullptr));
+        actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", nullptr));
+        unselectAllButton->setText(QApplication::translate("MainWindow", "Unselect All", nullptr));
+        selectAllButton->setText(QApplication::translate("MainWindow", "Select All", nullptr));
+        installSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Install", nullptr));
+        uninstallSelectedPackagesButton->setText(QApplication::translate("MainWindow", "Uninstall", nullptr));
+        loadSelectionButton->setText(QApplication::translate("MainWindow", "Load", nullptr));
+        saveSelectionButton->setText(QApplication::translate("MainWindow", "Save", nullptr));
+        label_18->setText(QApplication::translate("MainWindow", "Utilities", nullptr));
 #ifndef QT_NO_WHATSTHIS
         runDriverPackOnlineButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runDriverPackOnlineButton->setText(QApplication::translate("MainWindow", "Run DriverPack Online", Q_NULLPTR));
+        runDriverPackOnlineButton->setText(QApplication::translate("MainWindow", "Run DriverPack Online", nullptr));
+#ifndef QT_NO_SHORTCUT
         runDriverPackOnlineButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         installChocolateyButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        installChocolateyButton->setText(QApplication::translate("MainWindow", "Install Chocolatey", Q_NULLPTR));
+        installChocolateyButton->setText(QApplication::translate("MainWindow", "Install Chocolatey", nullptr));
+#ifndef QT_NO_SHORTCUT
         installChocolateyButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         installChrisPCButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        installChrisPCButton->setText(QApplication::translate("MainWindow", "Install it", Q_NULLPTR));
+        installChrisPCButton->setText(QApplication::translate("MainWindow", "Install it", nullptr));
+#ifndef QT_NO_SHORTCUT
         installChrisPCButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         runChrisPCButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runChrisPCButton->setText(QApplication::translate("MainWindow", "Run it", Q_NULLPTR));
+        runChrisPCButton->setText(QApplication::translate("MainWindow", "Run it", nullptr));
+#ifndef QT_NO_SHORTCUT
         runChrisPCButton->setShortcut(QString());
-        label_21->setText(QApplication::translate("MainWindow", "ChrisPC Win Experience Index", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_21->setText(QApplication::translate("MainWindow", "ChrisPC Win Experience Index", nullptr));
 #ifndef QT_NO_WHATSTHIS
         runUltimateWindowsTweaker4Button->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runUltimateWindowsTweaker4Button->setText(QApplication::translate("MainWindow", "Ultimate Windows Tweaker 4", Q_NULLPTR));
+        runUltimateWindowsTweaker4Button->setText(QApplication::translate("MainWindow", "Ultimate Windows Tweaker 4", nullptr));
+#ifndef QT_NO_SHORTCUT
         runUltimateWindowsTweaker4Button->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         run10AppsManager->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        run10AppsManager->setText(QApplication::translate("MainWindow", "10AppsManager", Q_NULLPTR));
+        run10AppsManager->setText(QApplication::translate("MainWindow", "10AppsManager", nullptr));
+#ifndef QT_NO_SHORTCUT
         run10AppsManager->setShortcut(QString());
-        label_22->setText(QApplication::translate("MainWindow", "thewindowsclub", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_22->setText(QApplication::translate("MainWindow", "thewindowsclub", nullptr));
 #ifndef QT_NO_WHATSTHIS
         runWindosUpdateMiniToolButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runWindosUpdateMiniToolButton->setText(QApplication::translate("MainWindow", "Windows Update MiniTool", Q_NULLPTR));
+        runWindosUpdateMiniToolButton->setText(QApplication::translate("MainWindow", "Windows Update MiniTool", nullptr));
+#ifndef QT_NO_SHORTCUT
         runWindosUpdateMiniToolButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         runProcessHackerButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runProcessHackerButton->setText(QApplication::translate("MainWindow", "Process Hacker", Q_NULLPTR));
+        runProcessHackerButton->setText(QApplication::translate("MainWindow", "Process Hacker", nullptr));
+#ifndef QT_NO_SHORTCUT
         runProcessHackerButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         runServiwinButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runServiwinButton->setText(QApplication::translate("MainWindow", "serviwin", Q_NULLPTR));
+        runServiwinButton->setText(QApplication::translate("MainWindow", "serviwin", nullptr));
+#ifndef QT_NO_SHORTCUT
         runServiwinButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         runProcessExplorerButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runProcessExplorerButton->setText(QApplication::translate("MainWindow", "Process Explorer", Q_NULLPTR));
+        runProcessExplorerButton->setText(QApplication::translate("MainWindow", "Process Explorer", nullptr));
+#ifndef QT_NO_SHORTCUT
         runProcessExplorerButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         runAdwcleaner->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        runAdwcleaner->setText(QApplication::translate("MainWindow", "AdwCleaner", Q_NULLPTR));
+        runAdwcleaner->setText(QApplication::translate("MainWindow", "AdwCleaner", nullptr));
+#ifndef QT_NO_SHORTCUT
         runAdwcleaner->setShortcut(QString());
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/1", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Install packages", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+#ifndef QT_NO_WHATSTHIS
+        runOptimizer->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        runOptimizer->setText(QApplication::translate("MainWindow", "Optimizer", nullptr));
+#ifndef QT_NO_SHORTCUT
+        runOptimizer->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+#ifndef QT_NO_WHATSTHIS
+        runWPD->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        runWPD->setText(QApplication::translate("MainWindow", "Windows Privacy Dashboard ", nullptr));
+#ifndef QT_NO_SHORTCUT
+        runWPD->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Packages 1/1", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Install packages", nullptr));
 #ifndef QT_NO_WHATSTHIS
         enableFirewallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableFirewallButton->setText(QApplication::translate("MainWindow", "Enable firewall", Q_NULLPTR));
+        enableFirewallButton->setText(QApplication::translate("MainWindow", "Enable firewall", nullptr));
+#ifndef QT_NO_SHORTCUT
         enableFirewallButton->setShortcut(QString());
-        label_12->setText(QApplication::translate("MainWindow", "Security", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_12->setText(QApplication::translate("MainWindow", "Security", nullptr));
 #ifndef QT_NO_WHATSTHIS
         disableFirewallButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableFirewallButton->setText(QApplication::translate("MainWindow", "Disable firewall", Q_NULLPTR));
+        disableFirewallButton->setText(QApplication::translate("MainWindow", "Disable firewall", nullptr));
+#ifndef QT_NO_SHORTCUT
         disableFirewallButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         completeShutdownButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        completeShutdownButton->setText(QApplication::translate("MainWindow", "Complete shutdown", Q_NULLPTR));
+        completeShutdownButton->setText(QApplication::translate("MainWindow", "Complete shutdown", nullptr));
+#ifndef QT_NO_SHORTCUT
         completeShutdownButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         openRegeditButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openRegeditButton->setText(QApplication::translate("MainWindow", "Open regedit", Q_NULLPTR));
+        openRegeditButton->setText(QApplication::translate("MainWindow", "Open regedit", nullptr));
+#ifndef QT_NO_SHORTCUT
         openRegeditButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         openTaskmgrButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openTaskmgrButton->setText(QApplication::translate("MainWindow", "Open taskmgr", Q_NULLPTR));
+        openTaskmgrButton->setText(QApplication::translate("MainWindow", "Open taskmgr", nullptr));
+#ifndef QT_NO_SHORTCUT
         openTaskmgrButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        knowLicenceExpirationButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>When your Windows license expires?</p></body></html>", Q_NULLPTR));
+        knowLicenceExpirationButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>When your Windows license expires?</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         knowLicenceExpirationButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        knowLicenceExpirationButton->setText(QApplication::translate("MainWindow", "Know licence expiration", Q_NULLPTR));
+        knowLicenceExpirationButton->setText(QApplication::translate("MainWindow", "Know licence expiration", nullptr));
+#ifndef QT_NO_SHORTCUT
         knowLicenceExpirationButton->setShortcut(QString());
-        label_19->setText(QApplication::translate("MainWindow", "Shortcuts", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_19->setText(QApplication::translate("MainWindow", "Shortcuts", nullptr));
 #ifndef QT_NO_WHATSTHIS
         openServicesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openServicesButton->setText(QApplication::translate("MainWindow", "Open services", Q_NULLPTR));
+        openServicesButton->setText(QApplication::translate("MainWindow", "Open services", nullptr));
+#ifndef QT_NO_SHORTCUT
         openServicesButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         openCmdButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openCmdButton->setText(QApplication::translate("MainWindow", "Open cmd", Q_NULLPTR));
+        openCmdButton->setText(QApplication::translate("MainWindow", "Open cmd", nullptr));
+#ifndef QT_NO_SHORTCUT
         openCmdButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         openPowershellButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        openPowershellButton->setText(QApplication::translate("MainWindow", "Open Powershell", Q_NULLPTR));
+        openPowershellButton->setText(QApplication::translate("MainWindow", "Open Powershell", nullptr));
+#ifndef QT_NO_SHORTCUT
         openPowershellButton->setShortcut(QString());
-        label_20->setText(QApplication::translate("MainWindow", "Energy", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_20->setText(QApplication::translate("MainWindow", "Energy", nullptr));
 #ifndef QT_NO_WHATSTHIS
         RestartButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        RestartButton->setText(QApplication::translate("MainWindow", "Restart", Q_NULLPTR));
+        RestartButton->setText(QApplication::translate("MainWindow", "Restart", nullptr));
+#ifndef QT_NO_SHORTCUT
         RestartButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         searchUpdatesButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        searchUpdatesButton->setText(QApplication::translate("MainWindow", "Search updates", Q_NULLPTR));
+        searchUpdatesButton->setText(QApplication::translate("MainWindow", "Search updates", nullptr));
+#ifndef QT_NO_SHORTCUT
         searchUpdatesButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         enableFastStartupButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableFastStartupButton->setText(QApplication::translate("MainWindow", "Enable fast startup", Q_NULLPTR));
+        enableFastStartupButton->setText(QApplication::translate("MainWindow", "Enable fast startup", nullptr));
+#ifndef QT_NO_SHORTCUT
         enableFastStartupButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         disableFastStartupButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableFastStartupButton->setText(QApplication::translate("MainWindow", "Disable fast startup", Q_NULLPTR));
+        disableFastStartupButton->setText(QApplication::translate("MainWindow", "Disable fast startup", nullptr));
+#ifndef QT_NO_SHORTCUT
         disableFastStartupButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         enableSystemRestoreButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        enableSystemRestoreButton->setText(QApplication::translate("MainWindow", "Enable system restore", Q_NULLPTR));
+        enableSystemRestoreButton->setText(QApplication::translate("MainWindow", "Enable system restore", nullptr));
+#ifndef QT_NO_SHORTCUT
         enableSystemRestoreButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         disableSystemRestoreButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        disableSystemRestoreButton->setText(QApplication::translate("MainWindow", "Disable system restore", Q_NULLPTR));
+        disableSystemRestoreButton->setText(QApplication::translate("MainWindow", "Disable system restore", nullptr));
+#ifndef QT_NO_SHORTCUT
         disableSystemRestoreButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         smartscreenWarnButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        smartscreenWarnButton->setText(QApplication::translate("MainWindow", "Smartscreen - Warn", Q_NULLPTR));
+        smartscreenWarnButton->setText(QApplication::translate("MainWindow", "Smartscreen - Warn", nullptr));
+#ifndef QT_NO_SHORTCUT
         smartscreenWarnButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         smartscreenBlockButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        smartscreenBlockButton->setText(QApplication::translate("MainWindow", "Smartscreen - Block", Q_NULLPTR));
+        smartscreenBlockButton->setText(QApplication::translate("MainWindow", "Smartscreen - Block", nullptr));
+#ifndef QT_NO_SHORTCUT
         smartscreenBlockButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         smartscreenOffButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        smartscreenOffButton->setText(QApplication::translate("MainWindow", "Smartscreen - Off", Q_NULLPTR));
+        smartscreenOffButton->setText(QApplication::translate("MainWindow", "Smartscreen - Off", nullptr));
+#ifndef QT_NO_SHORTCUT
         smartscreenOffButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/2", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Tweaks 1/2", nullptr));
 #ifndef QT_NO_WHATSTHIS
         getFirewallStatusButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        getFirewallStatusButton->setText(QApplication::translate("MainWindow", "Get firewall status", Q_NULLPTR));
+        getFirewallStatusButton->setText(QApplication::translate("MainWindow", "Get firewall status", nullptr));
+#ifndef QT_NO_SHORTCUT
         getFirewallStatusButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
         updateSystemTimeButton->setToolTip(QString());
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         updateSystemTimeButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        updateSystemTimeButton->setText(QApplication::translate("MainWindow", "Update system time", Q_NULLPTR));
+        updateSystemTimeButton->setText(QApplication::translate("MainWindow", "Update system time", nullptr));
+#ifndef QT_NO_SHORTCUT
         updateSystemTimeButton->setShortcut(QString());
-        label_14->setText(QApplication::translate("MainWindow", "Current Local Time", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_14->setText(QApplication::translate("MainWindow", "Current Local Time", nullptr));
 #ifndef QT_NO_WHATSTHIS
         startExplorerButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        startExplorerButton->setText(QApplication::translate("MainWindow", "Start explorer.exe", Q_NULLPTR));
+        startExplorerButton->setText(QApplication::translate("MainWindow", "Start explorer.exe", nullptr));
+#ifndef QT_NO_SHORTCUT
         startExplorerButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         restartExplorerButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        restartExplorerButton->setText(QApplication::translate("MainWindow", "Restart explorer.exe", Q_NULLPTR));
+        restartExplorerButton->setText(QApplication::translate("MainWindow", "Restart explorer.exe", nullptr));
+#ifndef QT_NO_SHORTCUT
         restartExplorerButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        UTCButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>I recommend to change to this</p></body></html>", Q_NULLPTR));
+        UTCButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>I recommend to change to this</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        UTCButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        UTCButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_NO_WHATSTHIS
-        UTCButton->setText(QApplication::translate("MainWindow", "UTC", Q_NULLPTR));
+        UTCButton->setText(QApplication::translate("MainWindow", "UTC", nullptr));
+#ifndef QT_NO_SHORTCUT
         UTCButton->setShortcut(QString());
-        label_15->setText(QApplication::translate("MainWindow", "Extra", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_15->setText(QApplication::translate("MainWindow", "Extra", nullptr));
 #ifndef QT_NO_TOOLTIP
-        GMTButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", Q_NULLPTR));
+        GMTButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_NO_WHATSTHIS
-        GMTButton->setText(QApplication::translate("MainWindow", "GMT", Q_NULLPTR));
+        GMTButton->setText(QApplication::translate("MainWindow", "GMT", nullptr));
+#ifndef QT_NO_SHORTCUT
         GMTButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
-        ExportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p><p>To:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p></body></html>", Q_NULLPTR));
+        ExportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p><p>To:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        ExportOutlookButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        ExportOutlookButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_NO_WHATSTHIS
-        ExportOutlookButton->setText(QApplication::translate("MainWindow", "Export profile and data", Q_NULLPTR));
+        ExportOutlookButton->setText(QApplication::translate("MainWindow", "Export profile and data", nullptr));
+#ifndef QT_NO_SHORTCUT
         ExportOutlookButton->setShortcut(QString());
-        label_16->setText(QApplication::translate("MainWindow", "Outlook", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        label_16->setText(QApplication::translate("MainWindow", "Outlook", nullptr));
 #ifndef QT_NO_TOOLTIP
-        ImportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p><p>To:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p></body></html>", Q_NULLPTR));
+        ImportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p><p>To:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        ImportOutlookButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", Q_NULLPTR));
+        ImportOutlookButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_NO_WHATSTHIS
-        ImportOutlookButton->setText(QApplication::translate("MainWindow", "Import profile and data", Q_NULLPTR));
+        ImportOutlookButton->setText(QApplication::translate("MainWindow", "Import profile and data", nullptr));
+#ifndef QT_NO_SHORTCUT
         ImportOutlookButton->setShortcut(QString());
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Tweaks 2/2", nullptr));
         RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore tweaks\n"
-" to Default", Q_NULLPTR));
-        applyTweaksButton->setText(QApplication::translate("MainWindow", "Apply", Q_NULLPTR));
-        loadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Load", Q_NULLPTR));
-        unloadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Unload", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", Q_NULLPTR));
-        checkBox_004->setText(QApplication::translate("MainWindow", "004.BITS - DISABLE", Q_NULLPTR));
-        checkBox_008->setText(QApplication::translate("MainWindow", "008.Windows Update - wuauserv - DISABLE", Q_NULLPTR));
-        checkBox_002->setText(QApplication::translate("MainWindow", "002.Superfetch - SysMain - DISABLE", Q_NULLPTR));
-        checkBox_001->setText(QApplication::translate("MainWindow", "001.Superfetch - SysMain - ENABLE", Q_NULLPTR));
-        checkBox_007->setText(QApplication::translate("MainWindow", "007.Windows Update - wuauserv - ENABLE", Q_NULLPTR));
-        checkBox_003->setText(QApplication::translate("MainWindow", "003.BITS - ENABLE", Q_NULLPTR));
-        checkBox_006->setText(QApplication::translate("MainWindow", "006.Windows Search - WSearch - DISABLE", Q_NULLPTR));
-        checkBox_005->setText(QApplication::translate("MainWindow", "005.Windows Search - WSearch - ENABLE", Q_NULLPTR));
-        tabWidget_6->setTabText(tabWidget_6->indexOf(tab_14), QApplication::translate("MainWindow", "Services 1/1", Q_NULLPTR));
-        loadServicesSelectionButton->setText(QApplication::translate("MainWindow", "Load", Q_NULLPTR));
-        disableAllServicesButton->setText(QApplication::translate("MainWindow", "Disable All", Q_NULLPTR));
-        enableAllServicesButton->setText(QApplication::translate("MainWindow", "Enable All", Q_NULLPTR));
-        saveSelectionButton_2->setText(QApplication::translate("MainWindow", "Save", Q_NULLPTR));
-        applyButton->setText(QApplication::translate("MainWindow", "Apply", Q_NULLPTR));
+" to Default", nullptr));
+        applyTweaksButton->setText(QApplication::translate("MainWindow", "Apply", nullptr));
+        loadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Load", nullptr));
+        unloadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Unload", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", nullptr));
+        checkBox_004->setText(QApplication::translate("MainWindow", "004.BITS - DISABLE", nullptr));
+        checkBox_008->setText(QApplication::translate("MainWindow", "008.Windows Update - wuauserv - DISABLE", nullptr));
+        checkBox_002->setText(QApplication::translate("MainWindow", "002.Superfetch - SysMain - DISABLE", nullptr));
+        checkBox_001->setText(QApplication::translate("MainWindow", "001.Superfetch - SysMain - ENABLE", nullptr));
+        checkBox_007->setText(QApplication::translate("MainWindow", "007.Windows Update - wuauserv - ENABLE", nullptr));
+        checkBox_003->setText(QApplication::translate("MainWindow", "003.BITS - ENABLE", nullptr));
+        checkBox_006->setText(QApplication::translate("MainWindow", "006.Windows Search - WSearch - DISABLE", nullptr));
+        checkBox_005->setText(QApplication::translate("MainWindow", "005.Windows Search - WSearch - ENABLE", nullptr));
+        tabWidget_6->setTabText(tabWidget_6->indexOf(tab_14), QApplication::translate("MainWindow", "Services 1/1", nullptr));
+        loadServicesSelectionButton->setText(QApplication::translate("MainWindow", "Load", nullptr));
+        disableAllServicesButton->setText(QApplication::translate("MainWindow", "Disable All", nullptr));
+        enableAllServicesButton->setText(QApplication::translate("MainWindow", "Enable All", nullptr));
+        saveSelectionButton_2->setText(QApplication::translate("MainWindow", "Save", nullptr));
+        applyButton->setText(QApplication::translate("MainWindow", "Apply", nullptr));
         RestoreThisServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore this\n"
-" services to Def.", Q_NULLPTR));
+" services to Def.", nullptr));
         RestoreAllServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore all\n"
-" services to Def.", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Services", Q_NULLPTR));
-        label_63->setText(QApplication::translate("MainWindow", "Pending", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", Q_NULLPTR));
-        label_62->setText(QApplication::translate("MainWindow", "Pending", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", Q_NULLPTR));
-        label_61->setText(QApplication::translate("MainWindow", "Pending", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", Q_NULLPTR));
-        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", Q_NULLPTR));
+" services to Def.", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Services", nullptr));
+        label_63->setText(QApplication::translate("MainWindow", "Pending", nullptr));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", nullptr));
+        label_62->setText(QApplication::translate("MainWindow", "Pending", nullptr));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", nullptr));
+        label_61->setText(QApplication::translate("MainWindow", "Pending", nullptr));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", nullptr));
+        label_2->setText(QApplication::translate("MainWindow", "Check system integrity", nullptr));
 #ifndef QT_NO_TOOLTIP
-        integrityCheckButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff55ff;\">SFC</span><span style=\" color:#c0c0c0;\"/><span style=\" color:#ff55ff;\">/ScanNow</span></p></body></html>", Q_NULLPTR));
+        integrityCheckButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff55ff;\">SFC</span><span style=\" color:#c0c0c0;\"/><span style=\" color:#ff55ff;\">/ScanNow</span></p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
         integrityCheckButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         integrityCheckButton->setText(QString());
+#ifndef QT_NO_SHORTCUT
         integrityCheckButton->setShortcut(QString());
-        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "v2017.06.16", Q_NULLPTR));
+#endif // QT_NO_SHORTCUT
+        tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", nullptr));
+        label->setText(QApplication::translate("MainWindow", "v2018.10.24", nullptr));
 #ifndef QT_NO_TOOLTIP
-        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", Q_NULLPTR));
+        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
         updateAppButton->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts</p></body></html>", Q_NULLPTR));
+        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
         updateScriptsButton->setText(QString());
-        menuNuevo->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
-        menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));
-        menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
+        menuNuevo->setTitle(QApplication::translate("MainWindow", "File", nullptr));
+        menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", nullptr));
+        menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", nullptr));
     } // retranslateUi
 
 };

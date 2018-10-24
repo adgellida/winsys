@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDesktopServices>
 
 ///////////////////////INSTALL TAB///////////////////////
 
@@ -38,20 +39,25 @@ void MainWindow::on_runChrisPCButton_clicked()
 void MainWindow::on_runUltimateWindowsTweaker4Button_clicked()
 {
     ui->statusBar->showMessage(tr("Running ChrisPC Win Experience Index"));
-    system("cd scripts\\windowsScripts-master & 011.runUltimateWindowsTweaker4.bat");
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./011.runUltimateWindowsTweaker4.ps1; sleep 2;""\"");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_run10AppsManager_clicked()
 {
     ui->statusBar->showMessage(tr("Running 10AppsManager"));
-    system("cd scripts\\windowsScripts-master & 012.run10AppsManager.bat");
+    //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./012.run10AppsManager.ps1; sleep 2;""\"");
+
+    QString link = "https://www.thewindowsclub.com/10appsmanager-windows-10";
+    QDesktopServices::openUrl(QUrl(link));
+
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_runWindosUpdateMiniToolButton_clicked()
 {
     ui->statusBar->showMessage(tr("Running WindowsUpdateMiniTool"));
+    on_installChocolateyButton_clicked();
     system("cd scripts\\windowsScripts-master & 013.runWindowsUpdateMiniTool.bat");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
@@ -88,16 +94,14 @@ void MainWindow::on_runAdwcleaner_clicked()
 void MainWindow::on_runOptimizer_clicked()
 {
     ui->statusBar->showMessage(tr("Running Optimizer"));
-    on_installChocolateyButton_clicked();
-    system("cd scripts\\windowsScripts-master & 025.runOptimizer.bat");
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./025.runOptimizer.ps1; sleep 2;""\"");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_runWPD_clicked()
 {
     ui->statusBar->showMessage(tr("Running Windows Privacy Dashboard"));
-    on_installChocolateyButton_clicked();
-    system("cd scripts\\windowsScripts-master & 026.runWPD.bat");
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./026.runWPD.ps1; sleep 2;""\"");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
