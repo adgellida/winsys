@@ -33,7 +33,7 @@ Download from official mirrors
 
 <p align="left">
   <a href="https://forthebadge.com/" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/made-with-qt.png" alt="forthebadge"></a>
-  <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.8.0-green.svg" alt="qt version"></a>
+  <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.11.2-green.svg" alt="qt version"></a>
   <a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=winsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
 
@@ -47,7 +47,7 @@ Due to lack of time paused development.
 
 **This is a very dangerous app, if you don't know what you are touching or how to fix it, don't do it. This software is for testing and knowledge purposes. It's unstable software.**
 
-Built with Qt 5.8.0. Based on [ubunsys](https://github.com/adgellida/ubunsys).
+Based on [ubunsys](https://github.com/adgellida/ubunsys).
 
 This is a GUI for these scripts [windowsScripts](https://github.com/adgellida/windowsScripts).
 
