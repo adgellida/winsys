@@ -878,6 +878,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -886,27 +887,12 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -916,7 +902,10 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/toolbartab.o: toolbartab.cpp mainwindow.h \
@@ -1146,6 +1135,7 @@ release/toolbartab.o: toolbartab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -1154,27 +1144,12 @@ release/toolbartab.o: toolbartab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -1414,6 +1389,7 @@ release/repairtab.o: repairtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -1422,27 +1398,12 @@ release/repairtab.o: repairtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -1682,6 +1643,7 @@ release/systemtab.o: systemtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -1690,27 +1652,12 @@ release/systemtab.o: systemtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -1950,6 +1897,7 @@ release/tweakstab.o: tweakstab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -1958,27 +1906,12 @@ release/tweakstab.o: tweakstab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -2220,6 +2153,7 @@ release/installtab.o: installtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -2228,27 +2162,12 @@ release/installtab.o: installtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -2258,7 +2177,9 @@ release/installtab.o: installtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QDesktopServices \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\installtab.o installtab.cpp
 
 release/about.o: about.cpp mainwindow.h \
@@ -2719,6 +2640,7 @@ release/services.o: services.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -2727,27 +2649,12 @@ release/services.o: services.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
@@ -2987,6 +2894,7 @@ release/updatezone.o: updatezone.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
@@ -2995,27 +2903,12 @@ release/updatezone.o: updatezone.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \

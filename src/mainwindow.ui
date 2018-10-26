@@ -3642,7 +3642,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>v2018.10.24</string>
+     <string>v2018.10.26</string>
     </property>
    </widget>
    <widget class="QPushButton" name="updateAppButton">

@@ -30,132 +30,71 @@ public slots:
 
 private slots:
     void on_actionNew_triggered();
-
     void on_actionOpen_triggered();
-
     void on_actionSave_triggered();
-
     void on_actionSave_as_triggered();
-
     void on_actionAbout_triggered();
-
     void on_integrityCheckButton_clicked();
-
     void on_unselectAllButton_clicked();
-
     void on_selectAllButton_clicked();
-
     void on_installSelectedPackagesButton_clicked();
-
     void on_uninstallSelectedPackagesButton_clicked();
-
     void on_loadSelectionButton_clicked();
-
     void on_saveSelectionButton_clicked();
-
     void on_enableFirewallButton_clicked();
-
     void on_disableFirewallButton_clicked();
-
     void on_getFirewallStatusButton_clicked();
-
     void on_completeShutdownButton_clicked();
-
     void on_applyButton_clicked();
-
     void on_disableAllServicesButton_clicked();
-
     void on_enableAllServicesButton_clicked();
-
     void on_loadServicesSelectionButton_clicked();
-
     void on_openRegeditButton_clicked();
-
     void on_openTaskmgrButton_clicked();
-
     void on_restartExplorerButton_clicked();
-
     void on_startExplorerButton_clicked();
-
     void on_knowLicenceExpirationButton_clicked();
-
     void on_openServicesButton_clicked();
-
     void on_openCmdButton_clicked();
-
     void on_openPowershellButton_clicked();
-
     void on_updateSystemTimeButton_clicked();
-
     void on_RestartButton_clicked();
-
     void on_searchUpdatesButton_clicked();
-
     void on_installChocolateyButton_clicked();
-
     void on_runDriverPackOnlineButton_clicked();
-
     void on_updateAppButton_clicked();
-
     void on_updateScriptsButton_clicked();
-
     void on_actionTutorial_triggered();
-
     void on_installChrisPCButton_clicked();
-
     void on_runChrisPCButton_clicked();
-
     void on_enableFastStartupButton_clicked();
-
     void on_disableFastStartupButton_clicked();
-
     void on_enableSystemRestoreButton_clicked();
-
     void on_disableSystemRestoreButton_clicked();
-
     void on_smartscreenBlockButton_clicked();
-
     void on_smartscreenWarnButton_clicked();
-
     void on_smartscreenOffButton_clicked();
-
     void on_run10AppsManager_clicked();
-
     void on_runUltimateWindowsTweaker4Button_clicked();
-
     void on_runWindosUpdateMiniToolButton_clicked();
-
     void on_RestoreTweaksToDefaultButton_clicked();
-
     void on_RestoreThisServicesToDefaultButton_clicked();
-
     void on_RestoreAllServicesToDefaultButton_clicked();
-
     void on_runProcessExplorerButton_clicked();
-
     void on_runServiwinButton_clicked();
-
     void on_runProcessHackerButton_clicked();
-
     void on_UTCButton_clicked();
-
     void on_GMTButton_clicked();
-
     void on_loadTweaksSelectionButton_clicked();
-
     void on_applyTweaksButton_clicked();
-
     void on_unloadTweaksSelectionButton_clicked();
-
     void on_runAdwcleaner_clicked();
-
     void on_ExportOutlookButton_clicked();
-
     void on_ImportOutlookButton_clicked();
-
     void on_runOptimizer_clicked();
-
     void on_runWPD_clicked();
+
+    void checkInstallAppUpdate();
 
 private:
     Ui::MainWindow *ui;

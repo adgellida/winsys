@@ -11,7 +11,7 @@ void MainWindow::on_actionAbout_triggered()
     about.setTextFormat(Qt::RichText);   //this is what makes the links clickable
     about.setText(tr("<p align='left'><b>winsys</b></p></br>"
                   "<p align='left'>Configurable app referent to packages, updates and configurations</p></br>"
-                  "<p align='left'>Built with Qt 5.8.0. Designed for Windows 10 x64."
+                  "<p align='left'>Designed for Windows 10 x64."
 				  "<p align='left'>Contains bugs. Alpha test status.</p></br>"
                   "<p align='left'>Based on <a href='https://github.com/adgellida/ubunsys'>ubunsys</a></p></br>"
                   "<p align='left'>Credits to <a href='https://thenounproject.com/bernar.novalyi/'>Bernar Novalyi</a> from Noun Project "
@@ -26,7 +26,7 @@ void MainWindow::on_actionAbout_triggered()
                   "<p align='left'><a href='https://github.com/adgellida/winsys'>Git Repo</a></p></br>"));
 
     about.setInformativeText(tr("Copyright (c) 2017 all rights reserved\n\n\GPL v2\n\nAntonio David Gellida Lavara\n\nadgellida@gmail.com\n\n"
-                             "v2018.10.24"));
+                             "v2018.10.26"));
 
     about.setWindowTitle(tr("About"));
     about.setStandardButtons(QMessageBox::Ok);

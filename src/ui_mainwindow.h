@@ -1262,7 +1262,7 @@ public:
 #endif // QT_NO_SHORTCUT
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "Repair  1/1", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", nullptr));
-        label->setText(QApplication::translate("MainWindow", "v2018.10.24", nullptr));
+        label->setText(QApplication::translate("MainWindow", "v2018.10.26", nullptr));
 #ifndef QT_NO_TOOLTIP
         updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP

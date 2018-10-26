@@ -14,8 +14,8 @@ Download from official mirrors
     <a href="https://github.com/adgellida/winsys/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/winsys.svg" alt="forks"></a>
     <a href="https://github.com/adgellida/winsys/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/winsys.svg" alt="open issues"></a>
     <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/total.svg" alt="total downloads"></a>
-    <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/v2018.10.24/total.svg" alt="total downloads latest release"></a>
-    <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2018.10.24-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/winsys/v2018.10.26/total.svg" alt="total downloads latest release"></a>
+    <a href="https://github.com/adgellida/winsys/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-v2018.10.26-blue.svg" alt="latest release"></a>
     <a href="https://github.com/adgellida/winsys/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-paused-orange.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/winsys/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
