@@ -27,10 +27,12 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    mainwindow.ui
 
 RESOURCES += \
-    winsys.qrc
+    winsys.qrc \
+    qdarkstyle/style.qrc
 
 TRANSLATIONS += languages/winsys_es_ES.ts
 

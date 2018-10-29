@@ -22,7 +22,13 @@ int main(int argc, char *argv[])
 
     //app.installTranslator(&translator);
 
-    //language
+    //theme
+
+    QFile f(":qdarkstyle/style.qss");
+    f.open(QFile::ReadOnly | QFile::Text);
+    QTextStream ts(&f);
+    qApp->setStyleSheet(ts.readAll());
+    qDebug() << "Dark loaded";
 
     MainWindow w;
     w.show();

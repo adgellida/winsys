@@ -32,7 +32,21 @@ void MainWindow::on_runChrisPCButton_clicked()
     system("cd C:\\Program Files (x86)\\ChrisPC Win Experience Index & ChrisPCWEI.exe");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
-//
+
+//StopUpdates10
+void MainWindow::on_installStopUpdates10Button_clicked()
+{
+    ui->statusBar->showMessage(tr("Running DriverPack Online"));
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./028.installStopUpdates10.ps1; sleep 2;""\"");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_runStopUpdates10Button_clicked()
+{
+    ui->statusBar->showMessage(tr("Running ChrisPC Win Experience Index"));
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./029.runStopUpdates10.ps1; sleep 2;""\"");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
 
 //thewindowsclub
 

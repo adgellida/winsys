@@ -93,8 +93,12 @@ private slots:
     void on_ImportOutlookButton_clicked();
     void on_runOptimizer_clicked();
     void on_runWPD_clicked();
-
     void checkInstallAppUpdate();
+    void on_actionTwitter_triggered();
+
+    void on_installStopUpdates10Button_clicked();
+
+    void on_runStopUpdates10Button_clicked();
 
 private:
     Ui::MainWindow *ui;

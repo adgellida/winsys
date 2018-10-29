@@ -210,14 +210,14 @@ void MainWindow::on_RestoreTweaksToDefaultButton_clicked()
 void MainWindow::on_UTCButton_clicked()
 {
     ui->statusBar->showMessage(tr("Smartscreen Off"));
-    system("cd scripts\\windowsScripts-master & start regedit /s 017.Windows Universal Time - On.reg");
+    system("cd scripts\\windowsScripts-master & start regedit /s 017.Windows_Universal_Time-On.reg");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
 void MainWindow::on_GMTButton_clicked()
 {
     ui->statusBar->showMessage(tr("Smartscreen Off"));
-    system("cd scripts\\windowsScripts-master & start regedit /s 018.Windows Universal Time - Off.reg");
+    system("cd scripts\\windowsScripts-master & start regedit /s 018.Windows_Universal_Time-Off.reg");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 

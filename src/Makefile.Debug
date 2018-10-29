@@ -56,6 +56,7 @@ SOURCES       = main.cpp \
 		services.cpp \
 		updatezone.cpp \
 		tutorial.cpp debug\qrc_winsys.cpp \
+		debug\qrc_style.cpp \
 		debug\moc_mainwindow.cpp
 OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
@@ -69,6 +70,7 @@ OBJECTS       = debug/main.o \
 		debug/updatezone.o \
 		debug/tutorial.o \
 		debug/qrc_winsys.o \
+		debug/qrc_style.o \
 		debug/moc_mainwindow.o
 
 DIST          =  mainwindow.h main.cpp \
@@ -104,10 +106,10 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) winsys.zip $(SOURCES) $(DIST) winsys.pro C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\spec_pre.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\qdevice.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\device_config.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\sanitize.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\gcc-base.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\g++-base.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\angle.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\windows-vulkan.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\g++-win32.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\qconfig.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_edid_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_egl_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_theme_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qt_functions.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qt_config.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\win32-g++\qmake.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\exclusive_builds.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\toolchain.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\default_pre.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\win32\default_pre.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\resolve_config.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\exclusive_builds_post.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\default_post.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\build_pass.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\resources.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qtquickcompiler.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\precompile_header.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\warn_on.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qt.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\moc.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\win32\opengl.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\uic.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qmake_use.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\file_copies.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\win32\windows.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\testcase_targets.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\exceptions.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\yacc.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\lex.prf winsys.pro winsys.qrc C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\qtmaind.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5OpenGLd.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5Widgetsd.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5Guid.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5Cored.prl languages\winsys_es_ES.ts languages\winsys_es_ES.ts winsys.qrc    C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\data\dummy.cpp mainwindow.h  main.cpp mainwindow.cpp toolbartab.cpp repairtab.cpp systemtab.cpp tweakstab.cpp installtab.cpp about.cpp services.cpp updatezone.cpp tutorial.cpp mainwindow.ui    
+	$(ZIP) winsys.zip $(SOURCES) $(DIST) winsys.pro C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\spec_pre.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\qdevice.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\device_config.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\sanitize.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\gcc-base.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\g++-base.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\angle.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\windows-vulkan.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\common\g++-win32.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\qconfig.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_edid_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_egl_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_theme_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qt_functions.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qt_config.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\win32-g++\qmake.conf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\exclusive_builds.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\toolchain.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\default_pre.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\win32\default_pre.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\resolve_config.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\exclusive_builds_post.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\default_post.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\build_pass.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\resources.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qtquickcompiler.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\precompile_header.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\warn_on.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qt.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\moc.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\win32\opengl.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\uic.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\qmake_use.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\file_copies.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\win32\windows.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\testcase_targets.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\exceptions.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\yacc.prf C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\lex.prf winsys.pro winsys.qrc qdarkstyle\style.qrc C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\qtmaind.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5OpenGLd.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5Widgetsd.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5Guid.prl C:\Qt\Qt5.11.2\5.11.2\mingw53_32\lib\Qt5Cored.prl languages\winsys_es_ES.ts languages\winsys_es_ES.ts winsys.qrc qdarkstyle\style.qrc    C:\Qt\Qt5.11.2\5.11.2\mingw53_32\mkspecs\features\data\dummy.cpp mainwindow.h  main.cpp mainwindow.cpp toolbartab.cpp repairtab.cpp systemtab.cpp tweakstab.cpp installtab.cpp about.cpp services.cpp updatezone.cpp tutorial.cpp mainwindow.ui    
 
 clean: compiler_clean 
-	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\toolbartab.o debug\repairtab.o debug\systemtab.o debug\tweakstab.o debug\installtab.o debug\about.o debug\services.o debug\updatezone.o debug\tutorial.o debug\qrc_winsys.o debug\moc_mainwindow.o
+	-$(DEL_FILE) debug\main.o debug\mainwindow.o debug\toolbartab.o debug\repairtab.o debug\systemtab.o debug\tweakstab.o debug\installtab.o debug\about.o debug\services.o debug\updatezone.o debug\tutorial.o debug\qrc_winsys.o debug\qrc_style.o debug\moc_mainwindow.o
 	-$(DEL_FILE) debug\winsys_res.o
 
 distclean: clean 
@@ -123,9 +125,9 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all: debug/qrc_winsys.cpp
+compiler_rcc_make_all: debug/qrc_winsys.cpp debug/qrc_style.cpp
 compiler_rcc_clean:
-	-$(DEL_FILE) debug\qrc_winsys.cpp
+	-$(DEL_FILE) debug\qrc_winsys.cpp debug\qrc_style.cpp
 debug/qrc_winsys.cpp: winsys.qrc \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/bin/rcc.exe \
 		images/flecha_arriba.png \
@@ -141,6 +143,7 @@ debug/qrc_winsys.cpp: winsys.qrc \
 		images/shellscript-icon.png \
 		images/escoba.png \
 		images/winsys.ico \
+		images/Twitter-icon.png \
 		images/upgrade.png \
 		images/save.png \
 		images/cut.png \
@@ -149,6 +152,50 @@ debug/qrc_winsys.cpp: winsys.qrc \
 		languages/winsys_es_ES.ts \
 		languages/winsys_es_ES.qm
 	C:\Qt\Qt5.11.2\5.11.2\mingw53_32\bin\rcc.exe -name winsys winsys.qrc -o debug\qrc_winsys.cpp
+
+debug/qrc_style.cpp: qdarkstyle/style.qrc \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/bin/rcc.exe \
+		qdarkstyle/rc/Vsepartoolbar.png \
+		qdarkstyle/rc/close-pressed.png \
+		qdarkstyle/rc/Hmovetoolbar.png \
+		qdarkstyle/rc/up_arrow.png \
+		qdarkstyle/rc/left_arrow_disabled.png \
+		qdarkstyle/rc/close-hover.png \
+		qdarkstyle/rc/checkbox_unchecked.png \
+		qdarkstyle/rc/radio_unchecked_disabled.png \
+		qdarkstyle/rc/radio_checked.png \
+		qdarkstyle/rc/checkbox_checked_disabled.png \
+		qdarkstyle/rc/Hsepartoolbar.png \
+		qdarkstyle/rc/sizegrip.png \
+		qdarkstyle/rc/down_arrow.png \
+		qdarkstyle/rc/stylesheet-branch-more.png \
+		qdarkstyle/rc/radio_unchecked.png \
+		qdarkstyle/rc/branch_closed-on.png \
+		qdarkstyle/rc/checkbox_unchecked_disabled.png \
+		qdarkstyle/rc/branch_open.png \
+		qdarkstyle/rc/left_arrow.png \
+		qdarkstyle/rc/stylesheet-branch-end.png \
+		qdarkstyle/rc/undock.png \
+		qdarkstyle/rc/right_arrow.png \
+		qdarkstyle/rc/checkbox_indeterminate.png \
+		qdarkstyle/rc/checkbox_checked_focus.png \
+		qdarkstyle/rc/stylesheet-vline.png \
+		qdarkstyle/rc/radio_checked_focus.png \
+		qdarkstyle/rc/branch_closed.png \
+		qdarkstyle/rc/right_arrow_disabled.png \
+		qdarkstyle/rc/down_arrow_disabled.png \
+		qdarkstyle/rc/branch_open-on.png \
+		qdarkstyle/rc/radio_unchecked_focus.png \
+		qdarkstyle/rc/Vmovetoolbar.png \
+		qdarkstyle/rc/transparent.png \
+		qdarkstyle/rc/close.png \
+		qdarkstyle/rc/radio_checked_disabled.png \
+		qdarkstyle/rc/checkbox_checked.png \
+		qdarkstyle/rc/up_arrow_disabled.png \
+		qdarkstyle/rc/checkbox_indeterminate_focus.png \
+		qdarkstyle/rc/checkbox_unchecked_focus.png \
+		qdarkstyle/style.qss
+	C:\Qt\Qt5.11.2\5.11.2\mingw53_32\bin\rcc.exe -name style qdarkstyle\style.qrc -o debug\qrc_style.cpp
 
 compiler_qmlcache_make_all:
 compiler_qmlcache_clean:
@@ -877,35 +924,11 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdialog.h
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QDesktopServices \
+		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/toolbartab.o: toolbartab.cpp mainwindow.h \
@@ -1133,33 +1156,7 @@ debug/toolbartab.o: toolbartab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/qtcoreversion.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
-		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\toolbartab.o toolbartab.cpp
 
 debug/repairtab.o: repairtab.cpp mainwindow.h \
@@ -1387,33 +1384,7 @@ debug/repairtab.o: repairtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/qtcoreversion.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
-		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\repairtab.o repairtab.cpp
 
 debug/systemtab.o: systemtab.cpp mainwindow.h \
@@ -1641,33 +1612,7 @@ debug/systemtab.o: systemtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/qtcoreversion.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
-		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\systemtab.o systemtab.cpp
 
 debug/tweakstab.o: tweakstab.cpp mainwindow.h \
@@ -1896,32 +1841,6 @@ debug/tweakstab.o: tweakstab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDir \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QProcess
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\tweakstab.o tweakstab.cpp
@@ -2152,32 +2071,6 @@ debug/installtab.o: installtab.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QDesktopServices \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\installtab.o installtab.cpp
@@ -2638,33 +2531,7 @@ debug/services.o: services.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/qtcoreversion.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
-		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\services.o services.cpp
 
 debug/updatezone.o: updatezone.cpp mainwindow.h \
@@ -2893,32 +2760,6 @@ debug/updatezone.o: updatezone.cpp mainwindow.h \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QSettings \
 		ui_mainwindow.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QIcon \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenu \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QTabWidget \
-		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/QDesktopServices \
 		C:/Qt/Qt5.11.2/5.11.2/mingw53_32/include/QtGui/qdesktopservices.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\updatezone.o updatezone.cpp
@@ -3156,6 +2997,9 @@ debug/tutorial.o: tutorial.cpp mainwindow.h \
 
 debug/qrc_winsys.o: debug/qrc_winsys.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\qrc_winsys.o debug\qrc_winsys.cpp
+
+debug/qrc_style.o: debug/qrc_style.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\qrc_style.o debug\qrc_style.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moc_mainwindow.o debug\moc_mainwindow.cpp

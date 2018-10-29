@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include <QDesktopServices>
+#include <QTabBar>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,8 +15,70 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout_Qt, SIGNAL(triggered()),
     qApp, SLOT(aboutQt()));
 
-    //Update scripts
-    on_updateScriptsButton_clicked();
+    //Configure tabs open
+
+    QTabWidget *tabw = ui->tabWidget;
+    tabw->setTabText(0, "");
+    tabw->setTabText(1, "");
+    tabw->setTabText(2, "");
+    tabw->setTabText(3, "");
+    tabw->setTabText(4, "");
+    tabw->setTabText(5, "");
+    tabw->setTabText(6, "");
+    tabw->setTabText(7, "");
+
+    QTabBar *tabbar = tabw->tabBar();
+
+    QLabel *lbl1 = new QLabel();
+    lbl1->setStyleSheet("QLabel { background:transparent }");
+    lbl1->setText("Packages");
+    tabbar->setTabButton(0, QTabBar::LeftSide, lbl1);
+
+    QLabel *lbl2 = new QLabel();
+    lbl2->setStyleSheet("QLabel { background:transparent }");
+    lbl2->setText("Sources");
+    tabbar->setTabButton(1, QTabBar::LeftSide, lbl2);
+
+    QLabel *lbl3 = new QLabel();
+    lbl3->setStyleSheet("QLabel { background:transparent }");
+    lbl3->setText("Updates");
+    tabbar->setTabButton(2, QTabBar::LeftSide, lbl3);
+
+    QLabel *lbl4 = new QLabel();
+    lbl4->setStyleSheet("QLabel { background:transparent }");
+    lbl4->setText("Fixes");
+    tabbar->setTabButton(3, QTabBar::LeftSide, lbl4);
+
+    QLabel *lbl5 = new QLabel();
+    lbl5->setStyleSheet("QLabel { background:transparent }");
+    lbl5->setText("Security");
+    tabbar->setTabButton(4, QTabBar::LeftSide, lbl5);
+
+    QLabel *lbl6 = new QLabel();
+    lbl6->setStyleSheet("QLabel { background:transparent }");
+    lbl6->setText("Power");
+    tabbar->setTabButton(5, QTabBar::LeftSide, lbl6);
+
+    QLabel *lbl7 = new QLabel();
+    lbl7->setStyleSheet("QLabel { background:transparent }");
+    lbl7->setText("Extras");
+    tabbar->setTabButton(6, QTabBar::LeftSide, lbl7);
+
+
+    //Check app update and install if proceed BEGIN
+
+    QFile file(QDir::currentPath() + "/chocoupdateok.txt");
+
+    if(!file.exists())
+    {
+        //Install/Upgrade Package
+        system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./027.chocoWinsysPackageInstall.ps1; sleep 2;""\"");
+    }
+    else
+    {
+        //Update scripts
+        on_updateScriptsButton_clicked();
+    }
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
@@ -48,12 +112,14 @@ void MainWindow::checkInstallAppUpdate()    //Not used
     }
 }
 
+void MainWindow::on_actionTwitter_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://www.twitter.com/winsyss_app", QUrl::TolerantMode));
+    ui->statusBar->showMessage(tr("Go to winsys twitter. Please wait."));
+}
+
+
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
-
-
-

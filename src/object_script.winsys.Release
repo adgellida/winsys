@@ -11,5 +11,6 @@ INPUT(
 ./release\updatezone.o
 ./release\tutorial.o
 ./release\qrc_winsys.o
+./release\qrc_style.o
 ./release\moc_mainwindow.o
 );

@@ -11,5 +11,6 @@ INPUT(
 ./debug\updatezone.o
 ./debug\tutorial.o
 ./debug\qrc_winsys.o
+./debug\qrc_style.o
 ./debug\moc_mainwindow.o
 );
