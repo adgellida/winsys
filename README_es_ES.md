@@ -63,8 +63,7 @@ Después en un terminal haz:
 Capturas de pantalla
 =============================================
 
-<img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot1.png" width="425">
-<img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot2.png" width="425">
+<img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot1.png" width="425"> <img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/screenshot2.png" width="425">
 
 Tutorial
 =============================================
