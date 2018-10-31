@@ -5,7 +5,7 @@ Descarga desde fuentes oficiales
   <a href="https://github.com/adgellida/winsys/releases" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" width="80" alt="Github"></a> <a href="https://gitlab.com/adgellida/winsys/tags" target="_blank"><img src="https://about.gitlab.com/images/logo.png" width="80" alt="Gitlab"></a> <a href="https://sourceforge.net/projects/winsys" target="_blank"><img src="http://www.ricksdailytips.com/wp-content/uploads/2013/07/sourceforge-logo.gif" width="80" alt="SourceForge"></a> <a href="https://www.opendesktop.org/s/Windows-Packages/p/1181126" target="_blank"><img src="https://lh3.googleusercontent.com/-GVRdhHKKZ0M/V0Rq3_4y83I/AAAAAAAAABI/I-ACMENI9HAGi0OnBy86NwxXO2x57BnGA/w530-h528-p/OCS%2BLOGO%2BSINGLE.png" width="80" alt="OpenDesktop.org"></a> <a href="https://chocolatey.org/packages/winsys" target="_blank"><img src="https://chocolatey.org/content/images/logo_small.svg" width="90" alt="Chocolatey"></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/winsys.png" width="80"> winsys
+<img src="https://raw.githubusercontent.com/adgellida/winsys/master/logo.png" width="80"> winsys
 =============================================
 
 <p align="center">
