@@ -45,7 +45,7 @@ private slots:
     void on_disableFirewallButton_clicked();
     void on_getFirewallStatusButton_clicked();
     void on_completeShutdownButton_clicked();
-    void on_applyButton_clicked();
+    //void on_applyButton_clicked();
     void on_disableAllServicesButton_clicked();
     void on_enableAllServicesButton_clicked();
     void on_loadServicesSelectionButton_clicked();
@@ -98,6 +98,7 @@ private slots:
     void on_installStopUpdates10Button_clicked();
     void on_runStopUpdates10Button_clicked();
     void checkServicesStatus();
+    void on_checkBox_wuauserv_clicked(bool checked);
 private:
     Ui::MainWindow *ui;
 

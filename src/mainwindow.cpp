@@ -72,13 +72,16 @@ MainWindow::MainWindow(QWidget *parent) :
     if(!file.exists())
     {
         //Install/Upgrade Package
-        system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./027.chocoWinsysPackageInstall.ps1; sleep 2;""\"");
+        //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./027.chocoWinsysPackageInstall.ps1; sleep 2;""\"");
     }
     else
     {
         //Update scripts
         on_updateScriptsButton_clicked();
     }
+
+    //Check services
+    checkServicesStatus();
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
@@ -115,14 +118,11 @@ void MainWindow::checkInstallAppUpdate()    //Not used
 void MainWindow::checkServicesStatus()
 {
 
-    ui->statusBar->showMessage(tr("Running DriverPack Online"));
+    ui->statusBar->showMessage(tr("Running"));
     system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./getWindowsUpdateStatus.ps1; sleep 2;""\"");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 
-
-
-
-    QFile fileUpdate(QDir::homePath() + "/status/updateStatus.txt");
+    QFile fileUpdate(QDir::currentPath() + "/scripts/windowsScripts-master/updateStatus.txt");
     //QLabel *testLabel= new QLabel;
 
     QString lineUpdate1;
@@ -136,26 +136,27 @@ void MainWindow::checkServicesStatus()
         //ui->statusBar->showMessage(line);
     }
     fileUpdate.close();
-
+    //lineUpdate1 = "Running";
     QString lineUpdate2 = "Running";
 
     if (lineUpdate1 == lineUpdate2){
 
         //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBox_007->setChecked(true);
+        ui->checkBox_wuauserv->setChecked(true);
     }
 
     else{
 
         //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBox_007->setChecked(false);
+        ui->checkBox_wuauserv->setChecked(false);
     }
-
+    qDebug() << fileUpdate;
     qDebug() << lineUpdate1;
     qDebug() << lineUpdate2;
 
-}
+    //fileUpdate.remove();
 
+}
 
 void MainWindow::on_actionTwitter_triggered()
 {
@@ -163,6 +164,27 @@ void MainWindow::on_actionTwitter_triggered()
     ui->statusBar->showMessage(tr("Go to winsys twitter. Please wait."));
 }
 
+//##wuauserv
+
+void MainWindow::on_checkBox_wuauserv_clicked(bool checked)
+{
+    if (checked == false){
+        qDebug() << checked;
+        ui->statusBar->showMessage(tr("Running"));
+        system("sc config wuauserv start= disabled & net stop wuauserv");
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+    else if (checked == true){
+        qDebug() << checked;
+        ui->statusBar->showMessage(tr("Running"));
+        system("sc config wuauserv start= delayed-auto & net start wuauserv");
+        ui->statusBar->showMessage(tr("Done. Now select another action"));
+    }
+
+  checkServicesStatus();
+
+  }
 
 MainWindow::~MainWindow()
 {

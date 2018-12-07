@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>6</number>
     </property>
     <property name="iconSize">
      <size>
@@ -1292,7 +1292,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>001.Superfetch - SysMain</string>
+         <string>Superfetch - SysMain</string>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_005">
@@ -1305,20 +1305,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>005.Windows Search - WSearch</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_006">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>80</y>
-          <width>301</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>006.Windows Search - WSearch</string>
+         <string>Windows Search - WSearch</string>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_003">
@@ -1331,59 +1318,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>003.BITS</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_004">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>60</y>
-          <width>291</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>004.BITS</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_008">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>100</y>
-          <width>301</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>008.Windows Update - wuauserv</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_002">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>40</y>
-          <width>291</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>002.Superfetch - SysMain</string>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_007">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>100</y>
-          <width>251</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>007.Windows Update - wuauserv</string>
+         <string>BITS</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_37">
@@ -1417,19 +1352,6 @@
         <property name="text">
          <string>Restore all
  services to Def.</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="applyButton">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>80</y>
-          <width>90</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Apply</string>
         </property>
        </widget>
        <widget class="QPushButton" name="loadServicesSelectionButton">
@@ -1773,44 +1695,6 @@
         </property>
         <property name="checkable">
          <bool>false</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_38">
-        <property name="geometry">
-         <rect>
-          <x>80</x>
-          <y>20</y>
-          <width>51</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>ENABLE</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_39">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>20</y>
-          <width>81</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>DISABLE</string>
         </property>
        </widget>
        <widget class="QPushButton" name="loadTweaksSelectionButton">
@@ -3838,6 +3722,19 @@
         </property>
         <property name="checkable">
          <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_wuauserv">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>251</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Windows Update - wuauserv</string>
         </property>
        </widget>
       </widget>

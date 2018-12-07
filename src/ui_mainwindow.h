@@ -108,15 +108,9 @@ public:
     QWidget *tab_7;
     QCheckBox *checkBox_001;
     QCheckBox *checkBox_005;
-    QCheckBox *checkBox_006;
     QCheckBox *checkBox_003;
-    QCheckBox *checkBox_004;
-    QCheckBox *checkBox_008;
-    QCheckBox *checkBox_002;
-    QCheckBox *checkBox_007;
     QLabel *label_37;
     QPushButton *RestoreAllServicesToDefaultButton;
-    QPushButton *applyButton;
     QPushButton *loadServicesSelectionButton;
     QPushButton *saveSelectionButton_2;
     QPushButton *RestoreThisServicesToDefaultButton;
@@ -132,8 +126,6 @@ public:
     QPushButton *knowLicenceExpirationButton;
     QPushButton *RestartButton;
     QPushButton *openTaskmgrButton;
-    QLabel *label_38;
-    QLabel *label_39;
     QPushButton *loadTweaksSelectionButton;
     QPushButton *RestoreTweaksToDefaultButton;
     QPushButton *applyTweaksButton;
@@ -149,6 +141,7 @@ public:
     QLabel *label_16;
     QPushButton *GMTButton;
     QPushButton *ExportOutlookButton;
+    QCheckBox *checkBox_wuauserv;
     QWidget *tab_6;
     QLabel *label;
     QMenuBar *menuBar;
@@ -544,24 +537,9 @@ public:
         checkBox_005 = new QCheckBox(tab_7);
         checkBox_005->setObjectName(QStringLiteral("checkBox_005"));
         checkBox_005->setGeometry(QRect(10, 80, 251, 23));
-        checkBox_006 = new QCheckBox(tab_7);
-        checkBox_006->setObjectName(QStringLiteral("checkBox_006"));
-        checkBox_006->setGeometry(QRect(210, 80, 301, 23));
         checkBox_003 = new QCheckBox(tab_7);
         checkBox_003->setObjectName(QStringLiteral("checkBox_003"));
         checkBox_003->setGeometry(QRect(10, 60, 251, 23));
-        checkBox_004 = new QCheckBox(tab_7);
-        checkBox_004->setObjectName(QStringLiteral("checkBox_004"));
-        checkBox_004->setGeometry(QRect(210, 60, 291, 23));
-        checkBox_008 = new QCheckBox(tab_7);
-        checkBox_008->setObjectName(QStringLiteral("checkBox_008"));
-        checkBox_008->setGeometry(QRect(210, 100, 301, 23));
-        checkBox_002 = new QCheckBox(tab_7);
-        checkBox_002->setObjectName(QStringLiteral("checkBox_002"));
-        checkBox_002->setGeometry(QRect(210, 40, 291, 23));
-        checkBox_007 = new QCheckBox(tab_7);
-        checkBox_007->setObjectName(QStringLiteral("checkBox_007"));
-        checkBox_007->setGeometry(QRect(10, 100, 251, 23));
         label_37 = new QLabel(tab_7);
         label_37->setObjectName(QStringLiteral("label_37"));
         label_37->setGeometry(QRect(10, 10, 241, 16));
@@ -569,9 +547,6 @@ public:
         RestoreAllServicesToDefaultButton = new QPushButton(tab_7);
         RestoreAllServicesToDefaultButton->setObjectName(QStringLiteral("RestoreAllServicesToDefaultButton"));
         RestoreAllServicesToDefaultButton->setGeometry(QRect(450, 160, 90, 41));
-        applyButton = new QPushButton(tab_7);
-        applyButton->setObjectName(QStringLiteral("applyButton"));
-        applyButton->setGeometry(QRect(450, 80, 90, 23));
         loadServicesSelectionButton = new QPushButton(tab_7);
         loadServicesSelectionButton->setObjectName(QStringLiteral("loadServicesSelectionButton"));
         loadServicesSelectionButton->setGeometry(QRect(450, 220, 90, 23));
@@ -637,14 +612,6 @@ public:
         openTaskmgrButton->setGeometry(QRect(10, 450, 120, 36));
         openTaskmgrButton->setIconSize(QSize(30, 30));
         openTaskmgrButton->setCheckable(false);
-        label_38 = new QLabel(tab_7);
-        label_38->setObjectName(QStringLiteral("label_38"));
-        label_38->setGeometry(QRect(80, 20, 51, 16));
-        label_38->setFont(font);
-        label_39 = new QLabel(tab_7);
-        label_39->setObjectName(QStringLiteral("label_39"));
-        label_39->setGeometry(QRect(260, 20, 81, 16));
-        label_39->setFont(font);
         loadTweaksSelectionButton = new QPushButton(tab_7);
         loadTweaksSelectionButton->setObjectName(QStringLiteral("loadTweaksSelectionButton"));
         loadTweaksSelectionButton->setGeometry(QRect(450, 450, 90, 23));
@@ -921,6 +888,9 @@ public:
         ExportOutlookButton->setGeometry(QRect(140, 260, 120, 36));
         ExportOutlookButton->setIconSize(QSize(30, 30));
         ExportOutlookButton->setCheckable(false);
+        checkBox_wuauserv = new QCheckBox(tab_7);
+        checkBox_wuauserv->setObjectName(QStringLiteral("checkBox_wuauserv"));
+        checkBox_wuauserv->setGeometry(QRect(10, 100, 251, 23));
         tabWidget_3->addTab(tab_7, QString());
         tab_6 = new QWidget();
         tab_6->setObjectName(QStringLiteral("tab_6"));
@@ -971,7 +941,7 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(6);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_8->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(0);
@@ -1220,18 +1190,12 @@ public:
 #endif // QT_NO_SHORTCUT
         tabWidget_7->setTabText(tabWidget_7->indexOf(tab_31), QApplication::translate("MainWindow", "Power", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QString());
-        checkBox_001->setText(QApplication::translate("MainWindow", "001.Superfetch - SysMain", nullptr));
-        checkBox_005->setText(QApplication::translate("MainWindow", "005.Windows Search - WSearch", nullptr));
-        checkBox_006->setText(QApplication::translate("MainWindow", "006.Windows Search - WSearch", nullptr));
-        checkBox_003->setText(QApplication::translate("MainWindow", "003.BITS", nullptr));
-        checkBox_004->setText(QApplication::translate("MainWindow", "004.BITS", nullptr));
-        checkBox_008->setText(QApplication::translate("MainWindow", "008.Windows Update - wuauserv", nullptr));
-        checkBox_002->setText(QApplication::translate("MainWindow", "002.Superfetch - SysMain", nullptr));
-        checkBox_007->setText(QApplication::translate("MainWindow", "007.Windows Update - wuauserv", nullptr));
+        checkBox_001->setText(QApplication::translate("MainWindow", "Superfetch - SysMain", nullptr));
+        checkBox_005->setText(QApplication::translate("MainWindow", "Windows Search - WSearch", nullptr));
+        checkBox_003->setText(QApplication::translate("MainWindow", "BITS", nullptr));
         label_37->setText(QApplication::translate("MainWindow", "Services", nullptr));
         RestoreAllServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore all\n"
 " services to Def.", nullptr));
-        applyButton->setText(QApplication::translate("MainWindow", "Apply", nullptr));
         loadServicesSelectionButton->setText(QApplication::translate("MainWindow", "Load", nullptr));
         saveSelectionButton_2->setText(QApplication::translate("MainWindow", "Save", nullptr));
         RestoreThisServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore this\n"
@@ -1305,8 +1269,6 @@ public:
 #ifndef QT_NO_SHORTCUT
         openTaskmgrButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
-        label_38->setText(QApplication::translate("MainWindow", "ENABLE", nullptr));
-        label_39->setText(QApplication::translate("MainWindow", "DISABLE", nullptr));
         loadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Load", nullptr));
         RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore tweaks\n"
 " to Default", nullptr));
@@ -1386,6 +1348,7 @@ public:
 #ifndef QT_NO_SHORTCUT
         ExportOutlookButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
+        checkBox_wuauserv->setText(QApplication::translate("MainWindow", "Windows Update - wuauserv", nullptr));
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Extras", nullptr));
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Fonts", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QString());

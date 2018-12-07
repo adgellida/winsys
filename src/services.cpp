@@ -3,6 +3,7 @@
 
 ///////////////////////SERVICES TAB///////////////////////
 
+/*
 void MainWindow::on_applyButton_clicked()
 {
     ui->statusBar->showMessage(tr("Applying settings. Please wait"));
@@ -65,19 +66,14 @@ void MainWindow::on_applyButton_clicked()
 
     ui->statusBar->showMessage(tr("Settings applied. Select another action"));
 }
-
+*/
 void MainWindow::on_disableAllServicesButton_clicked()
 {
     ui->statusBar->showMessage(tr("All services disabled"));
-
     ui->checkBox_001->setChecked(false);
-    ui->checkBox_002->setChecked(true);
     ui->checkBox_003->setChecked(false);
-    ui->checkBox_004->setChecked(true);
     ui->checkBox_005->setChecked(false);
-    ui->checkBox_006->setChecked(true);
-    ui->checkBox_007->setChecked(false);
-    ui->checkBox_008->setChecked(true);
+    ui->checkBox_wuauserv->setChecked(false);
 }
 
 void MainWindow::on_enableAllServicesButton_clicked()
@@ -85,13 +81,10 @@ void MainWindow::on_enableAllServicesButton_clicked()
     ui->statusBar->showMessage(tr("All services enabled"));
 
     ui->checkBox_001->setChecked(true);
-    ui->checkBox_002->setChecked(false);
     ui->checkBox_003->setChecked(true);
-    ui->checkBox_004->setChecked(false);
     ui->checkBox_005->setChecked(true);
-    ui->checkBox_006->setChecked(false);
-    ui->checkBox_007->setChecked(true);
-    ui->checkBox_008->setChecked(false);
+    ui->checkBox_wuauserv->setChecked(true);
+
 }
 
 void MainWindow::on_RestoreThisServicesToDefaultButton_clicked()
@@ -116,7 +109,7 @@ void MainWindow::on_RestoreThisServicesToDefaultButton_clicked()
     //007.Windows Update - wuauserv - DEFAULT ON
 
     system("sc config wuauserv start= delayed-auto & net start wuauserv");
-    ui->checkBox_007->setChecked(false);
+    ui->checkBox_wuauserv->setChecked(false);
 
     ui->statusBar->showMessage(tr("Settings applied. Select another action"));
 }
@@ -137,11 +130,8 @@ void MainWindow::on_loadServicesSelectionButton_clicked()
     //First
 
     ui->checkBox_001->setChecked(false);
-    ui->checkBox_002->setChecked(true);
     ui->checkBox_003->setChecked(false);
-    ui->checkBox_004->setChecked(true);
     ui->checkBox_005->setChecked(false);
-    ui->checkBox_006->setChecked(false);
-    ui->checkBox_007->setChecked(false);
-    ui->checkBox_008->setChecked(true);
+    ui->checkBox_wuauserv->setChecked(false);
+
 }
