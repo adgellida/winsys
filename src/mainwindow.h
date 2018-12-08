@@ -63,7 +63,6 @@ private slots:
     void on_installChocolateyButton_clicked();
     void on_runDriverPackOnlineButton_clicked();
     void on_updateAppButton_clicked();
-    void on_updateScriptsButton_clicked();
     void on_actionTutorial_triggered();
     void on_installChrisPCButton_clicked();
     void on_runChrisPCButton_clicked();
@@ -98,7 +97,25 @@ private slots:
     void on_installStopUpdates10Button_clicked();
     void on_runStopUpdates10Button_clicked();
     void checkServicesStatus();
-    void on_checkBox_wuauserv_clicked(bool checked);
+    void checkServiceWuauserv();
+    void checkServiceSysMain();
+    void checkServiceBits();
+    void checkServiceWSearch();
+    void on_checkBox_Wuauserv_clicked(bool checked);
+    void on_checkBox_SysMain_clicked(bool checked);
+    void on_checkBox_Bits_clicked(bool checked);
+    void on_checkBox_WSearch_clicked(bool checked);
+
+    void on_knowLicenceExpirationButton_2_clicked();
+
+    void on_knowLicenceExpirationButton_3_clicked();
+
+    void on_actionSeeReleases_triggered();
+
+    void on_actionUpdate_Scripts_triggered();
+
+    void on_actionUpdate_Program_triggered();
+
 private:
     Ui::MainWindow *ui;
 

@@ -53,7 +53,11 @@ void MainWindow::on_runStopUpdates10Button_clicked()
 void MainWindow::on_runUltimateWindowsTweaker4Button_clicked()
 {
     ui->statusBar->showMessage(tr("Running ChrisPC Win Experience Index"));
-    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./011.runUltimateWindowsTweaker4.ps1; sleep 2;""\"");
+    //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./011.runUltimateWindowsTweaker4.ps1; sleep 2;""\"");
+
+    QString link = "https://www.thewindowsclub.com/your-download-of-uwt4-will-start-in-5-seconds";
+    QDesktopServices::openUrl(QUrl(link));
+
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
@@ -62,7 +66,7 @@ void MainWindow::on_run10AppsManager_clicked()
     ui->statusBar->showMessage(tr("Running 10AppsManager"));
     //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./012.run10AppsManager.ps1; sleep 2;""\"");
 
-    QString link = "https://www.thewindowsclub.com/10appsmanager-windows-10";
+    QString link = "https://www.thewindowsclub.com/downloading-10appsmanager";
     QDesktopServices::openUrl(QUrl(link));
 
     ui->statusBar->showMessage(tr("Done. Now select another action"));

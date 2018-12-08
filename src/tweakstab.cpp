@@ -9,6 +9,15 @@ QString privateFirewallStatus, publicFirewallStatus, domainFirewallStatus;
 
 //QDir::setCurrent("C:/Windows");
 
+void MainWindow::on_knowLicenceExpirationButton_3_clicked()
+{
+    checkServicesStatus();
+    ui->checkBox_SysMain->setEnabled(true);
+    ui->checkBox_Bits->setEnabled(true);
+    ui->checkBox_WSearch->setEnabled(true);
+    ui->checkBox_Wuauserv->setEnabled(true);
+}
+
 void MainWindow::on_enableFirewallButton_clicked()
 {
     ui->statusBar->showMessage(tr("Enabling firewall."));
@@ -98,6 +107,14 @@ void MainWindow::on_knowLicenceExpirationButton_clicked()
     ui->statusBar->showMessage(tr("Opening license info.."));
     //@echo off
     system("start SLMGR -XPR");
+    ui->statusBar->showMessage(tr("Done. Now select another action"));
+}
+
+void MainWindow::on_knowLicenceExpirationButton_2_clicked()
+{
+    ui->statusBar->showMessage(tr("Opening license info.."));
+    //@echo off
+    system("winver");
     ui->statusBar->showMessage(tr("Done. Now select another action"));
 }
 
@@ -204,7 +221,6 @@ void MainWindow::on_RestoreTweaksToDefaultButton_clicked()
     MainWindow::on_enableFastStartupButton_clicked();
     MainWindow::on_enableSystemRestoreButton_clicked();
     MainWindow::on_smartscreenWarnButton_clicked();
-    MainWindow::on_GMTButton_clicked();
 }
 
 void MainWindow::on_UTCButton_clicked()
@@ -298,7 +314,6 @@ void MainWindow::on_applyTweaksButton_clicked()
     MainWindow::on_smartscreenOffButton_clicked();
     MainWindow::on_disableFastStartupButton_clicked();
     MainWindow::on_disableSystemRestoreButton_clicked();
-    MainWindow::on_UTCButton_clicked();
     ui->statusBar->showMessage(tr("Tweaks applied. Select another action"));
 }
 

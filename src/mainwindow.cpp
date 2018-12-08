@@ -72,16 +72,16 @@ MainWindow::MainWindow(QWidget *parent) :
     if(!file.exists())
     {
         //Install/Upgrade Package
-        //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./027.chocoWinsysPackageInstall.ps1; sleep 2;""\"");
+        system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./027.chocoWinsysPackageInstall.ps1; sleep 2;""\"");
     }
     else
     {
         //Update scripts
-        on_updateScriptsButton_clicked();
+        on_actionUpdate_Scripts_triggered();
     }
 
     //Check services
-    checkServicesStatus();
+    //checkServicesStatus();
 
     ui->statusBar->showMessage(tr("Recommendation: Push Help -> Tutorial"));
 
@@ -115,78 +115,20 @@ void MainWindow::checkInstallAppUpdate()    //Not used
     }
 }
 
-void MainWindow::checkServicesStatus()
-{
-
-    ui->statusBar->showMessage(tr("Running"));
-    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd scripts\\windowsScripts-master; & ./getWindowsUpdateStatus.ps1; sleep 2;""\"");
-    ui->statusBar->showMessage(tr("Done. Now select another action"));
-
-    QFile fileUpdate(QDir::currentPath() + "/scripts/windowsScripts-master/updateStatus.txt");
-    //QLabel *testLabel= new QLabel;
-
-    QString lineUpdate1;
-        if (fileUpdate.open(QIODevice::ReadOnly | QIODevice::Text)){
-        QTextStream stream(&fileUpdate);
-        while (!stream.atEnd()){
-
-            //line.append(stream.readLine()+"\n");
-            lineUpdate1.append(stream.readLine());
-        }
-        //ui->statusBar->showMessage(line);
-    }
-    fileUpdate.close();
-    //lineUpdate1 = "Running";
-    QString lineUpdate2 = "Running";
-
-    if (lineUpdate1 == lineUpdate2){
-
-        //ui->statusBar->showMessage(tr("Está activo"));
-        ui->checkBox_wuauserv->setChecked(true);
-    }
-
-    else{
-
-        //ui->statusBar->showMessage(tr("Está inactivo"));
-        ui->checkBox_wuauserv->setChecked(false);
-    }
-    qDebug() << fileUpdate;
-    qDebug() << lineUpdate1;
-    qDebug() << lineUpdate2;
-
-    //fileUpdate.remove();
-
-}
-
 void MainWindow::on_actionTwitter_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://www.twitter.com/winsyss_app", QUrl::TolerantMode));
     ui->statusBar->showMessage(tr("Go to winsys twitter. Please wait."));
 }
 
-//##wuauserv
-
-void MainWindow::on_checkBox_wuauserv_clicked(bool checked)
-{
-    if (checked == false){
-        qDebug() << checked;
-        ui->statusBar->showMessage(tr("Running"));
-        system("sc config wuauserv start= disabled & net stop wuauserv");
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-    }
-
-    else if (checked == true){
-        qDebug() << checked;
-        ui->statusBar->showMessage(tr("Running"));
-        system("sc config wuauserv start= delayed-auto & net start wuauserv");
-        ui->statusBar->showMessage(tr("Done. Now select another action"));
-    }
-
-  checkServicesStatus();
-
-  }
-
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_actionSeeReleases_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://github.com/adgellida/winsys/releases", QUrl::TolerantMode));
+    ui->statusBar->showMessage(tr("For now launches to release page to update manually. Please wait."));
+}
+

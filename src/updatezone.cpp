@@ -4,19 +4,22 @@
 
 ///////////////////////UPDATE APP & SCRIPTS ZONE///////////////////////
 
-void MainWindow::on_updateScriptsButton_clicked()
+void MainWindow::on_actionUpdate_Scripts_triggered()
 {
     ui->statusBar->showMessage(tr("Updating latest scripts. Please wait"));
 
     system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./022.downloadLatestWindowsScripts.ps1; sleep 2;""\"");
 
     //system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"$down = New-Object System.Net.WebClient; $url = 'https://raw.githubusercontent.com/adgellida/windowsScripts/master/022.downloadLatestWindowsScripts.ps1'; $file = '022.downloadLatestWindowsScripts.ps1'; $down.DownloadFile($url,$file); & ./022.downloadLatestWindowsScripts.ps1; sleep 2;""\"");
-	
-	//system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"$down = New-Object System.Net.WebClient; $url = 'https://raw.githubusercontent.com/adgellida/windowsScripts/master/022.downloadLatestWindowsScripts.ps1'; iex $down.DownloadString($url); sleep 2;""\"");
 }
 
 void MainWindow::on_updateAppButton_clicked()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/adgellida/winsys/releases", QUrl::TolerantMode));
     ui->statusBar->showMessage(tr("For now launches to release page to update manually. Please wait."));
+}
+
+void MainWindow::on_actionUpdate_Program_triggered()
+{
+    system("@powershell -NoProfile -ExecutionPolicy Bypass -Command \"& ./027.chocoWinsysPackageInstall.ps1; sleep 2;""\"");
 }

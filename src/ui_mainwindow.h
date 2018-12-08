@@ -44,6 +44,8 @@ public:
     QAction *actionSeeReleases;
     QAction *actionTwitter;
     QAction *actionTutorial;
+    QAction *actionUpdate_Scripts;
+    QAction *actionUpdate_Program;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab_4;
@@ -65,8 +67,6 @@ public:
     QPushButton *installChocolateyButton;
     QPushButton *runProcessHackerButton;
     QLabel *label_50;
-    QPushButton *updateScriptsButton;
-    QPushButton *updateAppButton;
     QPushButton *runStopUpdates10Button;
     QLabel *label_51;
     QPushButton *installStopUpdates10Button;
@@ -78,6 +78,8 @@ public:
     QWidget *tab;
     QTabWidget *tabWidget_4;
     QWidget *tab_8;
+    QPushButton *searchUpdatesButton;
+    QPushButton *knowLicenceExpirationButton_2;
     QWidget *tab_9;
     QWidget *tab_10;
     QWidget *tab_2;
@@ -96,6 +98,7 @@ public:
     QPushButton *enableFirewallButton;
     QPushButton *smartscreenWarnButton;
     QPushButton *disableFirewallButton;
+    QPushButton *getFirewallStatusButton;
     QWidget *tab_5;
     QTabWidget *tabWidget_7;
     QWidget *tab_31;
@@ -106,9 +109,9 @@ public:
     QWidget *tab_3;
     QTabWidget *tabWidget_3;
     QWidget *tab_7;
-    QCheckBox *checkBox_001;
-    QCheckBox *checkBox_005;
-    QCheckBox *checkBox_003;
+    QCheckBox *checkBox_SysMain;
+    QCheckBox *checkBox_WSearch;
+    QCheckBox *checkBox_Bits;
     QLabel *label_37;
     QPushButton *RestoreAllServicesToDefaultButton;
     QPushButton *loadServicesSelectionButton;
@@ -119,7 +122,6 @@ public:
     QPushButton *openRegeditButton;
     QPushButton *openServicesButton;
     QLabel *label_19;
-    QPushButton *searchUpdatesButton;
     QPushButton *openCmdButton;
     QPushButton *openPowershellButton;
     QPushButton *completeShutdownButton;
@@ -130,19 +132,19 @@ public:
     QPushButton *RestoreTweaksToDefaultButton;
     QPushButton *applyTweaksButton;
     QPushButton *unloadTweaksSelectionButton;
-    QPushButton *updateSystemTimeButton;
-    QLabel *label_15;
-    QPushButton *getFirewallStatusButton;
-    QPushButton *startExplorerButton;
-    QLabel *label_14;
-    QPushButton *ImportOutlookButton;
-    QPushButton *restartExplorerButton;
-    QPushButton *UTCButton;
-    QLabel *label_16;
-    QPushButton *GMTButton;
-    QPushButton *ExportOutlookButton;
-    QCheckBox *checkBox_wuauserv;
+    QCheckBox *checkBox_Wuauserv;
+    QPushButton *knowLicenceExpirationButton_3;
     QWidget *tab_6;
+    QWidget *tab_12;
+    QPushButton *ImportOutlookButton;
+    QLabel *label_16;
+    QLabel *label_14;
+    QPushButton *UTCButton;
+    QPushButton *ExportOutlookButton;
+    QPushButton *GMTButton;
+    QPushButton *updateSystemTimeButton;
+    QPushButton *restartExplorerButton;
+    QPushButton *startExplorerButton;
     QLabel *label;
     QMenuBar *menuBar;
     QMenu *menuNuevo;
@@ -217,8 +219,9 @@ public:
         actionSeeReleases->setObjectName(QStringLiteral("actionSeeReleases"));
         actionSeeReleases->setEnabled(true);
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/images/orange-up-24.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QStringLiteral(":/images/flecha_arriba.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionSeeReleases->setIcon(icon8);
+        actionSeeReleases->setShortcutVisibleInContextMenu(true);
         actionTwitter = new QAction(MainWindow);
         actionTwitter->setObjectName(QStringLiteral("actionTwitter"));
         actionTwitter->setEnabled(true);
@@ -227,6 +230,18 @@ public:
         actionTwitter->setIcon(icon9);
         actionTutorial = new QAction(MainWindow);
         actionTutorial->setObjectName(QStringLiteral("actionTutorial"));
+        actionUpdate_Scripts = new QAction(MainWindow);
+        actionUpdate_Scripts->setObjectName(QStringLiteral("actionUpdate_Scripts"));
+        QIcon icon10;
+        icon10.addFile(QStringLiteral(":/images/upgrade.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionUpdate_Scripts->setIcon(icon10);
+        actionUpdate_Scripts->setIconVisibleInMenu(true);
+        actionUpdate_Scripts->setShortcutVisibleInContextMenu(true);
+        actionUpdate_Program = new QAction(MainWindow);
+        actionUpdate_Program->setObjectName(QStringLiteral("actionUpdate_Program"));
+        QIcon icon11;
+        icon11.addFile(QStringLiteral(":/images/update-arrows.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionUpdate_Program->setIcon(icon11);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -343,18 +358,6 @@ public:
         label_50->setObjectName(QStringLiteral("label_50"));
         label_50->setGeometry(QRect(200, 10, 171, 16));
         label_50->setFont(font);
-        updateScriptsButton = new QPushButton(tab_11);
-        updateScriptsButton->setObjectName(QStringLiteral("updateScriptsButton"));
-        updateScriptsButton->setGeometry(QRect(510, 10, 40, 23));
-        QIcon icon10;
-        icon10.addFile(QStringLiteral(":/images/upgrade.png"), QSize(), QIcon::Normal, QIcon::Off);
-        updateScriptsButton->setIcon(icon10);
-        updateAppButton = new QPushButton(tab_11);
-        updateAppButton->setObjectName(QStringLiteral("updateAppButton"));
-        updateAppButton->setGeometry(QRect(460, 10, 40, 23));
-        QIcon icon11;
-        icon11.addFile(QStringLiteral(":/images/flecha_arriba.png"), QSize(), QIcon::Normal, QIcon::Off);
-        updateAppButton->setIcon(icon11);
         runStopUpdates10Button = new QPushButton(tab_11);
         runStopUpdates10Button->setObjectName(QStringLiteral("runStopUpdates10Button"));
         runStopUpdates10Button->setEnabled(true);
@@ -406,6 +409,16 @@ public:
         tabWidget_4->setGeometry(QRect(0, 0, 701, 571));
         tab_8 = new QWidget();
         tab_8->setObjectName(QStringLiteral("tab_8"));
+        searchUpdatesButton = new QPushButton(tab_8);
+        searchUpdatesButton->setObjectName(QStringLiteral("searchUpdatesButton"));
+        searchUpdatesButton->setGeometry(QRect(10, 10, 131, 36));
+        searchUpdatesButton->setIconSize(QSize(30, 30));
+        searchUpdatesButton->setCheckable(false);
+        knowLicenceExpirationButton_2 = new QPushButton(tab_8);
+        knowLicenceExpirationButton_2->setObjectName(QStringLiteral("knowLicenceExpirationButton_2"));
+        knowLicenceExpirationButton_2->setGeometry(QRect(10, 50, 131, 36));
+        knowLicenceExpirationButton_2->setIconSize(QSize(30, 30));
+        knowLicenceExpirationButton_2->setCheckable(false);
         tabWidget_4->addTab(tab_8, QString());
         tab_9 = new QWidget();
         tab_9->setObjectName(QStringLiteral("tab_9"));
@@ -462,12 +475,12 @@ public:
         tab_26->setObjectName(QStringLiteral("tab_26"));
         smartscreenBlockButton = new QPushButton(tab_26);
         smartscreenBlockButton->setObjectName(QStringLiteral("smartscreenBlockButton"));
-        smartscreenBlockButton->setGeometry(QRect(140, 10, 120, 36));
+        smartscreenBlockButton->setGeometry(QRect(140, 10, 131, 36));
         smartscreenBlockButton->setIconSize(QSize(30, 30));
         smartscreenBlockButton->setCheckable(false);
         smartscreenOffButton = new QPushButton(tab_26);
         smartscreenOffButton->setObjectName(QStringLiteral("smartscreenOffButton"));
-        smartscreenOffButton->setGeometry(QRect(140, 90, 120, 36));
+        smartscreenOffButton->setGeometry(QRect(140, 90, 131, 36));
         smartscreenOffButton->setIconSize(QSize(30, 30));
         smartscreenOffButton->setCheckable(false);
         enableFirewallButton = new QPushButton(tab_26);
@@ -477,7 +490,7 @@ public:
         enableFirewallButton->setCheckable(false);
         smartscreenWarnButton = new QPushButton(tab_26);
         smartscreenWarnButton->setObjectName(QStringLiteral("smartscreenWarnButton"));
-        smartscreenWarnButton->setGeometry(QRect(140, 50, 120, 36));
+        smartscreenWarnButton->setGeometry(QRect(140, 50, 131, 36));
         smartscreenWarnButton->setIconSize(QSize(30, 30));
         smartscreenWarnButton->setCheckable(false);
         disableFirewallButton = new QPushButton(tab_26);
@@ -485,149 +498,10 @@ public:
         disableFirewallButton->setGeometry(QRect(10, 50, 120, 36));
         disableFirewallButton->setIconSize(QSize(30, 30));
         disableFirewallButton->setCheckable(false);
-        tabWidget_6->addTab(tab_26, QString());
-        QIcon icon17;
-        icon17.addFile(QStringLiteral(":/images/559612.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget->addTab(tab_15, icon17, QString());
-        tab_5 = new QWidget();
-        tab_5->setObjectName(QStringLiteral("tab_5"));
-        tabWidget_7 = new QTabWidget(tab_5);
-        tabWidget_7->setObjectName(QStringLiteral("tabWidget_7"));
-        tabWidget_7->setGeometry(QRect(0, 0, 581, 571));
-        tabWidget_7->setFont(font1);
-        tabWidget_7->setAutoFillBackground(false);
-        tab_31 = new QWidget();
-        tab_31->setObjectName(QStringLiteral("tab_31"));
-        enableSystemRestoreButton = new QPushButton(tab_31);
-        enableSystemRestoreButton->setObjectName(QStringLiteral("enableSystemRestoreButton"));
-        enableSystemRestoreButton->setGeometry(QRect(140, 10, 120, 36));
-        enableSystemRestoreButton->setIconSize(QSize(30, 30));
-        enableSystemRestoreButton->setCheckable(false);
-        disableFastStartupButton = new QPushButton(tab_31);
-        disableFastStartupButton->setObjectName(QStringLiteral("disableFastStartupButton"));
-        disableFastStartupButton->setGeometry(QRect(10, 50, 120, 36));
-        disableFastStartupButton->setIconSize(QSize(30, 30));
-        disableFastStartupButton->setCheckable(false);
-        disableSystemRestoreButton = new QPushButton(tab_31);
-        disableSystemRestoreButton->setObjectName(QStringLiteral("disableSystemRestoreButton"));
-        disableSystemRestoreButton->setGeometry(QRect(140, 50, 120, 36));
-        disableSystemRestoreButton->setIconSize(QSize(30, 30));
-        disableSystemRestoreButton->setCheckable(false);
-        enableFastStartupButton = new QPushButton(tab_31);
-        enableFastStartupButton->setObjectName(QStringLiteral("enableFastStartupButton"));
-        enableFastStartupButton->setGeometry(QRect(10, 10, 120, 36));
-        enableFastStartupButton->setIconSize(QSize(30, 30));
-        enableFastStartupButton->setCheckable(false);
-        tabWidget_7->addTab(tab_31, QString());
-        QIcon icon18;
-        icon18.addFile(QStringLiteral(":/images/electricity-clipart-lightnig-597870-3188154.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget->addTab(tab_5, icon18, QString());
-        tab_3 = new QWidget();
-        tab_3->setObjectName(QStringLiteral("tab_3"));
-        tabWidget_3 = new QTabWidget(tab_3);
-        tabWidget_3->setObjectName(QStringLiteral("tabWidget_3"));
-        tabWidget_3->setGeometry(QRect(0, 0, 581, 571));
-        tabWidget_3->setFont(font1);
-        tabWidget_3->setAutoFillBackground(false);
-        tab_7 = new QWidget();
-        tab_7->setObjectName(QStringLiteral("tab_7"));
-        checkBox_001 = new QCheckBox(tab_7);
-        checkBox_001->setObjectName(QStringLiteral("checkBox_001"));
-        checkBox_001->setGeometry(QRect(10, 40, 251, 23));
-        checkBox_005 = new QCheckBox(tab_7);
-        checkBox_005->setObjectName(QStringLiteral("checkBox_005"));
-        checkBox_005->setGeometry(QRect(10, 80, 251, 23));
-        checkBox_003 = new QCheckBox(tab_7);
-        checkBox_003->setObjectName(QStringLiteral("checkBox_003"));
-        checkBox_003->setGeometry(QRect(10, 60, 251, 23));
-        label_37 = new QLabel(tab_7);
-        label_37->setObjectName(QStringLiteral("label_37"));
-        label_37->setGeometry(QRect(10, 10, 241, 16));
-        label_37->setFont(font);
-        RestoreAllServicesToDefaultButton = new QPushButton(tab_7);
-        RestoreAllServicesToDefaultButton->setObjectName(QStringLiteral("RestoreAllServicesToDefaultButton"));
-        RestoreAllServicesToDefaultButton->setGeometry(QRect(450, 160, 90, 41));
-        loadServicesSelectionButton = new QPushButton(tab_7);
-        loadServicesSelectionButton->setObjectName(QStringLiteral("loadServicesSelectionButton"));
-        loadServicesSelectionButton->setGeometry(QRect(450, 220, 90, 23));
-        saveSelectionButton_2 = new QPushButton(tab_7);
-        saveSelectionButton_2->setObjectName(QStringLiteral("saveSelectionButton_2"));
-        saveSelectionButton_2->setEnabled(false);
-        saveSelectionButton_2->setGeometry(QRect(450, 250, 90, 23));
-        RestoreThisServicesToDefaultButton = new QPushButton(tab_7);
-        RestoreThisServicesToDefaultButton->setObjectName(QStringLiteral("RestoreThisServicesToDefaultButton"));
-        RestoreThisServicesToDefaultButton->setGeometry(QRect(450, 110, 90, 41));
-        enableAllServicesButton = new QPushButton(tab_7);
-        enableAllServicesButton->setObjectName(QStringLiteral("enableAllServicesButton"));
-        enableAllServicesButton->setGeometry(QRect(450, 40, 90, 23));
-        disableAllServicesButton = new QPushButton(tab_7);
-        disableAllServicesButton->setObjectName(QStringLiteral("disableAllServicesButton"));
-        disableAllServicesButton->setGeometry(QRect(450, 10, 91, 23));
-        openRegeditButton = new QPushButton(tab_7);
-        openRegeditButton->setObjectName(QStringLiteral("openRegeditButton"));
-        openRegeditButton->setGeometry(QRect(140, 370, 120, 36));
-        openRegeditButton->setIconSize(QSize(30, 30));
-        openRegeditButton->setCheckable(false);
-        openServicesButton = new QPushButton(tab_7);
-        openServicesButton->setObjectName(QStringLiteral("openServicesButton"));
-        openServicesButton->setGeometry(QRect(10, 490, 120, 36));
-        openServicesButton->setIconSize(QSize(30, 30));
-        openServicesButton->setCheckable(false);
-        label_19 = new QLabel(tab_7);
-        label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setGeometry(QRect(10, 350, 111, 16));
-        label_19->setFont(font);
-        searchUpdatesButton = new QPushButton(tab_7);
-        searchUpdatesButton->setObjectName(QStringLiteral("searchUpdatesButton"));
-        searchUpdatesButton->setGeometry(QRect(270, 410, 120, 36));
-        searchUpdatesButton->setIconSize(QSize(30, 30));
-        searchUpdatesButton->setCheckable(false);
-        openCmdButton = new QPushButton(tab_7);
-        openCmdButton->setObjectName(QStringLiteral("openCmdButton"));
-        openCmdButton->setGeometry(QRect(10, 370, 120, 36));
-        openCmdButton->setIconSize(QSize(30, 30));
-        openCmdButton->setCheckable(false);
-        openPowershellButton = new QPushButton(tab_7);
-        openPowershellButton->setObjectName(QStringLiteral("openPowershellButton"));
-        openPowershellButton->setGeometry(QRect(10, 410, 120, 36));
-        openPowershellButton->setIconSize(QSize(30, 30));
-        openPowershellButton->setCheckable(false);
-        completeShutdownButton = new QPushButton(tab_7);
-        completeShutdownButton->setObjectName(QStringLiteral("completeShutdownButton"));
-        completeShutdownButton->setGeometry(QRect(140, 450, 120, 36));
-        completeShutdownButton->setIconSize(QSize(30, 30));
-        completeShutdownButton->setCheckable(false);
-        knowLicenceExpirationButton = new QPushButton(tab_7);
-        knowLicenceExpirationButton->setObjectName(QStringLiteral("knowLicenceExpirationButton"));
-        knowLicenceExpirationButton->setGeometry(QRect(270, 370, 120, 36));
-        knowLicenceExpirationButton->setIconSize(QSize(30, 30));
-        knowLicenceExpirationButton->setCheckable(false);
-        RestartButton = new QPushButton(tab_7);
-        RestartButton->setObjectName(QStringLiteral("RestartButton"));
-        RestartButton->setGeometry(QRect(140, 410, 120, 36));
-        RestartButton->setIconSize(QSize(30, 30));
-        RestartButton->setCheckable(false);
-        openTaskmgrButton = new QPushButton(tab_7);
-        openTaskmgrButton->setObjectName(QStringLiteral("openTaskmgrButton"));
-        openTaskmgrButton->setGeometry(QRect(10, 450, 120, 36));
-        openTaskmgrButton->setIconSize(QSize(30, 30));
-        openTaskmgrButton->setCheckable(false);
-        loadTweaksSelectionButton = new QPushButton(tab_7);
-        loadTweaksSelectionButton->setObjectName(QStringLiteral("loadTweaksSelectionButton"));
-        loadTweaksSelectionButton->setGeometry(QRect(450, 450, 90, 23));
-        RestoreTweaksToDefaultButton = new QPushButton(tab_7);
-        RestoreTweaksToDefaultButton->setObjectName(QStringLiteral("RestoreTweaksToDefaultButton"));
-        RestoreTweaksToDefaultButton->setGeometry(QRect(450, 400, 90, 41));
-        applyTweaksButton = new QPushButton(tab_7);
-        applyTweaksButton->setObjectName(QStringLiteral("applyTweaksButton"));
-        applyTweaksButton->setGeometry(QRect(450, 370, 90, 23));
-        unloadTweaksSelectionButton = new QPushButton(tab_7);
-        unloadTweaksSelectionButton->setObjectName(QStringLiteral("unloadTweaksSelectionButton"));
-        unloadTweaksSelectionButton->setGeometry(QRect(450, 480, 90, 23));
-        updateSystemTimeButton = new QPushButton(tab_7);
-        updateSystemTimeButton->setObjectName(QStringLiteral("updateSystemTimeButton"));
-        updateSystemTimeButton->setEnabled(false);
-        updateSystemTimeButton->setGeometry(QRect(10, 190, 120, 36));
+        getFirewallStatusButton = new QPushButton(tab_26);
+        getFirewallStatusButton->setObjectName(QStringLiteral("getFirewallStatusButton"));
+        getFirewallStatusButton->setEnabled(false);
+        getFirewallStatusButton->setGeometry(QRect(10, 90, 120, 36));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -692,17 +566,202 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        updateSystemTimeButton->setPalette(palette);
-        updateSystemTimeButton->setIconSize(QSize(30, 30));
-        updateSystemTimeButton->setCheckable(false);
-        label_15 = new QLabel(tab_7);
-        label_15->setObjectName(QStringLiteral("label_15"));
-        label_15->setGeometry(QRect(10, 130, 61, 16));
-        label_15->setFont(font);
-        getFirewallStatusButton = new QPushButton(tab_7);
-        getFirewallStatusButton->setObjectName(QStringLiteral("getFirewallStatusButton"));
-        getFirewallStatusButton->setEnabled(false);
-        getFirewallStatusButton->setGeometry(QRect(10, 150, 120, 36));
+        getFirewallStatusButton->setPalette(palette);
+        getFirewallStatusButton->setIconSize(QSize(30, 30));
+        getFirewallStatusButton->setCheckable(false);
+        tabWidget_6->addTab(tab_26, QString());
+        QIcon icon17;
+        icon17.addFile(QStringLiteral(":/images/559612.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget->addTab(tab_15, icon17, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QStringLiteral("tab_5"));
+        tabWidget_7 = new QTabWidget(tab_5);
+        tabWidget_7->setObjectName(QStringLiteral("tabWidget_7"));
+        tabWidget_7->setGeometry(QRect(0, 0, 581, 571));
+        tabWidget_7->setFont(font1);
+        tabWidget_7->setAutoFillBackground(false);
+        tab_31 = new QWidget();
+        tab_31->setObjectName(QStringLiteral("tab_31"));
+        enableSystemRestoreButton = new QPushButton(tab_31);
+        enableSystemRestoreButton->setObjectName(QStringLiteral("enableSystemRestoreButton"));
+        enableSystemRestoreButton->setGeometry(QRect(140, 10, 120, 36));
+        enableSystemRestoreButton->setIconSize(QSize(30, 30));
+        enableSystemRestoreButton->setCheckable(false);
+        disableFastStartupButton = new QPushButton(tab_31);
+        disableFastStartupButton->setObjectName(QStringLiteral("disableFastStartupButton"));
+        disableFastStartupButton->setGeometry(QRect(10, 50, 120, 36));
+        disableFastStartupButton->setIconSize(QSize(30, 30));
+        disableFastStartupButton->setCheckable(false);
+        disableSystemRestoreButton = new QPushButton(tab_31);
+        disableSystemRestoreButton->setObjectName(QStringLiteral("disableSystemRestoreButton"));
+        disableSystemRestoreButton->setGeometry(QRect(140, 50, 120, 36));
+        disableSystemRestoreButton->setIconSize(QSize(30, 30));
+        disableSystemRestoreButton->setCheckable(false);
+        enableFastStartupButton = new QPushButton(tab_31);
+        enableFastStartupButton->setObjectName(QStringLiteral("enableFastStartupButton"));
+        enableFastStartupButton->setGeometry(QRect(10, 10, 120, 36));
+        enableFastStartupButton->setIconSize(QSize(30, 30));
+        enableFastStartupButton->setCheckable(false);
+        tabWidget_7->addTab(tab_31, QString());
+        QIcon icon18;
+        icon18.addFile(QStringLiteral(":/images/electricity-clipart-lightnig-597870-3188154.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget->addTab(tab_5, icon18, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QStringLiteral("tab_3"));
+        tabWidget_3 = new QTabWidget(tab_3);
+        tabWidget_3->setObjectName(QStringLiteral("tabWidget_3"));
+        tabWidget_3->setGeometry(QRect(0, 0, 581, 571));
+        tabWidget_3->setFont(font1);
+        tabWidget_3->setAutoFillBackground(false);
+        tab_7 = new QWidget();
+        tab_7->setObjectName(QStringLiteral("tab_7"));
+        checkBox_SysMain = new QCheckBox(tab_7);
+        checkBox_SysMain->setObjectName(QStringLiteral("checkBox_SysMain"));
+        checkBox_SysMain->setEnabled(false);
+        checkBox_SysMain->setGeometry(QRect(10, 40, 251, 23));
+        checkBox_WSearch = new QCheckBox(tab_7);
+        checkBox_WSearch->setObjectName(QStringLiteral("checkBox_WSearch"));
+        checkBox_WSearch->setEnabled(false);
+        checkBox_WSearch->setGeometry(QRect(10, 100, 251, 23));
+        checkBox_Bits = new QCheckBox(tab_7);
+        checkBox_Bits->setObjectName(QStringLiteral("checkBox_Bits"));
+        checkBox_Bits->setEnabled(false);
+        checkBox_Bits->setGeometry(QRect(10, 70, 251, 23));
+        label_37 = new QLabel(tab_7);
+        label_37->setObjectName(QStringLiteral("label_37"));
+        label_37->setGeometry(QRect(10, 10, 241, 16));
+        label_37->setFont(font);
+        RestoreAllServicesToDefaultButton = new QPushButton(tab_7);
+        RestoreAllServicesToDefaultButton->setObjectName(QStringLiteral("RestoreAllServicesToDefaultButton"));
+        RestoreAllServicesToDefaultButton->setGeometry(QRect(450, 160, 90, 41));
+        loadServicesSelectionButton = new QPushButton(tab_7);
+        loadServicesSelectionButton->setObjectName(QStringLiteral("loadServicesSelectionButton"));
+        loadServicesSelectionButton->setEnabled(false);
+        loadServicesSelectionButton->setGeometry(QRect(450, 220, 90, 23));
+        saveSelectionButton_2 = new QPushButton(tab_7);
+        saveSelectionButton_2->setObjectName(QStringLiteral("saveSelectionButton_2"));
+        saveSelectionButton_2->setEnabled(false);
+        saveSelectionButton_2->setGeometry(QRect(450, 250, 90, 23));
+        RestoreThisServicesToDefaultButton = new QPushButton(tab_7);
+        RestoreThisServicesToDefaultButton->setObjectName(QStringLiteral("RestoreThisServicesToDefaultButton"));
+        RestoreThisServicesToDefaultButton->setGeometry(QRect(450, 110, 90, 41));
+        enableAllServicesButton = new QPushButton(tab_7);
+        enableAllServicesButton->setObjectName(QStringLiteral("enableAllServicesButton"));
+        enableAllServicesButton->setGeometry(QRect(450, 40, 90, 23));
+        disableAllServicesButton = new QPushButton(tab_7);
+        disableAllServicesButton->setObjectName(QStringLiteral("disableAllServicesButton"));
+        disableAllServicesButton->setGeometry(QRect(450, 10, 91, 23));
+        openRegeditButton = new QPushButton(tab_7);
+        openRegeditButton->setObjectName(QStringLiteral("openRegeditButton"));
+        openRegeditButton->setGeometry(QRect(140, 370, 120, 36));
+        openRegeditButton->setIconSize(QSize(30, 30));
+        openRegeditButton->setCheckable(false);
+        openServicesButton = new QPushButton(tab_7);
+        openServicesButton->setObjectName(QStringLiteral("openServicesButton"));
+        openServicesButton->setGeometry(QRect(10, 490, 120, 36));
+        openServicesButton->setIconSize(QSize(30, 30));
+        openServicesButton->setCheckable(false);
+        label_19 = new QLabel(tab_7);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setGeometry(QRect(10, 350, 111, 16));
+        label_19->setFont(font);
+        openCmdButton = new QPushButton(tab_7);
+        openCmdButton->setObjectName(QStringLiteral("openCmdButton"));
+        openCmdButton->setGeometry(QRect(10, 370, 120, 36));
+        openCmdButton->setIconSize(QSize(30, 30));
+        openCmdButton->setCheckable(false);
+        openPowershellButton = new QPushButton(tab_7);
+        openPowershellButton->setObjectName(QStringLiteral("openPowershellButton"));
+        openPowershellButton->setGeometry(QRect(10, 410, 120, 36));
+        openPowershellButton->setIconSize(QSize(30, 30));
+        openPowershellButton->setCheckable(false);
+        completeShutdownButton = new QPushButton(tab_7);
+        completeShutdownButton->setObjectName(QStringLiteral("completeShutdownButton"));
+        completeShutdownButton->setGeometry(QRect(140, 450, 120, 36));
+        completeShutdownButton->setIconSize(QSize(30, 30));
+        completeShutdownButton->setCheckable(false);
+        knowLicenceExpirationButton = new QPushButton(tab_7);
+        knowLicenceExpirationButton->setObjectName(QStringLiteral("knowLicenceExpirationButton"));
+        knowLicenceExpirationButton->setGeometry(QRect(270, 370, 120, 36));
+        knowLicenceExpirationButton->setIconSize(QSize(30, 30));
+        knowLicenceExpirationButton->setCheckable(false);
+        RestartButton = new QPushButton(tab_7);
+        RestartButton->setObjectName(QStringLiteral("RestartButton"));
+        RestartButton->setGeometry(QRect(140, 410, 120, 36));
+        RestartButton->setIconSize(QSize(30, 30));
+        RestartButton->setCheckable(false);
+        openTaskmgrButton = new QPushButton(tab_7);
+        openTaskmgrButton->setObjectName(QStringLiteral("openTaskmgrButton"));
+        openTaskmgrButton->setGeometry(QRect(10, 450, 120, 36));
+        openTaskmgrButton->setIconSize(QSize(30, 30));
+        openTaskmgrButton->setCheckable(false);
+        loadTweaksSelectionButton = new QPushButton(tab_7);
+        loadTweaksSelectionButton->setObjectName(QStringLiteral("loadTweaksSelectionButton"));
+        loadTweaksSelectionButton->setEnabled(false);
+        loadTweaksSelectionButton->setGeometry(QRect(450, 450, 90, 23));
+        RestoreTweaksToDefaultButton = new QPushButton(tab_7);
+        RestoreTweaksToDefaultButton->setObjectName(QStringLiteral("RestoreTweaksToDefaultButton"));
+        RestoreTweaksToDefaultButton->setEnabled(false);
+        RestoreTweaksToDefaultButton->setGeometry(QRect(450, 400, 90, 41));
+        applyTweaksButton = new QPushButton(tab_7);
+        applyTweaksButton->setObjectName(QStringLiteral("applyTweaksButton"));
+        applyTweaksButton->setEnabled(false);
+        applyTweaksButton->setGeometry(QRect(450, 352, 90, 41));
+        unloadTweaksSelectionButton = new QPushButton(tab_7);
+        unloadTweaksSelectionButton->setObjectName(QStringLiteral("unloadTweaksSelectionButton"));
+        unloadTweaksSelectionButton->setEnabled(false);
+        unloadTweaksSelectionButton->setGeometry(QRect(450, 480, 90, 23));
+        checkBox_Wuauserv = new QCheckBox(tab_7);
+        checkBox_Wuauserv->setObjectName(QStringLiteral("checkBox_Wuauserv"));
+        checkBox_Wuauserv->setEnabled(false);
+        checkBox_Wuauserv->setGeometry(QRect(10, 130, 251, 23));
+        knowLicenceExpirationButton_3 = new QPushButton(tab_7);
+        knowLicenceExpirationButton_3->setObjectName(QStringLiteral("knowLicenceExpirationButton_3"));
+        knowLicenceExpirationButton_3->setGeometry(QRect(10, 170, 120, 36));
+        knowLicenceExpirationButton_3->setIconSize(QSize(30, 30));
+        knowLicenceExpirationButton_3->setCheckable(false);
+        tabWidget_3->addTab(tab_7, QString());
+        tab_6 = new QWidget();
+        tab_6->setObjectName(QStringLiteral("tab_6"));
+        tabWidget_3->addTab(tab_6, QString());
+        tab_12 = new QWidget();
+        tab_12->setObjectName(QStringLiteral("tab_12"));
+        ImportOutlookButton = new QPushButton(tab_12);
+        ImportOutlookButton->setObjectName(QStringLiteral("ImportOutlookButton"));
+        ImportOutlookButton->setEnabled(false);
+        ImportOutlookButton->setGeometry(QRect(270, 70, 120, 36));
+        ImportOutlookButton->setIconSize(QSize(30, 30));
+        ImportOutlookButton->setCheckable(false);
+        label_16 = new QLabel(tab_12);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setGeometry(QRect(270, 10, 171, 16));
+        label_16->setFont(font);
+        label_14 = new QLabel(tab_12);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setGeometry(QRect(10, 10, 171, 16));
+        label_14->setFont(font);
+        UTCButton = new QPushButton(tab_12);
+        UTCButton->setObjectName(QStringLiteral("UTCButton"));
+        UTCButton->setEnabled(false);
+        UTCButton->setGeometry(QRect(10, 30, 120, 36));
+        UTCButton->setIconSize(QSize(30, 30));
+        UTCButton->setCheckable(false);
+        ExportOutlookButton = new QPushButton(tab_12);
+        ExportOutlookButton->setObjectName(QStringLiteral("ExportOutlookButton"));
+        ExportOutlookButton->setEnabled(false);
+        ExportOutlookButton->setGeometry(QRect(270, 30, 120, 36));
+        ExportOutlookButton->setIconSize(QSize(30, 30));
+        ExportOutlookButton->setCheckable(false);
+        GMTButton = new QPushButton(tab_12);
+        GMTButton->setObjectName(QStringLiteral("GMTButton"));
+        GMTButton->setEnabled(false);
+        GMTButton->setGeometry(QRect(10, 70, 120, 36));
+        GMTButton->setIconSize(QSize(30, 30));
+        GMTButton->setCheckable(false);
+        updateSystemTimeButton = new QPushButton(tab_12);
+        updateSystemTimeButton->setObjectName(QStringLiteral("updateSystemTimeButton"));
+        updateSystemTimeButton->setEnabled(false);
+        updateSystemTimeButton->setGeometry(QRect(10, 200, 120, 36));
         QPalette palette1;
         palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -749,13 +808,13 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        getFirewallStatusButton->setPalette(palette1);
-        getFirewallStatusButton->setIconSize(QSize(30, 30));
-        getFirewallStatusButton->setCheckable(false);
-        startExplorerButton = new QPushButton(tab_7);
-        startExplorerButton->setObjectName(QStringLiteral("startExplorerButton"));
-        startExplorerButton->setEnabled(false);
-        startExplorerButton->setGeometry(QRect(140, 190, 120, 36));
+        updateSystemTimeButton->setPalette(palette1);
+        updateSystemTimeButton->setIconSize(QSize(30, 30));
+        updateSystemTimeButton->setCheckable(false);
+        restartExplorerButton = new QPushButton(tab_12);
+        restartExplorerButton->setObjectName(QStringLiteral("restartExplorerButton"));
+        restartExplorerButton->setEnabled(false);
+        restartExplorerButton->setGeometry(QRect(140, 160, 120, 36));
         QPalette palette2;
         palette2.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette2.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -802,23 +861,13 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        startExplorerButton->setPalette(palette2);
-        startExplorerButton->setIconSize(QSize(30, 30));
-        startExplorerButton->setCheckable(false);
-        label_14 = new QLabel(tab_7);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setGeometry(QRect(10, 240, 171, 16));
-        label_14->setFont(font);
-        ImportOutlookButton = new QPushButton(tab_7);
-        ImportOutlookButton->setObjectName(QStringLiteral("ImportOutlookButton"));
-        ImportOutlookButton->setEnabled(false);
-        ImportOutlookButton->setGeometry(QRect(140, 300, 120, 36));
-        ImportOutlookButton->setIconSize(QSize(30, 30));
-        ImportOutlookButton->setCheckable(false);
-        restartExplorerButton = new QPushButton(tab_7);
-        restartExplorerButton->setObjectName(QStringLiteral("restartExplorerButton"));
-        restartExplorerButton->setEnabled(false);
-        restartExplorerButton->setGeometry(QRect(140, 150, 120, 36));
+        restartExplorerButton->setPalette(palette2);
+        restartExplorerButton->setIconSize(QSize(30, 30));
+        restartExplorerButton->setCheckable(false);
+        startExplorerButton = new QPushButton(tab_12);
+        startExplorerButton->setObjectName(QStringLiteral("startExplorerButton"));
+        startExplorerButton->setEnabled(false);
+        startExplorerButton->setGeometry(QRect(140, 200, 120, 36));
         QPalette palette3;
         palette3.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette3.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -865,36 +914,10 @@ public:
         palette3.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette3.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette3.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        restartExplorerButton->setPalette(palette3);
-        restartExplorerButton->setIconSize(QSize(30, 30));
-        restartExplorerButton->setCheckable(false);
-        UTCButton = new QPushButton(tab_7);
-        UTCButton->setObjectName(QStringLiteral("UTCButton"));
-        UTCButton->setGeometry(QRect(10, 260, 120, 36));
-        UTCButton->setIconSize(QSize(30, 30));
-        UTCButton->setCheckable(false);
-        label_16 = new QLabel(tab_7);
-        label_16->setObjectName(QStringLiteral("label_16"));
-        label_16->setGeometry(QRect(140, 240, 171, 16));
-        label_16->setFont(font);
-        GMTButton = new QPushButton(tab_7);
-        GMTButton->setObjectName(QStringLiteral("GMTButton"));
-        GMTButton->setGeometry(QRect(10, 300, 120, 36));
-        GMTButton->setIconSize(QSize(30, 30));
-        GMTButton->setCheckable(false);
-        ExportOutlookButton = new QPushButton(tab_7);
-        ExportOutlookButton->setObjectName(QStringLiteral("ExportOutlookButton"));
-        ExportOutlookButton->setEnabled(false);
-        ExportOutlookButton->setGeometry(QRect(140, 260, 120, 36));
-        ExportOutlookButton->setIconSize(QSize(30, 30));
-        ExportOutlookButton->setCheckable(false);
-        checkBox_wuauserv = new QCheckBox(tab_7);
-        checkBox_wuauserv->setObjectName(QStringLiteral("checkBox_wuauserv"));
-        checkBox_wuauserv->setGeometry(QRect(10, 100, 251, 23));
-        tabWidget_3->addTab(tab_7, QString());
-        tab_6 = new QWidget();
-        tab_6->setObjectName(QStringLiteral("tab_6"));
-        tabWidget_3->addTab(tab_6, QString());
+        startExplorerButton->setPalette(palette3);
+        startExplorerButton->setIconSize(QSize(30, 30));
+        startExplorerButton->setCheckable(false);
+        tabWidget_3->addTab(tab_12, QString());
         QIcon icon19;
         icon19.addFile(QStringLiteral(":/images/settings-5122.png"), QSize(), QIcon::Normal, QIcon::Off);
         tabWidget->addTab(tab_3, icon19, QString());
@@ -934,14 +957,19 @@ public:
         menuAyuda->addAction(actionAbout);
         menuAyuda->addAction(actionAbout_Qt);
         menuRun->addAction(actionSeeReleases);
+        menuRun->addAction(actionUpdate_Scripts);
+        menuRun->addAction(actionUpdate_Program);
         toolBar->addSeparator();
         toolBar->addAction(actionTwitter);
         toolBar->addSeparator();
+        toolBar->addAction(actionSeeReleases);
+        toolBar->addAction(actionUpdate_Scripts);
+        toolBar->addAction(actionUpdate_Program);
 
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(6);
+        tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_8->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(0);
@@ -978,6 +1006,8 @@ public:
         actionTwitter->setToolTip(QApplication::translate("MainWindow", "Go to Twitter", nullptr));
 #endif // QT_NO_TOOLTIP
         actionTutorial->setText(QApplication::translate("MainWindow", "Tutorial", nullptr));
+        actionUpdate_Scripts->setText(QApplication::translate("MainWindow", "Update Scripts", nullptr));
+        actionUpdate_Program->setText(QApplication::translate("MainWindow", "Update Program", nullptr));
         label_36->setText(QApplication::translate("MainWindow", "Scripts Manager", nullptr));
 #ifndef QT_NO_WHATSTHIS
         runWindosUpdateMiniToolButton->setWhatsThis(QString());
@@ -1072,14 +1102,6 @@ public:
         runProcessHackerButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
         label_50->setText(QApplication::translate("MainWindow", "ChrisPC Win Experience Index", nullptr));
-#ifndef QT_NO_TOOLTIP
-        updateScriptsButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update scripts</p></body></html>", nullptr));
-#endif // QT_NO_TOOLTIP
-        updateScriptsButton->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        updateAppButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Update program</p></body></html>", nullptr));
-#endif // QT_NO_TOOLTIP
-        updateAppButton->setText(QString());
 #ifndef QT_NO_WHATSTHIS
         runStopUpdates10Button->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1101,13 +1123,30 @@ public:
         label_44->setText(QApplication::translate("MainWindow", "Log update scripts", nullptr));
         tabWidget_8->setTabText(tabWidget_8->indexOf(tab_27), QApplication::translate("MainWindow", "Sources", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_16), QString());
+#ifndef QT_NO_WHATSTHIS
+        searchUpdatesButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        searchUpdatesButton->setText(QApplication::translate("MainWindow", "Search updates", nullptr));
+#ifndef QT_NO_SHORTCUT
+        searchUpdatesButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+#ifndef QT_NO_TOOLTIP
+        knowLicenceExpirationButton_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>When your Windows license expires?</p></body></html>", nullptr));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        knowLicenceExpirationButton_2->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        knowLicenceExpirationButton_2->setText(QApplication::translate("MainWindow", "Know Windows Version", nullptr));
+#ifndef QT_NO_SHORTCUT
+        knowLicenceExpirationButton_2->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "Normal user", nullptr));
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", nullptr));
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QString());
         tabWidget->setTabToolTip(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Check system integrity", nullptr));
-        label_18->setText(QApplication::translate("MainWindow", "shutdown -Fr now", nullptr));
+        label_18->setText(QApplication::translate("MainWindow", "sfc /scannow", nullptr));
         label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", nullptr));
 #ifndef QT_NO_TOOLTIP
         integrityCheckButton_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff55ff;\">SFC</span><span style=\" color:#c0c0c0;\"/><span style=\" color:#ff55ff;\">/ScanNow</span></p></body></html>", nullptr));
@@ -1158,6 +1197,13 @@ public:
 #ifndef QT_NO_SHORTCUT
         disableFirewallButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
+#ifndef QT_NO_WHATSTHIS
+        getFirewallStatusButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        getFirewallStatusButton->setText(QApplication::translate("MainWindow", "Get firewall status", nullptr));
+#ifndef QT_NO_SHORTCUT
+        getFirewallStatusButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
         tabWidget_6->setTabText(tabWidget_6->indexOf(tab_26), QApplication::translate("MainWindow", "Security", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_15), QString());
 #ifndef QT_NO_WHATSTHIS
@@ -1190,9 +1236,9 @@ public:
 #endif // QT_NO_SHORTCUT
         tabWidget_7->setTabText(tabWidget_7->indexOf(tab_31), QApplication::translate("MainWindow", "Power", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QString());
-        checkBox_001->setText(QApplication::translate("MainWindow", "Superfetch - SysMain", nullptr));
-        checkBox_005->setText(QApplication::translate("MainWindow", "Windows Search - WSearch", nullptr));
-        checkBox_003->setText(QApplication::translate("MainWindow", "BITS", nullptr));
+        checkBox_SysMain->setText(QApplication::translate("MainWindow", "Superfetch - SysMain", nullptr));
+        checkBox_WSearch->setText(QApplication::translate("MainWindow", "Windows Search - WSearch", nullptr));
+        checkBox_Bits->setText(QApplication::translate("MainWindow", "BITS", nullptr));
         label_37->setText(QApplication::translate("MainWindow", "Services", nullptr));
         RestoreAllServicesToDefaultButton->setText(QApplication::translate("MainWindow", "Restore all\n"
 " services to Def.", nullptr));
@@ -1217,13 +1263,6 @@ public:
         openServicesButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
         label_19->setText(QApplication::translate("MainWindow", "Shortcuts", nullptr));
-#ifndef QT_NO_WHATSTHIS
-        searchUpdatesButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        searchUpdatesButton->setText(QApplication::translate("MainWindow", "Search updates", nullptr));
-#ifndef QT_NO_SHORTCUT
-        searchUpdatesButton->setShortcut(QString());
-#endif // QT_NO_SHORTCUT
 #ifndef QT_NO_WHATSTHIS
         openCmdButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1272,34 +1311,22 @@ public:
         loadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Load", nullptr));
         RestoreTweaksToDefaultButton->setText(QApplication::translate("MainWindow", "Restore tweaks\n"
 " to Default", nullptr));
-        applyTweaksButton->setText(QApplication::translate("MainWindow", "Apply", nullptr));
+        applyTweaksButton->setText(QApplication::translate("MainWindow", "Apply predefined\n"
+" tweaks", nullptr));
         unloadTweaksSelectionButton->setText(QApplication::translate("MainWindow", "Unload", nullptr));
+        checkBox_Wuauserv->setText(QApplication::translate("MainWindow", "Windows Update - Wuauserv", nullptr));
 #ifndef QT_NO_TOOLTIP
-        updateSystemTimeButton->setToolTip(QString());
+        knowLicenceExpirationButton_3->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>When your Windows license expires?</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_WHATSTHIS
-        updateSystemTimeButton->setWhatsThis(QString());
+        knowLicenceExpirationButton_3->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
-        updateSystemTimeButton->setText(QApplication::translate("MainWindow", "Update system time", nullptr));
+        knowLicenceExpirationButton_3->setText(QApplication::translate("MainWindow", "Check Services Status", nullptr));
 #ifndef QT_NO_SHORTCUT
-        updateSystemTimeButton->setShortcut(QString());
+        knowLicenceExpirationButton_3->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
-        label_15->setText(QApplication::translate("MainWindow", "Extra", nullptr));
-#ifndef QT_NO_WHATSTHIS
-        getFirewallStatusButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        getFirewallStatusButton->setText(QApplication::translate("MainWindow", "Get firewall status", nullptr));
-#ifndef QT_NO_SHORTCUT
-        getFirewallStatusButton->setShortcut(QString());
-#endif // QT_NO_SHORTCUT
-#ifndef QT_NO_WHATSTHIS
-        startExplorerButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        startExplorerButton->setText(QApplication::translate("MainWindow", "Start explorer.exe", nullptr));
-#ifndef QT_NO_SHORTCUT
-        startExplorerButton->setShortcut(QString());
-#endif // QT_NO_SHORTCUT
-        label_14->setText(QApplication::translate("MainWindow", "Current Local Time", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Extras", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Fonts", nullptr));
 #ifndef QT_NO_TOOLTIP
         ImportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p><p>To:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
@@ -1310,13 +1337,8 @@ public:
 #ifndef QT_NO_SHORTCUT
         ImportOutlookButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
-#ifndef QT_NO_WHATSTHIS
-        restartExplorerButton->setWhatsThis(QString());
-#endif // QT_NO_WHATSTHIS
-        restartExplorerButton->setText(QApplication::translate("MainWindow", "Restart explorer.exe", nullptr));
-#ifndef QT_NO_SHORTCUT
-        restartExplorerButton->setShortcut(QString());
-#endif // QT_NO_SHORTCUT
+        label_16->setText(QApplication::translate("MainWindow", "Outlook", nullptr));
+        label_14->setText(QApplication::translate("MainWindow", "Current Local Time", nullptr));
 #ifndef QT_NO_TOOLTIP
         UTCButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>I recommend to change to this</p></body></html>", nullptr));
 #endif // QT_NO_TOOLTIP
@@ -1326,17 +1348,6 @@ public:
         UTCButton->setText(QApplication::translate("MainWindow", "UTC", nullptr));
 #ifndef QT_NO_SHORTCUT
         UTCButton->setShortcut(QString());
-#endif // QT_NO_SHORTCUT
-        label_16->setText(QApplication::translate("MainWindow", "Outlook", nullptr));
-#ifndef QT_NO_TOOLTIP
-        GMTButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_WHATSTHIS
-        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
-#endif // QT_NO_WHATSTHIS
-        GMTButton->setText(QApplication::translate("MainWindow", "GMT", nullptr));
-#ifndef QT_NO_SHORTCUT
-        GMTButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
 #ifndef QT_NO_TOOLTIP
         ExportOutlookButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Uses defaults locations only</p><p>From:</p><p>HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\Windows Messaging Subsystem\\\\Profiles</p><p>%localappdata%\\Microsoft\\Outlook\\*</p><p>To:</p><p>C:\\Program Files(x86)\\winsys\\OutlookProfile\\OutlookWinsys.reg</p><p>C:\\Program Files(x86)\\winsys\\OutlookData\\*</p></body></html>", nullptr));
@@ -1348,12 +1359,44 @@ public:
 #ifndef QT_NO_SHORTCUT
         ExportOutlookButton->setShortcut(QString());
 #endif // QT_NO_SHORTCUT
-        checkBox_wuauserv->setText(QApplication::translate("MainWindow", "Windows Update - wuauserv", nullptr));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_7), QApplication::translate("MainWindow", "Extras", nullptr));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_6), QApplication::translate("MainWindow", "Fonts", nullptr));
+#ifndef QT_NO_TOOLTIP
+        GMTButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Default setting. Not recommended</p></body></html>", nullptr));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        GMTButton->setWhatsThis(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
+#endif // QT_NO_WHATSTHIS
+        GMTButton->setText(QApplication::translate("MainWindow", "GMT", nullptr));
+#ifndef QT_NO_SHORTCUT
+        GMTButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+#ifndef QT_NO_TOOLTIP
+        updateSystemTimeButton->setToolTip(QString());
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_WHATSTHIS
+        updateSystemTimeButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        updateSystemTimeButton->setText(QApplication::translate("MainWindow", "Update system time", nullptr));
+#ifndef QT_NO_SHORTCUT
+        updateSystemTimeButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+#ifndef QT_NO_WHATSTHIS
+        restartExplorerButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        restartExplorerButton->setText(QApplication::translate("MainWindow", "Restart explorer.exe", nullptr));
+#ifndef QT_NO_SHORTCUT
+        restartExplorerButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+#ifndef QT_NO_WHATSTHIS
+        startExplorerButton->setWhatsThis(QString());
+#endif // QT_NO_WHATSTHIS
+        startExplorerButton->setText(QApplication::translate("MainWindow", "Start explorer.exe", nullptr));
+#ifndef QT_NO_SHORTCUT
+        startExplorerButton->setShortcut(QString());
+#endif // QT_NO_SHORTCUT
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_12), QApplication::translate("MainWindow", "Tests", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QString());
         tabWidget->setTabToolTip(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", nullptr));
-        label->setText(QApplication::translate("MainWindow", "v2018.10.29", nullptr));
+        label->setText(QApplication::translate("MainWindow", "v2018.12.08", nullptr));
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", nullptr));
         menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", nullptr));
         menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", nullptr));
