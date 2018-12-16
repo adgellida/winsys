@@ -160,7 +160,7 @@ public:
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(649, 682);
         QIcon icon;
-        icon.addFile(QStringLiteral(":/images/winsys.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/images/winsys.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         actionExit = new QAction(MainWindow);
         actionExit->setObjectName(QStringLiteral("actionExit"));
@@ -969,10 +969,10 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionExit, SIGNAL(triggered()), MainWindow, SLOT(close()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_8->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(0);
+        tabWidget_4->setCurrentIndex(1);
         tabWidget_5->setCurrentIndex(0);
         tabWidget_6->setCurrentIndex(0);
         tabWidget_7->setCurrentIndex(0);
@@ -1119,7 +1119,6 @@ public:
 #endif // QT_NO_SHORTCUT
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "Install", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QString());
-        tabWidget->setTabToolTip(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Packages", nullptr));
         label_44->setText(QApplication::translate("MainWindow", "Log update scripts", nullptr));
         tabWidget_8->setTabText(tabWidget_8->indexOf(tab_27), QApplication::translate("MainWindow", "Sources", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_16), QString());
@@ -1144,7 +1143,6 @@ public:
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_9), QApplication::translate("MainWindow", "Advanced user", nullptr));
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "Developer", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QString());
-        tabWidget->setTabToolTip(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "System", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Check system integrity", nullptr));
         label_18->setText(QApplication::translate("MainWindow", "sfc /scannow", nullptr));
         label_30->setText(QApplication::translate("MainWindow", "Be careful, your system will reboot", nullptr));
@@ -1161,7 +1159,6 @@ public:
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_13), QApplication::translate("MainWindow", "General", nullptr));
         tabWidget_5->setTabText(tabWidget_5->indexOf(tab_14), QApplication::translate("MainWindow", "Packages", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QString());
-        tabWidget->setTabToolTip(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Repair", nullptr));
 #ifndef QT_NO_WHATSTHIS
         smartscreenBlockButton->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
@@ -1395,7 +1392,6 @@ public:
 #endif // QT_NO_SHORTCUT
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_12), QApplication::translate("MainWindow", "Tests", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QString());
-        tabWidget->setTabToolTip(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Tweaks", nullptr));
         label->setText(QApplication::translate("MainWindow", "v2018.12.08", nullptr));
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", nullptr));
         menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", nullptr));

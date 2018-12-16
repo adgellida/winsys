@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="winsys.qrc">
-    <normaloff>:/images/winsys.ico</normaloff>:/images/winsys.ico</iconset>
+    <normaloff>:/images/winsys.png</normaloff>:/images/winsys.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -40,7 +40,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -67,9 +67,6 @@
      </attribute>
      <attribute name="title">
       <string/>
-     </attribute>
-     <attribute name="toolTip">
-      <string>Packages</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_2">
       <property name="enabled">
@@ -717,9 +714,6 @@
      <attribute name="title">
       <string/>
      </attribute>
-     <attribute name="toolTip">
-      <string>System</string>
-     </attribute>
      <widget class="QTabWidget" name="tabWidget_4">
       <property name="geometry">
        <rect>
@@ -730,7 +724,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -815,9 +809,6 @@
      </attribute>
      <attribute name="title">
       <string/>
-     </attribute>
-     <attribute name="toolTip">
-      <string>Repair</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_5">
       <property name="geometry">
@@ -1718,9 +1709,6 @@
      </attribute>
      <attribute name="title">
       <string/>
-     </attribute>
-     <attribute name="toolTip">
-      <string>Tweaks</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
