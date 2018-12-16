@@ -1392,7 +1392,7 @@ public:
 #endif // QT_NO_SHORTCUT
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_12), QApplication::translate("MainWindow", "Tests", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QString());
-        label->setText(QApplication::translate("MainWindow", "v2018.12.08", nullptr));
+        label->setText(QApplication::translate("MainWindow", "v2018.12.16", nullptr));
         menuNuevo->setTitle(QApplication::translate("MainWindow", "File", nullptr));
         menuEdici_n->setTitle(QApplication::translate("MainWindow", "Edit", nullptr));
         menuAyuda->setTitle(QApplication::translate("MainWindow", "Help", nullptr));
