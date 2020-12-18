@@ -2,6 +2,9 @@
   <a href="https://www.pling.com/p/1181126" target="_blank"><img src="https://www.linux-apps.com/images_sys/superstore/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1181126" target="_blank"><img src="https://i.imgur.com/c7JgyGJ.jpg" width="250" alt="Gitlab"></a>
 </p>
 
+<a href="https://github.com/adgellida/winsys/blob/master/READMEesES.md" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/data-protection-list/main/images/languages/spain.png" width="80" img align="right"></a>
+<a href="https://github.com/adgellida/winsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/data-protection-list/main/images/languages/united-kingdom.png" width="80" style="vertical-align:middle;margin:0px 50px" img align="right"></a>
+
 <img src="https://raw.githubusercontent.com/adgellida/winsys/master/logo.png" width="80"> winsys
 =============================================
 
@@ -33,8 +36,6 @@
   <a href="https://www.qt.io" target="_blank"><img src="https://img.shields.io/badge/qt version-v5.11.2-green.svg" alt="qt version"></a>
   <a href="http://www.somsubhra.com/github-release-stats/?username=adgellida&repository=winsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/winsys/master/src/images/github-release-stats.png" alt="github release stats"></a>
 </p>
-
-**Para Español pulsar [aqui](https://github.com/adgellida/winsys/blob/master/README_es_ES.md)**
 
 Gives the user a powerful control center to toggle on and off many system settings in Windows 10, it is able to change system configurations, system updates, executable improvements, small system fixes, and more at the touch of a button.
 
