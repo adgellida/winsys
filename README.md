@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://www.pling.com/p/1181126" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/resources/master/images/linux-apps-logo.png" width="250"></a><a href="https://www.pling.com/p/1181126" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/resources/master/images/download-badge.png" width="250" alt="Gitlab"></a>
+  <a href="https://chocolatey.org" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/windowspackages/master/others/poweredByChocolatey.png" width="150" style="vertical-align:middle;margin:0px 50px" img align="right"></a>
 </p>
 
-<a href="https://chocolatey.org" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/windowspackages/master/others/poweredByChocolatey.png" width="150" style="vertical-align:middle;margin:0px 50px" img align="right"></a>
 <a href="https://github.com/adgellida/winsys/blob/master/READMEesES.md" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/data-protection-list/main/images/languages/spain.png" width="80" img align="right"></a>
 <a href="https://github.com/adgellida/winsys" target="_blank"><img src="https://raw.githubusercontent.com/adgellida/data-protection-list/main/images/languages/united-kingdom.png" width="80" style="vertical-align:middle;margin:0px 50px" img align="right"></a>
 
